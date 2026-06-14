@@ -1,0 +1,429 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global/global}
+  \entry{abderrahmaneMaximizeFlexibility}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=AN}{%
+         family={Abderrahmane},
+         familyi={A\bibinitperiod},
+         given={Nassim},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AN1}
+    \strng{fullhash}{AN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Maximize Flexibility in {SoC} Design with eFPGAs}
+    \verb{url}
+    \verb https://www.electronicdesign.com
+    \endverb
+    \field{journaltitle}{Electronic Design}
+  \endentry
+
+  \entry{calvoTestingSesion4}{unpublished}{}{}
+    \name{author}{1}{}{%
+      {{hash=CMJR}{%
+         family={Calvo\bibnamedelima Monge},
+         familyi={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+         given={José\bibnamedelima Roberto},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CMJR1}
+    \strng{fullhash}{CMJR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{howpublished}{Diapositivas del programa Técnico en Semiconductores}
+    \field{note}{Material de clase}
+    \field{title}{Testing y Pruebas Funcionales. {Sesión} 4: {Interfaces}
+  básicas de testing/funcionales en un {SOC}}
+    \field{year}{2026}
+  \endentry
+
+  \entry{hassani2024efficient}{article}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{1}{}{%
+      {{hash=HFS}{%
+         family={Hassani},
+         familyi={H\bibinitperiod},
+         given={Fatemeh\bibnamedelima Serajeh},
+         giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HFS+1}
+    \strng{fullhash}{HFS+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb 10.1145/3643809
+    \endverb
+    \field{issn}{1084-4309}
+    \field{title}{An Efficient {FPGA} Architecture with Turn-Restricted Switch
+  Boxes}
+    \verb{url}
+    \verb https://doi.org/10.1145/3643809
+    \endverb
+    \field{journaltitle}{ACM Trans. Des. Autom. Electron. Syst.}
+    \field{year}{2024}
+  \endentry
+
+  \entry{ieee1149}{standard}{}{}
+    \list{organization}{1}{%
+      {IEEE Computer Society}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \verb{doi}
+    \verb 10.1109/IEEESTD.2013.6515989
+    \endverb
+    \field{number}{IEEE Std 1149.1-2013}
+    \field{title}{{IEEE Standard for Test Access Port and Boundary-Scan
+  Architecture}}
+    \field{year}{2013}
+  \endentry
+
+  \entry{jtagTechnologiesBoundaryScan}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=J}{%
+         family={{JTAG Technologies}},
+         familyi={J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {JTAG Technologies}%
+    }
+    \strng{namehash}{J1}
+    \strng{fullhash}{J1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{title}{Boundary Scan}
+    \verb{url}
+    \verb https://www.jtag.com/boundary-scan/
+    \endverb
+  \endentry
+
+  \entry{jtagTechnologiesTapController}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=J}{%
+         family={{JTAG Technologies}},
+         familyi={J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {JTAG Technologies}%
+    }
+    \strng{namehash}{J1}
+    \strng{fullhash}{J1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{title}{How the {JTAG} {TAP} Controller Works}
+    \verb{url}
+    \verb https://www.jtag.com/how-the-jtag-tap-controller-works/
+    \endverb
+  \endentry
+
+  \entry{kuon2007fpga}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=KI}{%
+         family={Kuon},
+         familyi={K\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=TR}{%
+         family={Tessier},
+         familyi={T\bibinitperiod},
+         given={Russell},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Rose},
+         familyi={R\bibinitperiod},
+         given={Jonathan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KITRRJ1}
+    \strng{fullhash}{KITRRJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1561/1000000005
+    \endverb
+    \field{title}{{FPGA} Architecture: Survey and Challenges}
+    \verb{url}
+    \verb https://doi.org/10.1561/1000000005
+    \endverb
+    \field{journaltitle}{Foundations and Trends in Electronic Design
+  Automation}
+    \field{year}{2007}
+  \endentry
+
+  \entry{meyerbaese2014digital}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=MBU}{%
+         family={Meyer-Baese},
+         familyi={M\bibinithyphendelim B\bibinitperiod},
+         given={Uwe},
+         giveni={U\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{MBU1}
+    \strng{fullhash}{MBU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \verb{doi}
+    \verb 10.1007/978-3-642-45309-0
+    \endverb
+    \field{edition}{4}
+    \field{issn}{1860-4870}
+    \field{title}{Digital Signal Processing with {Field Programmable Gate
+  Arrays}}
+    \verb{url}
+    \verb https://doi.org/10.1007/978-3-642-45309-0
+    \endverb
+    \field{year}{2014}
+  \endentry
+
+  \entry{nelsonBoundaryScan}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=NVP}{%
+         family={Nelson},
+         familyi={N\bibinitperiod},
+         given={Victor\bibnamedelima P.},
+         giveni={V\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Auburn University}%
+    }
+    \strng{namehash}{NVP1}
+    \strng{fullhash}{NVP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{titleaddon}{{ELEC} 4200 Lecture Slides}
+    \field{title}{Testing and Boundary Scan}
+    \verb{url}
+    \verb http://www.eng.auburn.edu/~nelson/courses/elec4200/Slides/BoundarySca
+    \verb n.pdf
+    \endverb
+  \endentry
+
+  \entry{proakis1996digital}{book}{}{}
+    \name{author}{2}{}{%
+      {{hash=PJG}{%
+         family={Proakis},
+         familyi={P\bibinitperiod},
+         given={John\bibnamedelima G.},
+         giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=MDG}{%
+         family={Manolakis},
+         familyi={M\bibinitperiod},
+         given={Dimitris\bibnamedelima G.},
+         giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Prentice Hall International}%
+    }
+    \strng{namehash}{PJGMDG1}
+    \strng{fullhash}{PJGMDG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{edition}{3}
+    \field{isbn}{0-13-394338-9}
+    \field{title}{Digital Signal Processing: Principles, Algorithms, and
+  Applications}
+    \field{year}{1996}
+  \endentry
+
+  \entry{saidi2018survey}{article}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{1}{}{%
+      {{hash=SH}{%
+         family={Saidi},
+         familyi={S\bibinitperiod},
+         given={Hajer},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SH+1}
+    \strng{fullhash}{SH+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1587/transinf.2017PAP0010
+    \endverb
+    \field{title}{A Survey and Comparative Study of Embedded {FPGA}
+  Architectures}
+    \verb{url}
+    \verb https://doi.org/10.1587/transinf.2017PAP0010
+    \endverb
+    \field{volume}{E101.D}
+    \field{journaltitle}{IEICE Transactions on Information and Systems}
+    \field{year}{2018}
+  \endentry
+
+  \entry{shan2019fpga}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=SY}{%
+         family={Shan},
+         familyi={S\bibinitperiod},
+         given={Yizhou},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SY1}
+    \strng{fullhash}{SY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{{FPGA} Bitstream Explained}
+    \verb{url}
+    \verb http://lastweek.io/fpga/bitstream/
+    \endverb
+    \field{month}{10}
+    \field{year}{2019}
+  \endentry
+
+  \entry{openlane}{software}{}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={{The OpenROAD Project}},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T1}
+    \strng{fullhash}{T1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{note}{GitHub repository}
+    \field{title}{{OpenLane}: An Automated {RTL} to {GDSII} Flow}
+    \verb{url}
+    \verb https://github.com/The-OpenROAD-Project/OpenLane
+    \endverb
+    \field{year}{2026}
+  \endentry
+
+  \entry{fabulous2024}{software}{}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={{TheFABulousProject Authors}},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {University of Manchester}%
+    }
+    \strng{namehash}{T2}
+    \strng{fullhash}{T2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{{FABulous}: Framework for Architecture Synthesis and Layout
+  of Open User-customizable Scaffolding}
+    \verb{url}
+    \verb https://fabulous.readthedocs.io/en/latest/
+    \endverb
+    \field{version}{latest}
+    \field{year}{2024}
+  \endentry
+
+  \entry{wolf2024yosys}{software}{}{}
+    \name{author}{1}{}{%
+      {{hash=WC}{%
+         family={Wolf},
+         familyi={W\bibinitperiod},
+         given={Claire},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WC1}
+    \strng{fullhash}{WC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{{Yosys Open Synthesis Suite}}
+    \verb{url}
+    \verb https://yosyshq.net/yosys/
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{xjtagWhatIsJtag}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=X}{%
+         family={{XJTAG}},
+         familyi={X\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {XJTAG}%
+    }
+    \strng{namehash}{X1}
+    \strng{fullhash}{X1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{X}
+    \field{sortinithash}{X}
+    \field{note}{Guía técnica en PDF}
+    \field{title}{eBook: ¿Qué es {JTAG}?}
+    \verb{url}
+    \verb https://www.xjtag.com/wp-content/uploads/xjtag-ebook_what-is-jtag-es.
+    \verb pdf
+    \endverb
+  \endentry
+\enddatalist
+\endinput

@@ -1,0 +1,58 @@
+\chapter{Experimento Preliminar}
+\label{ch:Experimento}
+
+En esta sección se especifica la estrategia planificada para realizar un 
+experimento preliminar que permita validar la metodología propuesta para 
+la emulación física y extracción de métricas de rendimiento en 
+arquitecturas de lógica reconfigurable. Se escaló el experimento a un 
+tamaño pequeño para asegurar su viabilidad en el tiempo del proyecto y 
+su funcionamiento correcto, lo que permitirá realizar ajustes a la 
+metodología antes de su aplicación a un sistema más complejo. El 
+principal interés del experimento es garantizar la correcta síntesis, 
+mapeo, reteo y generación del bitstream de la arquitectura lógica 
+reconfigurable mediante un circuito digital de prueba básico sin 
+intervención de hardware físico.
+
+\section{Metodología del experimento}
+
+Se diseñará mediante código RTL una microarquitectura de lógica 
+programable por un solo grupo de cuatro tablas de búsqueda, 
+matrices de conmutación y su ruteo respectivo, todo con sus registros 
+para asegurar que sea reconfigurable.
+
+Como circuito de referencia para emular dentro de la microarquitectura 
+reconfigurable descrita, se utilizará un multiplexor de dos entradas, 
+se describirá de manera estructural compuerta por compuerta como se 
+muestra en la función lógica \ref{eq1}. Dicho multiplexor es compuesto 
+por dos compuertas AND, una compuerta NOT y una compuerta OR, cada una 
+de las compuertas será asignada a una de las LUTs disponibles en la 
+microarquitectura reconfigurable.
+
+\begin{equation}
+	\label{eq1}
+	Y = (A \cdot \overline{S}) + (B \cdot S)
+\end{equation}
+
+Fidnalmente se realizará una simulación funcional y de temporización 
+utilizando un banco de pruebas en software para verificar que las 
+señales de entrada conmuten correctamente hacia la salida según el 
+estado de la línea de selección.
+
+\section{Resultados Esperados}
+
+Por este medio se pretende:
+
+\begin{itemize}
+
+	\item Confirmar que las herramientas abiertas son capaces de 
+	reconocer la estructura de la microarquitectura reconfigurable y 
+	mapear la lógica combinacional del multiplexor.
+
+	\item Verificar que el software puede interconectar las LUTs de 
+	manera exitosa para propagar la señal del multiplexor.
+
+	\item Obtener los primeros reportes de retardo estimados por el 
+	software, sirviendo como línea base para la metodología de 
+	caracterización final.
+
+\end{itemize}

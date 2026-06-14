@@ -1,0 +1,41 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {iii}}{chapter*.2}%
+\contentsline {chapter}{Índice de tablas}{\es@scroman {iv}}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Planteamiento del problema}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Estado Actual}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Definición del Problema}{2}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Estructura del Documento}{2}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Marco teórico}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Lógica Reconfigurable}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Arquitectura interna de FPGAs}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Tablas de Consulta}{4}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Enrutamiento}{6}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Matriz de conmutación}{7}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Arquitectura Modulo de Jerarquía Superior}{8}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Escaneo de Fronteras/JTAG}{8}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Interfaz del Puerto de Acceso de Prueba}{9}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Controlador JTAG TAP}{10}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Registros del JTAG}{10}{subsection.2.3.4}%
+\contentsline {subsubsection}{Registros de datos}{11}{section*.12}%
+\contentsline {section}{\numberline {2.4}Filtrado digital}{11}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Estado del Arte}{12}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}eFPGAs}{12}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Herramientas de software}{14}{subsection.2.5.2}%
+\contentsline {chapter}{\numberline {3}Solución Propuesta}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Primera Etapa}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Segunda Etapa}{15}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Tercera Etapa}{15}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Cuarta Etapa}{16}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Hipótesis y Objetivos del Proyecto}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Hipótesis}{17}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Objetivos}{17}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}General}{17}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Específicos}{17}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Lista de Tareas por Objetivo}{18}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Alcances y Limitaciones del Proyecto}{20}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Experimento Preliminar}{21}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Metodología del experimento}{21}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Resultados Esperados}{22}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Cronograma}{23}{chapter.6}%
+\contentsline {chapter}{Bibliografía}{25}{chapter*.14}%

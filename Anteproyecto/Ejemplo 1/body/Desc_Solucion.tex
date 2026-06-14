@@ -1,0 +1,43 @@
+\chapter{Solución Propuesta}
+\label{ch:solucion}
+
+Este proyecto propone el desarrollo de una metodología de emulación física y caracterización para 
+superar las limitaciones del hardware cerrado y disminuir los riesgos de la fabricación en 
+silicio sin el previo modelado del sistema necesario. Para esto, se proponen cuatro etapas 
+para la solución.
+
+\section{Primera Etapa}
+
+La primera etapa de la solución propuesta para el proyecto se enfoca en la selección de 
+una arquitectura de lógica reconfigurable de código abierto parametrizable, y su 
+implementación mediante un banco de pruebas para comprobar su funcionamiento correcto. De 
+esta manera se elimina la dependencia del flujo de herramientas de un fabricante específico 
+y se asegura la portabilidad del proyecto a diferentes plataformas, al igual que se garantiza 
+la continuidad del proyecto en el caso de querer profundizar en el futuro.
+
+\section{Segunda Etapa}
+
+La segunda parte de la solución propuesta para el proyecto se centra en la instanciación de 
+la arquitectura de lógica reconfigurable seleccionada en la primera etapa sobre una FPGA 
+comercial. Mediante esta etapa se busca un medio para extraer en próximas etapas las métricas 
+de rendimiento y uso de recursos como el área equivalente, el consumo de potencia y los 
+retardos de las rutas críticas.
+
+\section{Tercera Etapa}
+
+La tercera fase de la solución propuesta para el proyecto busca implementar dos circuitos 
+digitales que estresen la arquitectura de lógica reconfigurable seleccionada en la primera 
+etapa de maneras diferentes. Para esto se propone la implementación de un filtro digital 
+de orden bajo y un multiplicador de enteros. De esta manera se busca obtener métricas de 
+rendimiento para su comparación y se garantiza la funcionalidad del flujo de síntesis y 
+ruteo de la arquitectura de lógica reconfigurable seleccionada.
+
+\section{Cuarta Etapa}
+
+La cuarta etapa de la solución propuesta para el proyecto tiene como objetivo la consolidación 
+de los datos obtenidos en la tercera etapa observando cómo las métricas de rendimiento se 
+compensan entre sí, para determinar si la arquitectura de lógica reconfigurable seleccionada 
+es adecuada para su uso en aplicaciones de alto rendimiento o si es necesario realizar 
+modificaciones según la aplicación en la que se utilice. Esta etapa se enfoca en la 
+interpretación de los datos y cómo su análisis puede guiar el diseño de futuras arquitecturas 
+de lógica reconfigurable para su impresión en silicio.

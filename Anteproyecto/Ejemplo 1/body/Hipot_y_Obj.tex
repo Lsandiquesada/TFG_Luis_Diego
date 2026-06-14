@@ -1,0 +1,193 @@
+\chapter{Hipótesis y Objetivos del Proyecto}
+\label{ch:HyO}
+
+En este capítulo se presenta la base de la investigación: la hipótesis y las 
+interrogantes derivadas de la misma. El objetivo general consiste en validar 
+esta premisa, para lo cual se han definido objetivos específicos que abordan 
+diferentes aspectos del tema. Asimismo, se describen las tareas precisas 
+requeridas para alcanzar cada objetivo y lograr resultados concluyentes. Por 
+último, se exponen las limitaciones del estudio.
+
+\section{Hipótesis}
+     ``La variación sistemática de los parámetros estructurales en una arquitectura 
+     reconfigurable de hardware abierto permite identificar una configuración 
+     óptima que maximiza el rendimiento de temporización para un conjunto específico 
+     de circuitos benchmark, demostrando que la arquitectura de la red de 
+     interconexión es el factor dominante en el consumo de potencia y área 
+     sobre los bloques lógicos."
+\section{Objetivos}
+
+\subsection{General}
+            Evaluar el impacto de la variación de parámetros estructurales en el 
+            rendimiento, área y potencia de una arquitectura abierta de lógica 
+            reconfigurable a nivel de simulación y pruebas físicas utilizando una 
+            FPGA comercial como plataforma de emulación física.
+\subsection{Específicos}
+	\begin{itemize}
+                \item Seleccionar una arquitectura de lógica reconfigurable de hardware 
+                abierto y su flujo de herramientas asociado, justificando la elección 
+                basado en su nivel de parametrización, soporte de verificación funcional 
+                e historial de implementación física en otros proyectos.
+
+                \item Configurar e instanciar la arquitectura seleccionada en una tarjeta 
+                FPGA y caracterizarla basandose en reportes de síntesis, ruteo y ejecución 
+                funcional, además de implementar al menos dos circuitos de prueba en dicha 
+                lógica programable.
+                             
+                \item Caracterizar el impacto de la variación de los parámetros 
+                estructurales disponibles en la arquitectura de lógica programable sobre 
+                la utilización de recursos, el consumo de potencia y el rendimiento a nivel 
+                de temporización.
+    \end{itemize}
+ 
+\section{Lista de Tareas por Objetivo}
+
+Esta sección se enfoca en proporcionar un desglose detallado de las tareas que 
+deben realizarse para lograr cada objetivo específico en el proyecto. Esta 
+estructura por objetivo facilita la comprensión de las tareas individuales en el 
+contexto de los objetivos más amplios del proyecto. Cada objetivo del proyecto 
+tendrá su propia lista de tareas relacionadas, lo que proporciona una visión clara 
+de lo que se debe lograr para alcanzar ese objetivo. Estas tareas se presentan de 
+manera secuencial, lo que indica el orden en el que deben completarse.
+
+\textbf{\normalsize{Objetivo Específico 1}}
+
+Este objetivo se centra en la investigación de la arquitectura de 
+lógica reconfigurable y el flujo de harramientas para su implementación, 
+considerando la el soporte para su parametrización, verificación 
+funcional e historial de implementación física.
+
+\begin{enumerate}
+
+    \item Investigar y recopilar información sobre las distintas 
+    arquitecturas de lógica reconfigurable de hardware abierto 
+    disponibles.
+     
+    \item Evaluar la flexibilidad y el nivel de parametrización 
+    estructural que ofrece cada arquitectura preseleccionada.
+    
+    \item Analizar la madurez del flujo de herramientas asociado, 
+    comprobando la compatibilidad y el soporte para la verificación 
+    funcional.
+
+    \item Revisar el historial de implementación física en silicio 
+    de las opciones evaluadas para constatar su viabilidad y 
+    confiabilidad en proyectos previos. 
+
+    \item Seleccionar la arquitectura definitiva y justificar técnicamente 
+    la elección, basada en el cumplimiento de los criterios previamente 
+    analizados.
+
+\end{enumerate}
+
+Las tareas descritas justifican el uso de la arquitectura en las próximas 
+etapas y su implementación en la FPGA.
+
+\textbf{\normalsize{Objetivo Específico 2}}
+
+El segundo objetivo se centra en la configuración de la arquitectura 
+seleccionada mediante JTAG y la caracterización basada en reportes 
+desplegados por las herramientas seleccionadas en la etapa anterior, 
+además de la implementación de dos circuitos de prueba.
+
+\begin{enumerate}
+
+    \item Ajustar los módulos de la arquitectura seleccionada para asegurar 
+    su compatibilidad con la herramienta de síntesis de la FPGA objetivo.
+    
+    \item Integrar la arquitectura en el proyecto principal de la herramienta de desarrollo.
+    
+    \item Correr el proceso de síntesis y extraer los reportes de la cantidad de LUTs, 
+    flip-flops y bloques de memoria requeridos.
+
+    \item Ejecutar la implementación en la FPGA y compilar los reportes de tiempos 
+     de setup y hold, consumo de potencia estimado y congestión de ruteo.
+
+    \item Generar el bitstream necesario para configurar la FPGA física.
+    
+    \item Seleccionar dos circuitos que estresen diferentes aspectos de la lógica programable.
+    
+    \item Codificar ambos circuitos independientemente.
+    
+    \item Escribir los testbenches correspondientes y simular el comportamiento 
+    de los circuitos de prueba para asegurar su corrección funcional antes de la 
+    implementación física.
+
+    \item Compilar y cargar el primer y segundo circuito de prueba sobre la 
+    arquitectura de lógica programable ya instanciada.
+
+    \item Estimular las entradas en el hardware real, capturar las salidas y contrastar la 
+    ejecución funcional contra los resultados obtenidos en las simulaciones
+
+\end{enumerate}
+
+Estas tareas permiten validar la arquitectura seleccionada y dan información benéfica para 
+el desarrollo de la caracterización de la arquitectura seleccionada.
+
+\textbf{\normalsize{Objetivo Específico 3}}
+
+El tercer objetivo da base a la caracterizacion de la arquitecura de lógica programable 
+seleccionada según la utilización de recursos.
+
+\begin{enumerate}
+
+    \item Identificar cuáles variables de la arquitectura de la arquitectura lógica 
+    programable serán modificables.
+
+    \item Definir un conjunto discreto de valores para cada parámetro seleccionado y 
+    limitar las combinaciones posibles a un número manejable y representativo.
+    
+    \item Recopilar la cantidad de bloques lógicos básicos utilizados y la estimación de 
+    área equivalente de silicio.
+
+    \item Extraer del Análisis de Temporización Estática y el retardo de la ruta crítica.
+
+    \item Compilar las estimaciones de consumo de potencia dinámica y estática reportadas 
+    tras el ruteo.
+
+    \item Procesar los datos consolidados para graficar el comportamiento de las métricas 
+    frente a la variación de cada parámetro.
+
+    \item Analizar los puntos donde la mejora de una métrica perjudica a otra (Trade-off).
+    
+    \item Concluir cuáles son las configuraciones de parámetros estructurales que ofrecen 
+    el mejor balance técnico para los casos de uso proyectados.
+
+\end{enumerate}
+
+
+\section{Alcances y Limitaciones del Proyecto}
+
+En la sección de limitaciones se exponen los desafíos y restricciones propios de la 
+naturaleza del proyecto. Si bien estas condiciones pueden representar obstáculos, 
+al mismo tiempo delimitan el alcance del trabajo y establecen un marco de referencia 
+realista para su ejecución. A continuación, se detallan las principales limitaciones 
+identificadas:
+
+\begin{itemize}
+
+    \item La ejecución de los experimentos se llevará a cabo con la FPGA 
+    disponibles durante la evaluación del proyecto. Esta limitación en los recursos 
+    físicos para la realización de pruebas podría restringir tanto la diversidad de 
+    los escenarios evaluados como la naturaleza de los datos susceptibles de recolección.
+
+    \item Al instanciar una arquitectura de lógica programable sobre una FPGA comercial, 
+    el área, la potencia y el retardo de temporización estarán limitados por la arquitectura 
+    de la FPGA anfitriona.
+
+    \item La configuración óptima identificada estará restringida a las características 
+    de los circuitos seleccionados y podría no ser generalizable a todas las aplicaciones 
+    digitales.
+
+    \item No se realizará una exploración exhaustiva de todo el espacio de diseño, por lo 
+    que la configuración óptima que maximiza el rendimiento corresponderá únicamente a un 
+    óptimo dentro del subconjunto explorado.
+
+    \item Las métricas de consumo de potencia se extraerán a partir de reportes generados 
+    por herramientas de síntesis y ruteo, no mediante mediciones físicas directas sobre 
+    la arquitectura implementada por lo tanto se introduce un margen de error inherente a 
+    los modelos matemáticos y estimaciones.
+
+
+
+\end{itemize}

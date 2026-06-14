@@ -1,0 +1,30 @@
+\nomenclatureentry{ATP\ TP@[{TP}]\begingroup Test Program\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{APPV\ PPV@[{PPV}]\begingroup Product Platform Validation\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{ADTD\ DTD@[{DTD}]\begingroup Debug and Test Development\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{ADTD\ DTD@[{DTD}]\begingroup Debug and Test Development\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AALU\ ALU@[{ALU}]\begingroup Unidad Aritmético-Lógica\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AAVX-512\ AVX-512@[{AVX-512}]\begingroup Advanced Vector Extensions 512\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AL1\ L1@[{L1}]\begingroup Caché de Nivel 1\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AL2\ L2@[{L2}]\begingroup Caché de Nivel 2\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AL3\ L3@[{L3}]\begingroup Caché de Nivel 3\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AQPI\ QPI@[{QPI}]\begingroup QuickPath Interconnect\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AUPI\ UPI@[{UPI}]\begingroup Ultra Path Interconnect\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AVT-d\ VT-d@[{VT-d}]\begingroup Virtualization Technology for Directed I/O\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AVT-x\ VT-x@[{VT-x}]\begingroup Virtualization Technology\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{ACPU\ CPU@[{CPU}]\begingroup Central Processing Unit\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AVdd\ Vdd@[{Vdd}]\begingroup Voltage Drain Drain\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AGHz\ GHz@[{GHz}]\begingroup Gigahertz\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AMHz\ MHz@[{MHz}]\begingroup Megahertz\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AMOSFET\ MOSFET@[{MOSFET}]\begingroup Metal-Oxide-Semiconductor Field-Effect Transistor\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{ACMOS\ CMOS@[{CMOS}]\begingroup Complementary Metal-Oxide-Semiconductor\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AVLSI\ VLSI@[{VLSI}]\begingroup Very-Large-Scale Integration\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AASIC\ ASIC@[{ASIC}]\begingroup Application-Specific Integrated Circuit\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AVTC\ VTC@[{VTC}]\begingroup Voltage Transfer Characteristic\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AAC\ AC@[{AC}]\begingroup Alternating Current\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{ADC\ DC@[{DC}]\begingroup Direct Current\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{ASoC\ SoC@[{SoC}]\begingroup System on Chip\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{APVT\ PVT@[{PVT}]\begingroup Process, Voltage, Temperature\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{ATDP\ TDP@[{TDP}]\begingroup Thermal Design Power\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AHPC\ HPC@[{HPC}]\begingroup High-Performance Computing\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AEDA\ EDA@[{EDA}]\begingroup Electronic Design Automation\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{ARTL\ RTL@[{RTL}]\begingroup Register-Transfer Level\nomeqref {0}|nompageref}{1}

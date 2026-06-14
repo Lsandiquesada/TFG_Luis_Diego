@@ -1,0 +1,91 @@
+%% ---------------------------------------------------------------------------
+%% intro.tex
+%%
+%% Introduction
+%%
+%% $Id: intro.tex 1477 2010-07-28 21:34:43Z palvarado $
+%% ---------------------------------------------------------------------------
+
+\chapter{Introducción}
+\label{chp:intro}
+
+La Christian-Albrechts-Universit¨at zu Kiel conocida como CAU y Universidad de Kiel,
+referente en investigación tecnológica en Alemania, ha iniciado una investigación para
+diseñar una arquitectura de FPGA propia. A diferencia de las soluciones comerciales de
+caja negra, este desarrollo busca ofrecer una plataforma competitiva para fines académicos
+y experimentales.
+El proyecto ha captado el interés de TSMC, el fabricante de semiconductores más grande
+del mundo, que ha manifestado su intención de apoyar al centro educativo mediante el
+acceso a nodos de fabricación avanzados. Esta sinergia se extiende a Centroamérica gracias
+a los lazos históricos de cooperación entre la Universidad de Kiel y el Instituto Tecnológico
+de Costa Rica, permitiendo una transferencia de conocimiento de alto nivel en el área de
+sistemas digitales complejos.
+La investigación se centra en el concepto de la caracterización de una FPGA embebida
+en lugar de la fabricación de un IC desde cero. Su desarrollo consta del diseño de una
+eFPGA en conjunto de un sistema para la inyección de flujo de bits para su correcta
+programación. La esencia del proyecto es hardware reconfigurable dentro de otro para
+su caracterización y desarrollo, la implementación de un filtro digital parametrizable se
+requiere para términos del comportamiento de la eFPGA, entre las métricas a estudiar
+se encuentra el consumo de potencia, las rutas críticas y la eficiencia de las tablas de
+consulta.
+
+\section{Planteamiento del problema}
+
+\subsection{Estado Actual}
+ Aunque existen arquitecturas de FPGA de desarrollo académico, los mismos no cuentan
+con la capacidad de la flexibilidad de una FPGA comercial debido a características como
+la cantidad de tablas de consulta, potencia y velocidad de procesamiento, por lo que su 
+desarrollo se ha quedado estancado en su propia academia. Las FPGAs comerciales
+requieren licencias para su uso además del elevado precio que significa la compra de
+sufientes para impartir un curso. Además, existe un interés de TSMC para su dessarrollo,
+sin embargo, aún no se cuenta con un modelo caracterizado ni validado.
+
+\subsection{Definición del Problema}
+
+La dependencia de arquitecturas de hardware cerrado limita la capacidad de los centros
+de investigación para innovar en el diseño de semiconductores. En la colaboración CAU
+TEC, el problema radica en la falta de una metodología validada para caracterizar el
+rendimiento, área y consumo de una eFPGA. Sin una implementación previa en una
+FPGA física que actúe como entorno de prueba para aplicaciones como filtros digitales,
+no es posible asegurar que el diseño final sea competitivo para su futura fabricación con
+TSMC.
+
+\section{Estructura del Documento}
+
+En el \textbf{capítulo~\ref{ch:marco}} se presenta un informe de la investigación del 
+estado del arte actual del problema, así como una descripción de las partes y 
+características del proyecto, Se profundiza en la arquitectura básica de una FPGA 
+y en el método para cargarle el bitstream.
+
+\setlength{\parskip}{2.5mm}
+
+En el \textbf{capítulo~\ref{ch:solucion}} se presenta las posible solución al problema 
+donde analizamos las etapas a tomar en cuenta para la validación de una arquitectura de 
+lógica reconfigurable, se describe además cada parte del proyecto y los resultados que 
+se esperan.
+
+\setlength{\parskip}{2.5mm}
+
+En el \textbf{capítulo~\ref{ch:HyO}}  se expone la hipótesis planteada, además, se 
+presenta el objetivo general para este trabajo, así como, los objetivos específicos 
+del mismo. Se muestran metas por objetivo propuesto. Por último, 
+se resaltan los alcances y limitaciones que presenta este trabajo.
+
+\setlength{\parskip}{2.5mm}
+
+En el \textbf{capítulo~\ref{ch:Experimento}} se presenta el posible experimento 
+preliminar que detalla la estrategia del proyecto y el enfoque necesario prueba el 
+sistema y el flujo de herramientas a través de un experimento bien diseñado y riguroso.
+
+\setlength{\parskip}{2.5mm}
+
+En el \textbf{capítulo~\ref{ch:Crono}}  se presentan las tareas necesarias a llevar a 
+cabo a lo largo de este trabajo, así como el diagrama de Gantt para poder completar con las 
+tareas propuestas.
+
+\setlength{\parskip}{2.5mm}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 
