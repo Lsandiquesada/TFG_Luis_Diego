@@ -1,0 +1,1004 @@
+INFO | Running: task build-test-design YOSYS_PATH=/usr/bin/yosys NEXTPNR_PATH=/usr/local/bin/nextpnr-generic FAB_PROJ_ROOT=/home/luisd/mi_fpga_1_proj DESIGN=fir_filter_top TOP_WRAPPER=top_wrapper DESIGN_FILES=/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v TOP_WRAPPER_FILE=/home/luisd/mi_fpga_1_proj/user_design/top_wrapper.v JSON_FILE=/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.json FASM_FILE=/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.fasm BIN_FILE=/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.bin LOG_FILE=/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top_npnr_log.txt SYNTH_EXTRA_ARGS= YOSYS_EXTRA_ARGS= NEXTPNR_EXTRA_ARGS= NEXTPNR_VERBOSE= (in /home/luisd/mi_fpga_1_proj/Test)
+task: Task "mkdir-build" is up to date
+task: [compile:compile-yosys] /usr/bin/yosys   -p "synth_fabulous -top top_wrapper -json /home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.json -extra-plib /home/luisd/mi_fpga_1_proj/user_design/custom_prims.v " /home/luisd/mi_fpga_1_proj/user_design/top_wrapper.v /home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)
+
+-- Parsing `/home/luisd/mi_fpga_1_proj/user_design/top_wrapper.v' using frontend ` -vlog2k' --
+
+1. Executing Verilog-2005 frontend: /home/luisd/mi_fpga_1_proj/user_design/top_wrapper.v
+Parsing Verilog input from `/home/luisd/mi_fpga_1_proj/user_design/top_wrapper.v' to AST representation.
+Storing AST representation for module `$abstract\top_wrapper'.
+Successfully finished Verilog frontend.
+
+-- Parsing `/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v' using frontend ` -vlog2k' --
+
+2. Executing Verilog-2005 frontend: /home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v
+Parsing Verilog input from `/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v' to AST representation.
+Storing AST representation for module `$abstract\fir_filter_top'.
+Successfully finished Verilog frontend.
+
+-- Running command `synth_fabulous -top top_wrapper -json /home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.json -extra-plib /home/luisd/mi_fpga_1_proj/user_design/custom_prims.v ' --
+
+3. Executing SYNTH_FABULOUS pass.
+
+3.1. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/fabulous/prims.v
+Parsing Verilog input from `/usr/bin/../share/yosys/fabulous/prims.v' to AST representation.
+Generating RTLIL representation for module `\LUT1'.
+Generating RTLIL representation for module `\LUT2'.
+Generating RTLIL representation for module `\LUT3'.
+Generating RTLIL representation for module `\LUT4'.
+Generating RTLIL representation for module `\LUT4_HA'.
+Generating RTLIL representation for module `\LUT5'.
+Generating RTLIL representation for module `\LUT6'.
+Generating RTLIL representation for module `\LUT55_FCY'.
+Generating RTLIL representation for module `\LUTFF'.
+Generating RTLIL representation for module `\FABULOUS_MUX2'.
+Generating RTLIL representation for module `\FABULOUS_MUX4'.
+Generating RTLIL representation for module `\FABULOUS_MUX8'.
+Generating RTLIL representation for module `\FABULOUS_LC'.
+Generating RTLIL representation for module `\Global_Clock'.
+Generating RTLIL representation for module `\InPass4_frame_config'.
+Generating RTLIL representation for module `\OutPass4_frame_config'.
+Generating RTLIL representation for module `\IO_1_bidirectional_frame_config_pass'.
+Generating RTLIL representation for module `\MULADD'.
+Generating RTLIL representation for module `\RegFile_32x4'.
+Successfully finished Verilog frontend.
+
+3.2. Executing Verilog-2005 frontend: /home/luisd/mi_fpga_1_proj/user_design/custom_prims.v
+Parsing Verilog input from `/home/luisd/mi_fpga_1_proj/user_design/custom_prims.v' to AST representation.
+Generating RTLIL representation for module `\InPass4_frame_config_mux'.
+Generating RTLIL representation for module `\OutPass4_frame_config_mux'.
+Successfully finished Verilog frontend.
+
+3.3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.4. Executing AST frontend in derive mode using pre-parsed AST for module `\top_wrapper'.
+Generating RTLIL representation for module `\top_wrapper'.
+
+3.4.1. Analyzing design hierarchy..
+Top module:  \top_wrapper
+
+3.4.2. Executing AST frontend in derive mode using pre-parsed AST for module `\fir_filter_top'.
+Generating RTLIL representation for module `\fir_filter_top'.
+
+3.4.3. Analyzing design hierarchy..
+Top module:  \top_wrapper
+Used module:     \fir_filter_top
+
+3.4.4. Analyzing design hierarchy..
+Top module:  \top_wrapper
+Used module:     \fir_filter_top
+Removing unused module `$abstract\fir_filter_top'.
+Removing unused module `$abstract\top_wrapper'.
+Removed 2 unused modules.
+
+3.5. Executing PROC pass (convert processes to netlists).
+
+3.5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:21$42 in module fir_filter_top.
+Removed a total of 0 dead cases.
+
+3.5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+3.5.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~2 debug messages>
+
+3.5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\fir_filter_top.$proc$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:21$42'.
+     1/5: $0\yv[0:0]
+     2/5: $0\y[7:0]
+     3/5: $0\d3[7:0]
+     4/5: $0\d2[7:0]
+     5/5: $0\d1[7:0]
+
+3.5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\fir_filter_top.\d1' using process `\fir_filter_top.$proc$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:21$42'.
+  created $dff cell `$procdff$68' with positive edge clock.
+Creating register for signal `\fir_filter_top.\d2' using process `\fir_filter_top.$proc$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:21$42'.
+  created $dff cell `$procdff$69' with positive edge clock.
+Creating register for signal `\fir_filter_top.\d3' using process `\fir_filter_top.$proc$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:21$42'.
+  created $dff cell `$procdff$70' with positive edge clock.
+Creating register for signal `\fir_filter_top.\y' using process `\fir_filter_top.$proc$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:21$42'.
+  created $dff cell `$procdff$71' with positive edge clock.
+Creating register for signal `\fir_filter_top.\yv' using process `\fir_filter_top.$proc$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:21$42'.
+  created $dff cell `$procdff$72' with positive edge clock.
+
+3.5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\fir_filter_top.$proc$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:21$42'.
+Removing empty process `fir_filter_top.$proc$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:21$42'.
+Cleaned up 2 empty switches.
+
+3.5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fir_filter_top.
+<suppressed ~2 debug messages>
+Optimizing module top_wrapper.
+
+3.6. Executing FLATTEN pass (flatten design).
+Deleting now unused module fir_filter_top.
+<suppressed ~1 debug messages>
+
+3.7. Executing TRIBUF pass.
+
+3.8. Executing DEMINOUT pass (demote inout ports to input or output).
+
+3.9. Executing TRIBUF pass.
+
+3.10. Executing DEMINOUT pass (demote inout ports to input or output).
+
+3.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top_wrapper.
+
+3.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top_wrapper..
+Removed 0 unused cells and 18 unused wires.
+<suppressed ~1 debug messages>
+
+3.13. Executing CHECK pass (checking for obvious problems).
+Checking module top_wrapper...
+Found and reported 0 problems.
+
+3.14. Executing OPT pass (performing simple optimizations).
+
+3.14.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top_wrapper.
+
+3.14.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top_wrapper'.
+Removed a total of 0 cells.
+
+3.14.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top_wrapper..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+3.14.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top_wrapper.
+Performed a total of 0 changes.
+
+3.14.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top_wrapper'.
+Removed a total of 0 cells.
+
+3.14.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.14.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top_wrapper..
+
+3.14.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top_wrapper.
+
+3.14.9. Finished OPT passes. (There is nothing left to do.)
+
+3.15. Executing FSM pass (extract and optimize FSM).
+
+3.15.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+3.15.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+3.15.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+3.15.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top_wrapper..
+
+3.15.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+3.15.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+3.15.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+3.15.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+3.16. Executing OPT pass (performing simple optimizations).
+
+3.16.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top_wrapper.
+
+3.16.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top_wrapper'.
+Removed a total of 0 cells.
+
+3.16.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top_wrapper..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+3.16.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top_wrapper.
+Performed a total of 0 changes.
+
+3.16.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top_wrapper'.
+Removed a total of 0 cells.
+
+3.16.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $flatten\top_i.$procdff$72 ($dff) from module top_wrapper (D = $flatten\top_i.$procmux$43_Y, Q = \top_i.yv, rval = 1'0).
+Adding SRST signal on $flatten\top_i.$procdff$71 ($dff) from module top_wrapper (D = $flatten\top_i.$procmux$48_Y, Q = \top_i.y, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$75 ($sdff) from module top_wrapper (D = \top_i.sum [10:3], Q = \top_i.y).
+Adding SRST signal on $flatten\top_i.$procdff$70 ($dff) from module top_wrapper (D = $flatten\top_i.$procmux$53_Y, Q = \top_i.d3, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$77 ($sdff) from module top_wrapper (D = \top_i.d2, Q = \top_i.d3).
+Adding SRST signal on $flatten\top_i.$procdff$69 ($dff) from module top_wrapper (D = $flatten\top_i.$procmux$58_Y, Q = \top_i.d2, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$79 ($sdff) from module top_wrapper (D = \top_i.d1, Q = \top_i.d2).
+Adding SRST signal on $flatten\top_i.$procdff$68 ($dff) from module top_wrapper (D = $flatten\top_i.$procmux$63_Y, Q = \top_i.d1, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$81 ($sdff) from module top_wrapper (D = \io_in [7:0], Q = \top_i.d1).
+
+3.16.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top_wrapper..
+Removed 9 unused cells and 9 unused wires.
+<suppressed ~10 debug messages>
+
+3.16.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top_wrapper.
+
+3.16.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.16.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top_wrapper..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1 debug messages>
+
+3.16.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top_wrapper.
+Performed a total of 0 changes.
+
+3.16.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top_wrapper'.
+Removed a total of 0 cells.
+
+3.16.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.16.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top_wrapper..
+
+3.16.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top_wrapper.
+
+3.16.16. Finished OPT passes. (There is nothing left to do.)
+
+3.17. Executing WREDUCE pass (reducing word size of cells).
+Removed top 3 bits (of 11) from port B of cell top_wrapper.$flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$41 ($add).
+Removed top 2 bits (of 11) from port B of cell top_wrapper.$flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$40 ($add).
+Removed top 3 bits (of 11) from port B of cell top_wrapper.$flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$38 ($add).
+Removed top 2 bits (of 11) from port B of cell top_wrapper.$flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$37 ($add).
+Converting cell top_wrapper.$flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$35 ($add) from unsigned to signed.
+Removed top 3 bits (of 11) from port A of cell top_wrapper.$flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$35 ($add).
+Removed top 3 bits (of 11) from port B of cell top_wrapper.$flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$35 ($add).
+Removed top 2 bits (of 11) from port Y of cell top_wrapper.$flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$35 ($add).
+Removed top 2 bits (of 11) from port A of cell top_wrapper.$flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$37 ($add).
+Removed top 1 bits (of 11) from port Y of cell top_wrapper.$flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$37 ($add).
+Removed top 9 bits (of 28) from wire top_wrapper.io_out.
+
+3.18. Executing PEEPOPT pass (run peephole optimizers).
+
+3.19. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top_wrapper..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+3.20. Executing TECHMAP pass (map to technology primitives).
+
+3.20.1. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/cmp2lut.v
+Parsing Verilog input from `/usr/bin/../share/yosys/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+3.20.2. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/cmp2lcu.v
+Parsing Verilog input from `/usr/bin/../share/yosys/cmp2lcu.v' to AST representation.
+Generating RTLIL representation for module `\_80_lcu_cmp_'.
+Generating RTLIL representation for module `\$__CMP2LCU'.
+Successfully finished Verilog frontend.
+
+3.20.3. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~7 debug messages>
+
+3.21. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module top_wrapper:
+  creating $macc model for $flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$35 ($add).
+  creating $macc model for $flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$37 ($add).
+  creating $macc model for $flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$38 ($add).
+  creating $macc model for $flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$40 ($add).
+  creating $macc model for $flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$41 ($add).
+  merging $macc model for $flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$40 into $flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$41.
+  merging $macc model for $flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$38 into $flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$41.
+  merging $macc model for $flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$35 into $flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$37.
+  creating $macc cell for $flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$37: $auto$alumacc.cc:365:replace_macc$86
+  creating $macc cell for $flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$41: $auto$alumacc.cc:365:replace_macc$87
+  created 0 $alu and 2 $macc cells.
+
+3.22. Executing SHARE pass (SAT-based resource sharing).
+
+3.23. Executing OPT pass (performing simple optimizations).
+
+3.23.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top_wrapper.
+
+3.23.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top_wrapper'.
+Removed a total of 0 cells.
+
+3.23.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top_wrapper..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1 debug messages>
+
+3.23.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top_wrapper.
+Performed a total of 0 changes.
+
+3.23.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top_wrapper'.
+Removed a total of 0 cells.
+
+3.23.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.23.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top_wrapper..
+Removed 3 unused cells and 3 unused wires.
+<suppressed ~4 debug messages>
+
+3.23.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top_wrapper.
+
+3.23.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.23.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top_wrapper..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1 debug messages>
+
+3.23.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top_wrapper.
+Performed a total of 0 changes.
+
+3.23.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top_wrapper'.
+Removed a total of 0 cells.
+
+3.23.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.23.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top_wrapper..
+
+3.23.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top_wrapper.
+
+3.23.16. Finished OPT passes. (There is nothing left to do.)
+
+3.24. Executing MEMORY pass.
+
+3.24.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+3.24.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+3.24.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+3.24.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+3.24.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+3.24.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top_wrapper..
+
+3.24.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+3.24.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+3.24.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top_wrapper..
+
+3.24.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.25. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top_wrapper..
+
+3.26. Executing MEMORY_LIBMAP pass (mapping memories to cells).
+
+3.27. Executing TECHMAP pass (map to technology primitives).
+
+3.27.1. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/fabulous/regfile_map.v
+Parsing Verilog input from `/usr/bin/../share/yosys/fabulous/regfile_map.v' to AST representation.
+Generating RTLIL representation for module `\$__REGFILE_XX_'.
+Successfully finished Verilog frontend.
+
+3.27.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+3.28. Executing OPT pass (performing simple optimizations).
+
+3.28.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top_wrapper.
+<suppressed ~1 debug messages>
+
+3.28.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top_wrapper'.
+Removed a total of 0 cells.
+
+3.28.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.28.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top_wrapper..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+3.28.5. Finished fast OPT passes.
+
+3.29. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+3.30. Executing OPT pass (performing simple optimizations).
+
+3.30.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top_wrapper.
+
+3.30.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top_wrapper'.
+Removed a total of 0 cells.
+
+3.30.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top_wrapper..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+3.30.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top_wrapper.
+Performed a total of 0 changes.
+
+3.30.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top_wrapper'.
+Removed a total of 0 cells.
+
+3.30.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.30.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top_wrapper..
+
+3.30.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top_wrapper.
+
+3.30.9. Finished OPT passes. (There is nothing left to do.)
+
+3.31. Executing OPT pass (performing simple optimizations).
+
+3.31.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top_wrapper.
+
+3.31.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top_wrapper'.
+Removed a total of 0 cells.
+
+3.31.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top_wrapper..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+3.31.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top_wrapper.
+Performed a total of 0 changes.
+
+3.31.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top_wrapper'.
+Removed a total of 0 cells.
+
+3.31.6. Executing OPT_SHARE pass.
+
+3.31.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.31.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top_wrapper..
+
+3.31.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top_wrapper.
+
+3.31.10. Finished OPT passes. (There is nothing left to do.)
+
+3.32. Executing TECHMAP pass (map to technology primitives).
+
+3.32.1. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/usr/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+3.32.2. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/fabulous/arith_map.v
+Parsing Verilog input from `/usr/bin/../share/yosys/fabulous/arith_map.v' to AST representation.
+Successfully finished Verilog frontend.
+
+3.32.3. Continuing TECHMAP pass.
+Using extmapper maccmap for cells of type $macc_v2.
+  add \io_in [7:0] (8 bits, signed)
+  add { \top_i.d1 1'0 } (9 bits, signed)
+  add \top_i.d1 (8 bits, signed)
+Using extmapper simplemap for cells of type $sdff.
+Using extmapper simplemap for cells of type $sdffe.
+  add { $flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$37_Y [10] $flatten\top_i.$add$/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:19$37_Y [8:0] } (10 bits, signed)
+  add \top_i.d3 (8 bits, signed)
+  add { \top_i.d2 1'0 } (9 bits, signed)
+  add \top_i.d2 (8 bits, signed)
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000001010 for cells of type $fa.
+Using template $paramod$484d51534650924b7ed4c69e46eed3a56904771f\_90_alu for cells of type $alu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000001011 for cells of type $fa.
+Using template $paramod$ec32b97001540459632a2df9accd677d3703ea0f\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $and.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001010 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $not.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001011 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~481 debug messages>
+
+3.33. Executing OPT pass (performing simple optimizations).
+
+3.33.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top_wrapper.
+<suppressed ~81 debug messages>
+
+3.33.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top_wrapper'.
+<suppressed ~15 debug messages>
+Removed a total of 5 cells.
+
+3.33.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.33.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top_wrapper..
+Removed 30 unused cells and 93 unused wires.
+<suppressed ~31 debug messages>
+
+3.33.5. Finished fast OPT passes.
+
+3.34. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+
+3.35. Executing TECHMAP pass (map to technology primitives).
+
+3.35.1. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/fabulous/latches_map.v
+Parsing Verilog input from `/usr/bin/../share/yosys/fabulous/latches_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Successfully finished Verilog frontend.
+
+3.35.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+3.36. Executing TECHMAP pass (map to technology primitives).
+
+3.36.1. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/fabulous/ff_map.v
+Parsing Verilog input from `/usr/bin/../share/yosys/fabulous/ff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DFF_P_'.
+Generating RTLIL representation for module `\$_DFFE_PP_'.
+Generating RTLIL representation for module `\$_SDFF_PP0_'.
+Generating RTLIL representation for module `\$_SDFF_PP1_'.
+Generating RTLIL representation for module `\$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `\$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+3.36.2. Continuing TECHMAP pass.
+Using template \$_DFF_P_ for cells of type $_DFF_P_.
+No more expansions possible.
+<suppressed ~41 debug messages>
+Removed 0 unused cells and 99 unused wires.
+
+3.37. Executing ABC pass (technology mapping using ABC).
+
+3.37.1. Extracting gate netlist of module `\top_wrapper' to `<abc-temp-dir>/input.blif'..
+Extracted 288 gates and 331 wires to a netlist network with 42 inputs and 33 outputs.
+
+3.37.1.1. Executing ABC.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC:
+ABC: + read_blif <abc-temp-dir>/input.blif
+ABC: + read_lut <abc-temp-dir>/lutdefs.txt
+ABC: + strash
+ABC: + &get -n
+ABC: + &fraig -x
+ABC: + &put
+ABC: + scorr
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2
+ABC: + dretime
+ABC: + strash
+ABC: + dch -f
+ABC: + if
+ABC: + mfs2
+ABC: + lutpack -S 1
+ABC: + dress <abc-temp-dir>/input.blif
+ABC: Total number of equiv classes                =     106.
+ABC: Participating nodes from both networks       =     211.
+ABC: Participating nodes from the first network   =     105. (  96.33 % of nodes)
+ABC: Participating nodes from the second network  =     106. (  97.25 % of nodes)
+ABC: Node pairs (any polarity)                    =     105. (  96.33 % of names can be moved)
+ABC: Node pairs (same polarity)                   =      76. (  69.72 % of names can be moved)
+ABC: Total runtime =     0.06 sec
+ABC: + write_blif <abc-temp-dir>/output.blif
+
+3.37.1.2. Re-integrating ABC results.
+ABC RESULTS:              $lut cells:      108
+ABC RESULTS:        internal signals:      256
+ABC RESULTS:           input signals:       42
+ABC RESULTS:          output signals:       33
+Removing temp directory.
+Removed 0 unused cells and 168 unused wires.
+
+3.38. Executing TECHMAP pass (map to technology primitives).
+
+3.38.1. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/fabulous/cells_map.v
+Parsing Verilog input from `/usr/bin/../share/yosys/fabulous/cells_map.v' to AST representation.
+Generating RTLIL representation for module `\$lut'.
+Generating RTLIL representation for module `\$_DFF_P_'.
+Successfully finished Verilog frontend.
+
+3.38.2. Continuing TECHMAP pass.
+Using template $paramod$df196ed0a1da5c4a58c5e08a1dac304fd3fccaab\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00010111 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10010110 for cells of type $lut.
+Using template $paramod$4282def8dbd6df3d1248ad282c629bee684502c2\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01010011 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1001 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01110001 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01101001 for cells of type $lut.
+Using template $paramod$e5cb8e913f4daae476fde2b364998f21967f1f08\$lut for cells of type $lut.
+Using template $paramod$2bdfdda73873e8931790d872b72220895e67fee5\$lut for cells of type $lut.
+Using template $paramod$c3e1dc7b9e539f115f21c9fa61c94c4df05b91c1\$lut for cells of type $lut.
+Using template $paramod$27acc603f41a963d4586e964f7f1d593c1251ec7\$lut for cells of type $lut.
+Using template $paramod$595b4955041ceff09e28d600fe79275c24ba9878\$lut for cells of type $lut.
+Using template $paramod$868427562418b5dc988caeac6a54689ec9c9025e\$lut for cells of type $lut.
+Using template $paramod$32f5ea57a02a66d26d4a2e3cd7f26ba05fa8bd58\$lut for cells of type $lut.
+Using template $paramod$4adb41216162ad4c68ce9ea5c48385c753262ac3\$lut for cells of type $lut.
+Using template $paramod$24ced899438e172604a424008974634c832673b7\$lut for cells of type $lut.
+Using template $paramod$da2f95476331ffa2143f8212db8aff730de806a0\$lut for cells of type $lut.
+Using template $paramod$6c15da6150ce36eeff7fb8c09f7ef22f5448d679\$lut for cells of type $lut.
+Using template $paramod$eee55e20620c1b30cc2277e2a276139a025adbc8\$lut for cells of type $lut.
+Using template $paramod$fd904e9e35cfd343a9df248824bd3f1408724879\$lut for cells of type $lut.
+Using template $paramod$973818279bc95792902f3c09371fd2407d04a2a5\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0110 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11101000 for cells of type $lut.
+Using template $paramod$545506bd116676813f41816e238f31427fbb4a59\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0100 for cells of type $lut.
+Using template $paramod$a1db0cceddeac660e5752d0f8826154a44496801\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00011000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11110001 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00010100 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01011100 for cells of type $lut.
+Using template $paramod$e96de5e9fcce737e52eacf39c70c8f533dc27d63\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00101011 for cells of type $lut.
+Using template $paramod$dbcb26e27c75f5e65d4c2b3160bb46f311a2b796\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10110010 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10100011 for cells of type $lut.
+Using template $paramod$c9994e2a733aa21e4bfe57075af37a9c5257c791\$lut for cells of type $lut.
+Using template $paramod$2ea69c779d6c1b79ac5a87b0d1523c67d5628dba\$lut for cells of type $lut.
+Using template $paramod$98d40e23bb57d56e14345fb0942003de3e361f25\$lut for cells of type $lut.
+No more expansions possible.
+<suppressed ~619 debug messages>
+Removed 0 unused cells and 216 unused wires.
+
+3.39. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `top_wrapper'. Setting top module to top_wrapper.
+
+3.39.1. Analyzing design hierarchy..
+Top module:  \top_wrapper
+
+3.39.2. Analyzing design hierarchy..
+Top module:  \top_wrapper
+Removed 0 unused modules.
+
+3.40. Printing statistics.
+
+=== top_wrapper ===
+
+   Number of wires:                128
+   Number of wire bits:            356
+   Number of public wires:          20
+   Number of public wire bits:     248
+   Number of ports:                  0
+   Number of port bits:              0
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                171
+     $scopeinfo                      1
+     Global_Clock                    1
+     IO_1_bidirectional_frame_config_pass     28
+     LUT2                            9
+     LUT3                           35
+     LUT4                           64
+     LUTFF                          33
+
+3.41. Executing JSON backend.
+
+End of script. Logfile hash: 7637c0074d, CPU: user 0.17s system 0.01s, MEM: 46.05 MB peak
+Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)
+Time spent: 53% 1x abc (0 sec), 10% 6x techmap (0 sec), ...
+task: Task "mkdir-build" is up to date
+task: [compile:compile-nextpnr] FAB_ROOT=/home/luisd/mi_fpga_1_proj /usr/local/bin/nextpnr-generic --uarch fabulous --json /home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.json -o fasm=/home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.fasm  --log /home/luisd/mi_fpga_1_proj/user_design/fir_filter_top_npnr_log.txt
+Info: Detected FABulous 2.0 format project.
+Info: Reading BELs file: /.FABulous/bel.v3.txt
+Info: Reading PIPs file: /.FABulous/pips.txt
+Warning: unknown placement_estimate.txt key 'pipDelayScale' ignored
+
+Info: No PCF file specified, skipping constraints application.
+Info: Checksum: 0xec1bb48c
+
+Info: Device utilisation:
+Info:            FABULOUS_LC:     108/    672    16%
+Info:   IO_1_bidirectional_frame_config_pass:      28/     28   100%
+Info:   InPass4_frame_config_mux:       0/     56     0%
+Info:   OutPass4_frame_config_mux:       0/     98     0%
+Info:           RegFile_32x4:       0/     14     0%
+Info:                 MULADD:       0/      7     0%
+Info:           Global_Clock:       1/      1   100%
+Info:          FABULOUS_MUX2:       0/    336     0%
+Info:          FABULOUS_MUX4:       0/    168     0%
+Info:          FABULOUS_MUX8:       0/     84     0%
+Info:          Config_access:       0/     42     0%
+
+Info: Placed 28 cells based on constraints.
+Info: Creating initial analytic placement for 111 cells, random placement wirelen = 1459.
+Info:     at initial placer iter 0, wirelen = 54
+Info:     at initial placer iter 1, wirelen = 54
+Info:     at initial placer iter 2, wirelen = 54
+Info:     at initial placer iter 3, wirelen = 54
+Info: Running main analytical placer, max placement attempts per cell = 10000.
+Info:     at iteration #1, type Global_Clock: wirelen solved = 54, spread = 54, legal = 54; time = 0.00s
+Info:     at iteration #1, type _CONST1_DRV: wirelen solved = 54, spread = 54, legal = 54; time = 0.00s
+Info:     at iteration #1, type _CONST0_DRV: wirelen solved = 54, spread = 54, legal = 54; time = 0.00s
+Info:     at iteration #1, type FABULOUS_LC: wirelen solved = 54, spread = 371, legal = 371; time = 0.00s
+Info:     at iteration #1, type ALL: wirelen solved = 53, spread = 375, legal = 375; time = 0.00s
+Info:     at iteration #2, type Global_Clock: wirelen solved = 375, spread = 375, legal = 375; time = 0.00s
+Info:     at iteration #2, type _CONST1_DRV: wirelen solved = 375, spread = 375, legal = 375; time = 0.00s
+Info:     at iteration #2, type _CONST0_DRV: wirelen solved = 375, spread = 375, legal = 375; time = 0.00s
+Info:     at iteration #2, type FABULOUS_LC: wirelen solved = 63, spread = 289, legal = 289; time = 0.00s
+Info:     at iteration #2, type ALL: wirelen solved = 63, spread = 289, legal = 289; time = 0.00s
+Info:     at iteration #3, type Global_Clock: wirelen solved = 289, spread = 289, legal = 289; time = 0.00s
+Info:     at iteration #3, type _CONST1_DRV: wirelen solved = 289, spread = 289, legal = 289; time = 0.00s
+Info:     at iteration #3, type _CONST0_DRV: wirelen solved = 289, spread = 289, legal = 289; time = 0.00s
+Info:     at iteration #3, type FABULOUS_LC: wirelen solved = 72, spread = 261, legal = 261; time = 0.00s
+Info:     at iteration #3, type ALL: wirelen solved = 70, spread = 260, legal = 260; time = 0.00s
+Info:     at iteration #4, type Global_Clock: wirelen solved = 260, spread = 260, legal = 260; time = 0.00s
+Info:     at iteration #4, type _CONST1_DRV: wirelen solved = 260, spread = 260, legal = 260; time = 0.00s
+Info:     at iteration #4, type _CONST0_DRV: wirelen solved = 260, spread = 260, legal = 260; time = 0.00s
+Info:     at iteration #4, type FABULOUS_LC: wirelen solved = 76, spread = 258, legal = 258; time = 0.00s
+Info:     at iteration #4, type ALL: wirelen solved = 76, spread = 258, legal = 258; time = 0.00s
+Info:     at iteration #5, type Global_Clock: wirelen solved = 258, spread = 258, legal = 258; time = 0.00s
+Info:     at iteration #5, type _CONST1_DRV: wirelen solved = 258, spread = 258, legal = 258; time = 0.00s
+Info:     at iteration #5, type _CONST0_DRV: wirelen solved = 258, spread = 258, legal = 258; time = 0.00s
+Info:     at iteration #5, type FABULOUS_LC: wirelen solved = 85, spread = 331, legal = 331; time = 0.00s
+Info:     at iteration #5, type ALL: wirelen solved = 95, spread = 323, legal = 323; time = 0.00s
+Info:     at iteration #6, type Global_Clock: wirelen solved = 323, spread = 323, legal = 323; time = 0.00s
+Info:     at iteration #6, type _CONST1_DRV: wirelen solved = 323, spread = 323, legal = 323; time = 0.00s
+Info:     at iteration #6, type _CONST0_DRV: wirelen solved = 323, spread = 323, legal = 323; time = 0.00s
+Info:     at iteration #6, type FABULOUS_LC: wirelen solved = 120, spread = 416, legal = 438; time = 0.00s
+Info:     at iteration #6, type ALL: wirelen solved = 118, spread = 329, legal = 329; time = 0.00s
+Info:     at iteration #7, type Global_Clock: wirelen solved = 329, spread = 329, legal = 329; time = 0.00s
+Info:     at iteration #7, type _CONST1_DRV: wirelen solved = 329, spread = 329, legal = 329; time = 0.00s
+Info:     at iteration #7, type _CONST0_DRV: wirelen solved = 329, spread = 329, legal = 329; time = 0.00s
+Info:     at iteration #7, type FABULOUS_LC: wirelen solved = 123, spread = 326, legal = 326; time = 0.00s
+Info:     at iteration #7, type ALL: wirelen solved = 120, spread = 332, legal = 332; time = 0.00s
+Info:     at iteration #8, type Global_Clock: wirelen solved = 332, spread = 332, legal = 332; time = 0.00s
+Info:     at iteration #8, type _CONST1_DRV: wirelen solved = 332, spread = 332, legal = 332; time = 0.00s
+Info:     at iteration #8, type _CONST0_DRV: wirelen solved = 332, spread = 332, legal = 332; time = 0.00s
+Info:     at iteration #8, type FABULOUS_LC: wirelen solved = 116, spread = 455, legal = 471; time = 0.00s
+Info:     at iteration #8, type ALL: wirelen solved = 116, spread = 445, legal = 468; time = 0.00s
+Info:     at iteration #9, type Global_Clock: wirelen solved = 468, spread = 468, legal = 468; time = 0.00s
+Info:     at iteration #9, type _CONST1_DRV: wirelen solved = 468, spread = 468, legal = 468; time = 0.00s
+Info:     at iteration #9, type _CONST0_DRV: wirelen solved = 468, spread = 468, legal = 468; time = 0.00s
+Info:     at iteration #9, type FABULOUS_LC: wirelen solved = 134, spread = 446, legal = 470; time = 0.00s
+Info:     at iteration #9, type ALL: wirelen solved = 138, spread = 453, legal = 464; time = 0.00s
+Info: HeAP Placer Time: 0.06s
+Info:   of which solving equations: 0.04s
+Info:   of which spreading cells: 0.00s
+Info:   of which strict legalisation: 0.00s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 405, wirelen = 258
+Info:   at iteration #5: temp = 0.000000, timing cost = 368, wirelen = 221
+Info:   at iteration #10: temp = 0.000000, timing cost = 360, wirelen = 211
+Info:   at iteration #15: temp = 0.000000, timing cost = 354, wirelen = 200
+Info:   at iteration #17: temp = 0.000000, timing cost = 400, wirelen = 198
+Info: SA placement time 0.04s
+
+Info: Max frequency for clock 'clk': 9.22 MHz (FAIL at 12.00 MHz)
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [-25166, -20066) |**
+Info: [-20066, -14966) |
+Info: [-14966,  -9866) |
+Info: [ -9866,  -4766) |**
+Info: [ -4766,    334) |
+Info: [   334,   5434) |
+Info: [  5434,  10534) |
+Info: [ 10534,  15634) |**
+Info: [ 15634,  20734) |
+Info: [ 20734,  25834) |*
+Info: [ 25834,  30934) |
+Info: [ 30934,  36034) |*
+Info: [ 36034,  41134) |*
+Info: [ 41134,  46234) |
+Info: [ 46234,  51334) |
+Info: [ 51334,  56434) |
+Info: [ 56434,  61534) |
+Info: [ 61534,  66634) |*
+Info: [ 66634,  71734) |*
+Info: [ 71734,  76834) |**********************************************
+Info: Checksum: 0x3fc378b0
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 468 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |      517        482 |  517   482 |        74|       0.15       0.15|
+Info:       1576 |      949        627 |  432   145 |         0|       0.10       0.25|
+Info: Routing complete.
+Info: Router1 time 0.25s
+Info: Checksum: 0x2234016a
+
+Info: Critical path report for clock 'clk' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  1.00  1.00 Source $abc$833$auto$blifparse.cc:535:parse_blif$853.Q
+Info:    routing  3.90  4.90 Net top_i.d1[2] (1,7) -> (1,8)
+Info:                          Sink $abc$833$auto$blifparse.cc:535:parse_blif$866.I1
+Info:                          Defined in:
+Info:                               /home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.v:16.24-16.26
+Info:      logic  3.00  7.90 Source $abc$833$auto$blifparse.cc:535:parse_blif$866.O
+Info:    routing  2.10  10.00 Net $abc$833$auto$maccmap.cc:114:fulladd$167.Y[2]_new (1,8) -> (1,8)
+Info:                          Sink $abc$833$auto$blifparse.cc:535:parse_blif$872.I1
+Info:                          Defined in:
+Info:                               /usr/bin/../share/yosys/techmap.v:200.24-200.25
+Info:      logic  3.00  13.00 Source $abc$833$auto$blifparse.cc:535:parse_blif$872.O
+Info:    routing  2.90  15.90 Net $abc$833$auto$maccmap.cc:240:synth$168.CO[2]_new_inv (1,8) -> (1,7)
+Info:                          Sink $abc$833$auto$blifparse.cc:535:parse_blif$882.I0
+Info:                          Defined in:
+Info:                               /usr/bin/../share/yosys/techmap.v:274.23-274.25
+Info:      logic  3.00  18.90 Source $abc$833$auto$blifparse.cc:535:parse_blif$882.O
+Info:    routing  4.50  23.40 Net $abc$833$auto$maccmap.cc:114:fulladd$207.A[4]_new (1,7) -> (2,8)
+Info:                          Sink $abc$833$auto$blifparse.cc:535:parse_blif$881.I0
+Info:                          Defined in:
+Info:                               /usr/bin/../share/yosys/techmap.v:198.20-198.21
+Info:      logic  3.00  26.40 Source $abc$833$auto$blifparse.cc:535:parse_blif$881.O
+Info:    routing  2.10  28.50 Net $abc$833$auto$maccmap.cc:114:fulladd$207.Y[4]_new (2,8) -> (2,8)
+Info:                          Sink $abc$833$auto$blifparse.cc:535:parse_blif$880.I0
+Info:                          Defined in:
+Info:                               /usr/bin/../share/yosys/techmap.v:200.24-200.25
+Info:      logic  3.00  31.50 Source $abc$833$auto$blifparse.cc:535:parse_blif$880.O
+Info:    routing  2.90  34.40 Net $abc$833$auto$maccmap.cc:114:fulladd$210.t1[4]_new (2,8) -> (2,9)
+Info:                          Sink $abc$833$auto$blifparse.cc:535:parse_blif$889.I2
+Info:                          Defined in:
+Info:                               /usr/bin/../share/yosys/techmap.v:203.19-203.21
+Info:      logic  3.00  37.40 Source $abc$833$auto$blifparse.cc:535:parse_blif$889.O
+Info:    routing  3.70  41.10 Net $abc$833$auto$maccmap.cc:240:synth$211.CO[4]_new_inv (2,9) -> (2,7)
+Info:                          Sink $abc$833$auto$blifparse.cc:535:parse_blif$911.I0
+Info:                          Defined in:
+Info:                               /usr/bin/../share/yosys/techmap.v:274.23-274.25
+Info:      logic  3.00  44.10 Source $abc$833$auto$blifparse.cc:535:parse_blif$911.O
+Info:    routing  2.90  47.00 Net $abc$833$techmap$auto$maccmap.cc:240:synth$211.lcu.$and$/usr/bin/../share/yosys/techmap.v:248$564_Y_new (2,7) -> (2,6)
+Info:                          Sink $abc$833$auto$blifparse.cc:535:parse_blif$923.I1
+Info:                          Defined in:
+Info:                               /usr/bin/../share/yosys/techmap.v:286.27-286.69
+Info:                               /usr/bin/../share/yosys/techmap.v:248.19-248.41
+Info:      logic  3.00  50.00 Source $abc$833$auto$blifparse.cc:535:parse_blif$923.O
+Info:    routing  3.70  53.70 Net $abc$833$auto$maccmap.cc:240:synth$211.CO[7]_new_inv (2,6) -> (2,4)
+Info:                          Sink $abc$833$auto$blifparse.cc:535:parse_blif$931.I0
+Info:                          Defined in:
+Info:                               /usr/bin/../share/yosys/techmap.v:274.23-274.25
+Info:      logic  3.00  56.70 Source $abc$833$auto$blifparse.cc:535:parse_blif$931.O
+Info:    routing  2.90  59.60 Net $abc$833$auto$maccmap.cc:240:synth$211.CO[8]_new_inv (2,4) -> (2,3)
+Info:                          Sink $abc$833$auto$blifparse.cc:535:parse_blif$937.I0
+Info:                          Defined in:
+Info:                               /usr/bin/../share/yosys/techmap.v:274.23-274.25
+Info:      logic  3.00  62.60 Source $abc$833$auto$blifparse.cc:535:parse_blif$937.O
+Info:    routing  2.10  64.70 Net $abc$833$auto$maccmap.cc:240:synth$211.CO[9]_new_inv (2,3) -> (2,3)
+Info:                          Sink $abc$833$auto$blifparse.cc:535:parse_blif$936.I1
+Info:                          Defined in:
+Info:                               /usr/bin/../share/yosys/techmap.v:274.23-274.25
+Info:      setup  2.50  67.20 Source $abc$833$auto$blifparse.cc:535:parse_blif$936.I1
+Info: 33.50 ns logic, 33.70 ns routing
+
+Info: Max frequency for clock 'clk': 14.88 MHz (PASS at 12.00 MHz)
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [ 16133,  19164) |**
+Info: [ 19164,  22195) |
+Info: [ 22195,  25226) |*
+Info: [ 25226,  28257) |*
+Info: [ 28257,  31288) |*
+Info: [ 31288,  34319) |*
+Info: [ 34319,  37350) |*
+Info: [ 37350,  40381) |
+Info: [ 40381,  43412) |*
+Info: [ 43412,  46443) |*
+Info: [ 46443,  49474) |
+Info: [ 49474,  52505) |
+Info: [ 52505,  55536) |
+Info: [ 55536,  58567) |
+Info: [ 58567,  61598) |
+Info: [ 61598,  64629) |
+Info: [ 64629,  67660) |
+Info: [ 67660,  70691) |*
+Info: [ 70691,  73722) |***
+Info: [ 73722,  76753) |********************************************
+1 warning, 0 errors
+
+Info: Program finished normally.
+task: Task "mkdir-build" is up to date
+task: [compile:compile-bitgen] bit_gen -genBitstream /home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.fasm /home/luisd/mi_fpga_1_proj/.FABulous/bitStreamSpec.bin /home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.bin
+2026-10-14 23:32:56.185 | INFO     | fabulous_bit_gen.bit_gen:_build_csv_and_frame_data:427 - Border rows excluded from bitstream (default).
+task: [run-bitgen] python3 makehex.py /home/luisd/mi_fpga_1_proj/user_design/fir_filter_top.bin 16384 build/fir_filter_top.hex
+task: Task "mkdir-build" is up to date
+task: [copy-files] find /home/luisd/mi_fpga_1_proj/Tile/ -name '*.v' -type f -exec cp {} build/fabric_files/ \;
+task: [copy-files] find /home/luisd/mi_fpga_1_proj/Fabric/ -name '*.v' -type f -exec cp {} build/fabric_files/ \;
+INFO | Compile flow completed successfully.
+INFO | Commands "compile_design user_design/fir_filter_top.v" executed successfully
+808:   Number of cells:                171
+832:Info: Device utilisation:
+910:Info: Max frequency for clock 'clk': 9.22 MHz (FAIL at 12.00 MHz)
+1009:Info: Max frequency for clock 'clk': 14.88 MHz (PASS at 12.00 MHz)
