@@ -1,0 +1,13 @@
+//comprobacion del JTAG+FPGA+FLTR
+iverilog -g2012 -s tb_chip_top_fir -o sim tb_chip_top_fir.v chip_top.v jtag_fabric_config.v $FILES
+vvp sim +BITSTREAM=fir_filter_top_jtag.hex
+
+//vista de parametros de simulacion FPGA+FLTR
+source ~/FABulous/venv/bin/activate
+cd ~/mi_fpga_1_proj
+FABulous -p ~/mi_fpga_1_proj run "compile_design user_design/fir_filter_top.v" 2>&1 | tee ~/compile.log
+grep -n -i "utilisation\|utilization\|max frequency\|number of cells" ~/compile.log | head -40
+
+//vista de parametros de simulacion jtag
+cd ~/mi_fpga_1_proj/jtag_sim
+yosys -q -p "read_verilog jtag_fabric_config.v; synth -top jtag_fabric_config -flatten; tee -o jtag_stat.txt stat" && cat jtag_stat.txt
