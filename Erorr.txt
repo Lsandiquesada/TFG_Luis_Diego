@@ -1,35 +1,18 @@
-# Pines para pintest (reloj, KEY, SW, LED)
-# Pines de la DE0-Nano-SoC tomados del .qsf de Terasic (ghrd) que subiste.
-# Se importa con Assignments -> Import Assignments. Solo asigna pines y estandar de E/S.
-
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_CLK1_50
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[0]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[0]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[3]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[4]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[5]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[6]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[7]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[0]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[3]
-
-set_location_assignment PIN_V11 -to FPGA_CLK1_50
-set_location_assignment PIN_AH17 -to KEY[0]
-set_location_assignment PIN_AH16 -to KEY[1]
-set_location_assignment PIN_W15 -to LED[0]
-set_location_assignment PIN_AA24 -to LED[1]
-set_location_assignment PIN_V16 -to LED[2]
-set_location_assignment PIN_V15 -to LED[3]
-set_location_assignment PIN_AF26 -to LED[4]
-set_location_assignment PIN_AE26 -to LED[5]
-set_location_assignment PIN_Y16 -to LED[6]
-set_location_assignment PIN_AA23 -to LED[7]
-set_location_assignment PIN_L10 -to SW[0]
-set_location_assignment PIN_L9 -to SW[1]
-set_location_assignment PIN_H6 -to SW[2]
-set_location_assignment PIN_H5 -to SW[3]
+Error (171016): Can't place node "LED[0]" -- illegal location assignment PIN_W15
+Error (171016): Can't place node "LED[1]" -- illegal location assignment PIN_AA24
+Error (171016): Can't place node "LED[4]" -- illegal location assignment PIN_AF26
+Error (171016): Can't place node "LED[5]" -- illegal location assignment PIN_AE26
+Error (171016): Can't place node "LED[7]" -- illegal location assignment PIN_AA23
+Error (171016): Can't place node "SW[0]" -- illegal location assignment PIN_L10
+Error (171016): Can't place node "SW[1]" -- illegal location assignment PIN_L9
+Error (171016): Can't place node "KEY[0]" -- illegal location assignment PIN_AH17
+Error (171016): Can't place node "KEY[1]" -- illegal location assignment PIN_AH16
+Error (171016): Can't place node "FPGA_CLK1_50" -- illegal location assignment PIN_V11
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:00
+Error (11802): Can't fit design in device. Modify your design to reduce resources, or choose a larger device. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number.
+Error: Quartus Prime Fitter was unsuccessful. 11 errors, 2 warnings
+	Error: Peak virtual memory: 5138 megabytes
+	Error: Processing ended: Mon Oct 19 17:34:22 2026
+	Error: Elapsed time: 00:00:01
+	Error: Total CPU time (on all processors): 00:00:01
+Error (293001): Quartus Prime Full Compilation was unsuccessful. 13 errors, 6 warnings
