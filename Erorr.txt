@@ -1,237 +1,124 @@
-Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
-	Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
-	Info: Processing started: Mon Oct 19 14:13:49 2026
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off de0nano_efpga_top -c de0nano_efpga_top
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file w_io_switch_matrix.v
-	Info (12023): Found entity 1: W_IO_switch_matrix
-Info (12021): Found 1 design units, including 1 entities, in source file w_io_configmem.v
-	Info (12023): Found entity 1: W_IO_ConfigMem
-Info (12021): Found 1 design units, including 1 entities, in source file w_io.v
-	Info (12023): Found entity 1: W_IO
-Info (12021): Found 1 design units, including 1 entities, in source file s_term_single_switch_matrix.v
-	Info (12023): Found entity 1: S_term_single_switch_matrix
-Info (12021): Found 1 design units, including 1 entities, in source file s_term_single2_switch_matrix.v
-	Info (12023): Found entity 1: S_term_single2_switch_matrix
-Info (12021): Found 1 design units, including 1 entities, in source file s_term_single2.v
-	Info (12023): Found entity 1: S_term_single2
-Info (12021): Found 1 design units, including 1 entities, in source file s_term_single.v
-	Info (12023): Found entity 1: S_term_single
-Info (12021): Found 1 design units, including 1 entities, in source file s_term_ram_io_switch_matrix.v
-	Info (12023): Found entity 1: S_term_RAM_IO_switch_matrix
-Info (12021): Found 1 design units, including 1 entities, in source file s_term_ram_io.v
-	Info (12023): Found entity 1: S_term_RAM_IO
-Info (12021): Found 1 design units, including 1 entities, in source file s_term_dsp_switch_matrix.v
-	Info (12023): Found entity 1: S_term_DSP_switch_matrix
-Info (12021): Found 1 design units, including 1 entities, in source file s_term_dsp.v
-	Info (12023): Found entity 1: S_term_DSP
-Info (12021): Found 1 design units, including 1 entities, in source file regfile_switch_matrix.v
-	Info (12023): Found entity 1: RegFile_switch_matrix
-Info (12021): Found 1 design units, including 1 entities, in source file regfile_configmem.v
-	Info (12023): Found entity 1: RegFile_ConfigMem
-Warning (10335): Unrecognized synthesis attribute "FABulous" at RegFile_32x4.v(18)
-Warning (10335): Unrecognized synthesis attribute "BelMap" at RegFile_32x4.v(18)
-Warning (10335): Unrecognized synthesis attribute "AD_reg" at RegFile_32x4.v(19)
-Warning (10335): Unrecognized synthesis attribute "BD_reg" at RegFile_32x4.v(20)
-Warning (10335): Unrecognized synthesis attribute "FABulous" at RegFile_32x4.v(38)
-Warning (10335): Unrecognized synthesis attribute "EXTERNAL" at RegFile_32x4.v(38)
-Warning (10335): Unrecognized synthesis attribute "SHARED_PORT" at RegFile_32x4.v(38)
-Warning (10335): Unrecognized synthesis attribute "FABulous" at RegFile_32x4.v(40)
-Warning (10335): Unrecognized synthesis attribute "GLOBAL" at RegFile_32x4.v(40)
-Info (12021): Found 1 design units, including 1 entities, in source file regfile_32x4.v
-	Info (12023): Found entity 1: RegFile_32x4
-Info (12021): Found 1 design units, including 1 entities, in source file regfile.v
-	Info (12023): Found entity 1: RegFile
-Info (12021): Found 1 design units, including 1 entities, in source file ram_io_switch_matrix.v
-	Info (12023): Found entity 1: RAM_IO_switch_matrix
-Info (12021): Found 1 design units, including 1 entities, in source file ram_io_configmem.v
-	Info (12023): Found entity 1: RAM_IO_ConfigMem
-Info (12021): Found 1 design units, including 1 entities, in source file ram_io.v
-	Info (12023): Found entity 1: RAM_IO
-Warning (10335): Unrecognized synthesis attribute "FABulous" at OutPass4_frame_config_mux.v(18)
-Warning (10335): Unrecognized synthesis attribute "BelMap" at OutPass4_frame_config_mux.v(18)
-Warning (10335): Unrecognized synthesis attribute "I0_reg" at OutPass4_frame_config_mux.v(19)
-Warning (10335): Unrecognized synthesis attribute "I1_reg" at OutPass4_frame_config_mux.v(20)
-Warning (10335): Unrecognized synthesis attribute "I2_reg" at OutPass4_frame_config_mux.v(21)
-Warning (10335): Unrecognized synthesis attribute "I3_reg" at OutPass4_frame_config_mux.v(22)
-Warning (10335): Unrecognized synthesis attribute "FABulous" at OutPass4_frame_config_mux.v(30)
-Warning (10335): Unrecognized synthesis attribute "EXTERNAL" at OutPass4_frame_config_mux.v(30)
-Warning (10335): Unrecognized synthesis attribute "FABulous" at OutPass4_frame_config_mux.v(33)
-Warning (10335): Unrecognized synthesis attribute "EXTERNAL" at OutPass4_frame_config_mux.v(33)
-Warning (10335): Unrecognized synthesis attribute "SHARED_PORT" at OutPass4_frame_config_mux.v(33)
-Warning (10335): Unrecognized synthesis attribute "FABulous" at OutPass4_frame_config_mux.v(36)
-Warning (10335): Unrecognized synthesis attribute "GLOBAL" at OutPass4_frame_config_mux.v(36)
-Info (12021): Found 1 design units, including 1 entities, in source file outpass4_frame_config_mux.v
-	Info (12023): Found entity 1: OutPass4_frame_config_mux
-Info (12021): Found 1 design units, including 1 entities, in source file n_term_single_switch_matrix.v
-	Info (12023): Found entity 1: N_term_single_switch_matrix
-Info (12021): Found 1 design units, including 1 entities, in source file n_term_single2_switch_matrix.v
-	Info (12023): Found entity 1: N_term_single2_switch_matrix
-Info (12021): Found 1 design units, including 1 entities, in source file n_term_single2.v
-	Info (12023): Found entity 1: N_term_single2
-Info (12021): Found 1 design units, including 1 entities, in source file n_term_single.v
-	Info (12023): Found entity 1: N_term_single
-Info (12021): Found 1 design units, including 1 entities, in source file n_term_ram_io_switch_matrix.v
-	Info (12023): Found entity 1: N_term_RAM_IO_switch_matrix
-Info (12021): Found 1 design units, including 1 entities, in source file n_term_ram_io.v
-	Info (12023): Found entity 1: N_term_RAM_IO
-Info (12021): Found 1 design units, including 1 entities, in source file n_term_dsp_switch_matrix.v
-	Info (12023): Found entity 1: N_term_DSP_switch_matrix
-Info (12021): Found 1 design units, including 1 entities, in source file n_term_dsp.v
-	Info (12023): Found entity 1: N_term_DSP
-Warning (10335): Unrecognized synthesis attribute "FABulous" at MUX8LUT_frame_config_mux.v(17)
-Warning (10335): Unrecognized synthesis attribute "BelMap" at MUX8LUT_frame_config_mux.v(17)
-Warning (10335): Unrecognized synthesis attribute "c0" at MUX8LUT_frame_config_mux.v(18)
-Warning (10335): Unrecognized synthesis attribute "c1" at MUX8LUT_frame_config_mux.v(19)
-Warning (10335): Unrecognized synthesis attribute "FABulous" at MUX8LUT_frame_config_mux.v(39)
-Warning (10335): Unrecognized synthesis attribute "GLOBAL" at MUX8LUT_frame_config_mux.v(39)
-Info (12021): Found 1 design units, including 1 entities, in source file mux8lut_frame_config_mux.v
-	Info (12023): Found entity 1: MUX8LUT_frame_config_mux
-Warning (10335): Unrecognized synthesis attribute "FABulous" at MULADD.v(17)
-Warning (10335): Unrecognized synthesis attribute "BelMap" at MULADD.v(17)
-Warning (10335): Unrecognized synthesis attribute "A_reg" at MULADD.v(18)
-Warning (10335): Unrecognized synthesis attribute "B_reg" at MULADD.v(19)
-Warning (10335): Unrecognized synthesis attribute "C_reg" at MULADD.v(20)
-Warning (10335): Unrecognized synthesis attribute "ACC" at MULADD.v(21)
-Warning (10335): Unrecognized synthesis attribute "signExtension" at MULADD.v(22)
-Warning (10335): Unrecognized synthesis attribute "ACCout" at MULADD.v(23)
-Warning (10335): Unrecognized synthesis attribute "FABulous" at MULADD.v(36)
-Warning (10335): Unrecognized synthesis attribute "EXTERNAL" at MULADD.v(36)
-Warning (10335): Unrecognized synthesis attribute "SHARED_PORT" at MULADD.v(36)
-Warning (10335): Unrecognized synthesis attribute "FABulous" at MULADD.v(39)
-Warning (10335): Unrecognized synthesis attribute "GLOBAL" at MULADD.v(39)
-Info (12021): Found 1 design units, including 1 entities, in source file muladd.v
-	Info (12023): Found entity 1: MULADD
-Info (12021): Found 7 design units, including 7 entities, in source file models_pack.v
-	Info (12023): Found entity 1: config_latch
-	Info (12023): Found entity 2: my_buf
-	Info (12023): Found entity 3: clk_buf
-	Info (12023): Found entity 4: cus_mux41
-	Info (12023): Found entity 5: cus_mux21
-	Info (12023): Found entity 6: cus_mux81
-	Info (12023): Found entity 7: cus_mux161
-Warning (10335): Unrecognized synthesis attribute "FABulous" at LUT4c_frame_config_dffesr.v(18)
-Warning (10335): Unrecognized synthesis attribute "BelMap" at LUT4c_frame_config_dffesr.v(18)
-Warning (10335): Unrecognized synthesis attribute "INIT" at LUT4c_frame_config_dffesr.v(19)
-Warning (10335): Unrecognized synthesis attribute "INIT_1" at LUT4c_frame_config_dffesr.v(20)
-Warning (10335): Unrecognized synthesis attribute "INIT_2" at LUT4c_frame_config_dffesr.v(21)
-Warning (10335): Unrecognized synthesis attribute "INIT_3" at LUT4c_frame_config_dffesr.v(22)
-Warning (10335): Unrecognized synthesis attribute "INIT_4" at LUT4c_frame_config_dffesr.v(23)
-Warning (10335): Unrecognized synthesis attribute "INIT_5" at LUT4c_frame_config_dffesr.v(24)
-Warning (10335): Unrecognized synthesis attribute "INIT_6" at LUT4c_frame_config_dffesr.v(25)
-Warning (10335): Unrecognized synthesis attribute "INIT_7" at LUT4c_frame_config_dffesr.v(26)
-Warning (10335): Unrecognized synthesis attribute "INIT_8" at LUT4c_frame_config_dffesr.v(27)
-Warning (10335): Unrecognized synthesis attribute "INIT_9" at LUT4c_frame_config_dffesr.v(28)
-Warning (10335): Unrecognized synthesis attribute "INIT_10" at LUT4c_frame_config_dffesr.v(29)
-Warning (10335): Unrecognized synthesis attribute "INIT_11" at LUT4c_frame_config_dffesr.v(30)
-Warning (10335): Unrecognized synthesis attribute "INIT_12" at LUT4c_frame_config_dffesr.v(31)
-Warning (10335): Unrecognized synthesis attribute "INIT_13" at LUT4c_frame_config_dffesr.v(32)
-Warning (10335): Unrecognized synthesis attribute "INIT_14" at LUT4c_frame_config_dffesr.v(33)
-Warning (10335): Unrecognized synthesis attribute "INIT_15" at LUT4c_frame_config_dffesr.v(34)
-Warning (10335): Unrecognized synthesis attribute "FF" at LUT4c_frame_config_dffesr.v(35)
-Warning (10335): Unrecognized synthesis attribute "IOmux" at LUT4c_frame_config_dffesr.v(36)
-Warning (10335): Unrecognized synthesis attribute "SET_NORESET" at LUT4c_frame_config_dffesr.v(37)
-Warning (10335): Unrecognized synthesis attribute "FABulous" at LUT4c_frame_config_dffesr.v(49)
-Warning (10335): Unrecognized synthesis attribute "EXTERNAL" at LUT4c_frame_config_dffesr.v(49)
-Warning (10335): Unrecognized synthesis attribute "SHARED_PORT" at LUT4c_frame_config_dffesr.v(49)
-Warning (10335): Unrecognized synthesis attribute "FABulous" at LUT4c_frame_config_dffesr.v(50)
-Warning (10335): Unrecognized synthesis attribute "GLOBAL" at LUT4c_frame_config_dffesr.v(50)
-Info (12021): Found 1 design units, including 1 entities, in source file lut4c_frame_config_dffesr.v
-	Info (12023): Found entity 1: LUT4c_frame_config_dffesr
-Info (12021): Found 1 design units, including 1 entities, in source file lut4ab_switch_matrix.v
-	Info (12023): Found entity 1: LUT4AB_switch_matrix
-Info (12021): Found 1 design units, including 1 entities, in source file lut4ab_configmem.v
-	Info (12023): Found entity 1: LUT4AB_ConfigMem
-Info (12021): Found 1 design units, including 1 entities, in source file lut4ab.v
-	Info (12023): Found entity 1: LUT4AB
-Info (12021): Found 1 design units, including 1 entities, in source file jtag_fabric_config.v
-	Info (12023): Found entity 1: jtag_fabric_config
-Info (12021): Found 1 design units, including 1 entities, in source file jtag_bitstream_loader.v
-	Info (12023): Found entity 1: jtag_bitstream_loader
-Warning (10335): Unrecognized synthesis attribute "FABulous" at IO_1_bidirectional_frame_config_pass.v(25)
-Warning (10335): Unrecognized synthesis attribute "EXTERNAL" at IO_1_bidirectional_frame_config_pass.v(25)
-Warning (10335): Unrecognized synthesis attribute "FABulous" at IO_1_bidirectional_frame_config_pass.v(26)
-Warning (10335): Unrecognized synthesis attribute "EXTERNAL" at IO_1_bidirectional_frame_config_pass.v(26)
-Warning (10335): Unrecognized synthesis attribute "FABulous" at IO_1_bidirectional_frame_config_pass.v(27)
-Warning (10335): Unrecognized synthesis attribute "EXTERNAL" at IO_1_bidirectional_frame_config_pass.v(27)
-Warning (10335): Unrecognized synthesis attribute "FABulous" at IO_1_bidirectional_frame_config_pass.v(31)
-Warning (10335): Unrecognized synthesis attribute "EXTERNAL" at IO_1_bidirectional_frame_config_pass.v(31)
-Warning (10335): Unrecognized synthesis attribute "SHARED_PORT" at IO_1_bidirectional_frame_config_pass.v(31)
-Info (12021): Found 1 design units, including 1 entities, in source file io_1_bidirectional_frame_config_pass.v
-	Info (12023): Found entity 1: IO_1_bidirectional_frame_config_pass
-Warning (10335): Unrecognized synthesis attribute "FABulous" at InPass4_frame_config_mux.v(18)
-Warning (10335): Unrecognized synthesis attribute "BelMap" at InPass4_frame_config_mux.v(18)
-Warning (10335): Unrecognized synthesis attribute "I0_reg" at InPass4_frame_config_mux.v(19)
-Warning (10335): Unrecognized synthesis attribute "I1_reg" at InPass4_frame_config_mux.v(20)
-Warning (10335): Unrecognized synthesis attribute "I2_reg" at InPass4_frame_config_mux.v(21)
-Warning (10335): Unrecognized synthesis attribute "I3_reg" at InPass4_frame_config_mux.v(22)
-Warning (10335): Unrecognized synthesis attribute "FABulous" at InPass4_frame_config_mux.v(27)
-Warning (10335): Unrecognized synthesis attribute "EXTERNAL" at InPass4_frame_config_mux.v(27)
-Warning (10335): Unrecognized synthesis attribute "FABulous" at InPass4_frame_config_mux.v(31)
-Warning (10335): Unrecognized synthesis attribute "EXTERNAL" at InPass4_frame_config_mux.v(31)
-Warning (10335): Unrecognized synthesis attribute "SHARED_PORT" at InPass4_frame_config_mux.v(31)
-Warning (10335): Unrecognized synthesis attribute "FABulous" at InPass4_frame_config_mux.v(34)
-Warning (10335): Unrecognized synthesis attribute "GLOBAL" at InPass4_frame_config_mux.v(34)
-Info (12021): Found 1 design units, including 1 entities, in source file inpass4_frame_config_mux.v
-	Info (12023): Found entity 1: InPass4_frame_config_mux
-Info (12021): Found 1 design units, including 1 entities, in source file frame_select.v
-	Info (12023): Found entity 1: Frame_Select
-Info (12021): Found 1 design units, including 1 entities, in source file frame_data_reg.v
-	Info (12023): Found entity 1: Frame_Data_Reg
-Info (12021): Found 1 design units, including 1 entities, in source file efpga_top.v
-	Info (12023): Found entity 1: eFPGA_top
-Info (12021): Found 1 design units, including 1 entities, in source file efpga_config.v
-	Info (12023): Found entity 1: eFPGA_Config
-Info (12021): Found 1 design units, including 1 entities, in source file efpga.v
-	Info (12023): Found entity 1: eFPGA
-Info (12021): Found 1 design units, including 1 entities, in source file dsp_top_switch_matrix.v
-	Info (12023): Found entity 1: DSP_top_switch_matrix
-Info (12021): Found 1 design units, including 1 entities, in source file dsp_top_configmem.v
-	Info (12023): Found entity 1: DSP_top_ConfigMem
-Info (12021): Found 1 design units, including 1 entities, in source file dsp_top.v
-	Info (12023): Found entity 1: DSP_top
-Info (12021): Found 1 design units, including 1 entities, in source file dsp_bot_switch_matrix.v
-	Info (12023): Found entity 1: DSP_bot_switch_matrix
-Info (12021): Found 1 design units, including 1 entities, in source file dsp_bot_configmem.v
-	Info (12023): Found entity 1: DSP_bot_ConfigMem
-Info (12021): Found 1 design units, including 1 entities, in source file dsp_bot.v
-	Info (12023): Found entity 1: DSP_bot
-Info (12021): Found 1 design units, including 1 entities, in source file dsp.v
-	Info (12023): Found entity 1: DSP
-Info (12021): Found 1 design units, including 1 entities, in source file de0nano_efpga_top.v
-	Info (12023): Found entity 1: de0nano_efpga_top
-Error (10170): Verilog HDL syntax error at config_UART.v(397) near text: "if";  expecting "endmodule". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number.
-Error (10170): Verilog HDL syntax error at config_UART.v(445) near text: "end";  expecting "endmodule". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number.
-Error (10112): Ignored design unit "config_UART" at config_UART.v(3) due to previous errors
-Info (12021): Found 0 design units, including 0 entities, in source file config_uart.v
-Warning (10335): Unrecognized synthesis attribute "FABulous" at Config_access.v(3)
-Warning (10335): Unrecognized synthesis attribute "BelMap" at Config_access.v(3)
-Warning (10335): Unrecognized synthesis attribute "C_bit0" at Config_access.v(4)
-Warning (10335): Unrecognized synthesis attribute "C_bit1" at Config_access.v(5)
-Warning (10335): Unrecognized synthesis attribute "C_bit2" at Config_access.v(6)
-Warning (10335): Unrecognized synthesis attribute "C_bit3" at Config_access.v(7)
-Warning (10335): Unrecognized synthesis attribute "FABulous" at Config_access.v(14)
-Warning (10335): Unrecognized synthesis attribute "EXTERNAL" at Config_access.v(14)
-Warning (10335): Unrecognized synthesis attribute "FABulous" at Config_access.v(16)
-Warning (10335): Unrecognized synthesis attribute "GLOBAL" at Config_access.v(16)
-Info (12021): Found 1 design units, including 1 entities, in source file config_access.v
-	Info (12023): Found entity 1: Config_access
-Info (12021): Found 1 design units, including 1 entities, in source file configfsm.v
-	Info (12023): Found entity 1: ConfigFSM
-Info (12021): Found 1 design units, including 1 entities, in source file chip_top.v
-	Info (12023): Found entity 1: chip_top
-Warning (10335): Unrecognized synthesis attribute "blackbox" at BlockRAM_1KB.v(193)
-Info (12021): Found 2 design units, including 2 entities, in source file blockram_1kb.v
-	Info (12023): Found entity 1: BlockRAM_1KB
-	Info (12023): Found entity 2: sram_1rw1r_32_256_8_sky130
-Info (12021): Found 1 design units, including 1 entities, in source file bitstream_rom.v
-	Info (12023): Found entity 1: bitstream_rom
-Info (12021): Found 1 design units, including 1 entities, in source file bitbang.v
-	Info (12023): Found entity 1: bitbang
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 101 warnings
-	Error: Peak virtual memory: 4828 megabytes
-	Error: Processing ended: Mon Oct 19 14:13:55 2026
-	Error: Elapsed time: 00:00:06
-	Error: Total CPU time (on all processors): 00:00:14
+Problem Details
+Error:
+
+*** Fatal Error: Stack Overflow
+Module: quartus_map.exe
+Stack Trace:
+    0xa135e: HDB_INSTANCE_NAME::find_in_children + 0x3e (DB_HDB)
+   0x11cd21: HDB_SYN_INSTANCE_NAME::find_synthesized_name + 0x2a1 (DB_HDB)
+   0x11d440: HDB_SYN_INSTANCE_NAME::create_or_reuse_synthesized_name + 0x190 (DB_HDB)
+   0x11ce60: HDB_SYN_INSTANCE_NAME::create_synthesized_name + 0xb0 (DB_HDB)
+    0x5405b: CDB_SGATE_NETLIST::insert_loop_cut + 0x18b (db_cdb_sgate)
+    0x52ea4: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x1f4 (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+    0x532fe: CDB_SGATE_NETLIST::dfs_visit_oterm + 0x64e (db_cdb_sgate)
+
+End-trace
+
+
+Executable: quartus
+Comment:
+None
+
+System Information
+Platform: windows64
+OS name: Windows 10
+OS version: 10.0
+
+Quartus Prime Information
+Address bits: 64
+Version: 25.1std.0
+Build: 1129
+Edition: Lite Edition
