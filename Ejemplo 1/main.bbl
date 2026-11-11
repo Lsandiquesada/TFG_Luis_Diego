@@ -1,0 +1,1185 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{abderrahmaneMaximizeFlexibility}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=6de87aa767e274d43ed6156dc1dfe5a2}{%
+           family={Abderrahmane},
+           familyi={A\bibinitperiod},
+           given={Nassim},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{6de87aa767e274d43ed6156dc1dfe5a2}
+      \strng{fullhash}{6de87aa767e274d43ed6156dc1dfe5a2}
+      \strng{fullhashraw}{6de87aa767e274d43ed6156dc1dfe5a2}
+      \strng{bibnamehash}{6de87aa767e274d43ed6156dc1dfe5a2}
+      \strng{authorbibnamehash}{6de87aa767e274d43ed6156dc1dfe5a2}
+      \strng{authornamehash}{6de87aa767e274d43ed6156dc1dfe5a2}
+      \strng{authorfullhash}{6de87aa767e274d43ed6156dc1dfe5a2}
+      \strng{authorfullhashraw}{6de87aa767e274d43ed6156dc1dfe5a2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Electronic Design}
+      \field{title}{Maximize Flexibility in {SoC} Design with eFPGAs}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.electronicdesign.com/technologies/embedded/article/55261389/maximize-flexibility-in-soc-design-with-efpgas
+      \endverb
+      \verb{url}
+      \verb https://www.electronicdesign.com/technologies/embedded/article/55261389/maximize-flexibility-in-soc-design-with-efpgas
+      \endverb
+    \endentry
+    \entry{C_allelcoelec2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=0ad2a79e2488c21526e5b7db32998a34}{%
+           family={{allelcoelec}},
+           familyi={a\bibinitperiod}}}%
+      }
+      \strng{namehash}{0ad2a79e2488c21526e5b7db32998a34}
+      \strng{fullhash}{0ad2a79e2488c21526e5b7db32998a34}
+      \strng{fullhashraw}{0ad2a79e2488c21526e5b7db32998a34}
+      \strng{bibnamehash}{0ad2a79e2488c21526e5b7db32998a34}
+      \strng{authorbibnamehash}{0ad2a79e2488c21526e5b7db32998a34}
+      \strng{authornamehash}{0ad2a79e2488c21526e5b7db32998a34}
+      \strng{authorfullhash}{0ad2a79e2488c21526e5b7db32998a34}
+      \strng{authorfullhashraw}{0ad2a79e2488c21526e5b7db32998a34}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{DRAM vs SRAM vs Flash vs NVRAM: Which Memory Type Is Best?}}
+      \field{urlday}{3}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.allelcoelec.com/blog/DRAM-vs-SRAM-vs-Flash-vs-NVRAM-Which-Memory-Type-Is-Best.html
+      \endverb
+      \verb{url}
+      \verb https://www.allelcoelec.com/blog/DRAM-vs-SRAM-vs-Flash-vs-NVRAM-Which-Memory-Type-Is-Best.html
+      \endverb
+    \endentry
+    \entry{L_altera2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=feb14148e4ce243ab58a4f11cd231ab9}{%
+           family={{Altera}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{feb14148e4ce243ab58a4f11cd231ab9}
+      \strng{fullhash}{feb14148e4ce243ab58a4f11cd231ab9}
+      \strng{fullhashraw}{feb14148e4ce243ab58a4f11cd231ab9}
+      \strng{bibnamehash}{feb14148e4ce243ab58a4f11cd231ab9}
+      \strng{authorbibnamehash}{feb14148e4ce243ab58a4f11cd231ab9}
+      \strng{authornamehash}{feb14148e4ce243ab58a4f11cd231ab9}
+      \strng{authorfullhash}{feb14148e4ce243ab58a4f11cd231ab9}
+      \strng{authorfullhashraw}{feb14148e4ce243ab58a4f11cd231ab9}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cyclone V FPGA and SoC FPGA Product Table}
+      \field{urlday}{3}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.altera.com/products/fpga/cyclone-v/sx
+      \endverb
+      \verb{url}
+      \verb https://www.altera.com/products/fpga/cyclone-v/sx
+      \endverb
+    \endentry
+    \entry{H_bottcher2023}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=9f08f43a14c04edb065beec357955dde}{%
+           family={Böttcher},
+           familyi={B\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0046d827395c0e4a0cfb0ed7541159ad}{%
+           family={Kumm},
+           familyi={K\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{389d779f60757d8fb60ab4d8a3f32ebd}
+      \strng{fullhash}{389d779f60757d8fb60ab4d8a3f32ebd}
+      \strng{fullhashraw}{389d779f60757d8fb60ab4d8a3f32ebd}
+      \strng{bibnamehash}{389d779f60757d8fb60ab4d8a3f32ebd}
+      \strng{authorbibnamehash}{389d779f60757d8fb60ab4d8a3f32ebd}
+      \strng{authornamehash}{389d779f60757d8fb60ab4d8a3f32ebd}
+      \strng{authorfullhash}{389d779f60757d8fb60ab4d8a3f32ebd}
+      \strng{authorfullhashraw}{389d779f60757d8fb60ab4d8a3f32ebd}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0018-9340}
+      \field{journaltitle}{IEEE Transactions on Computers}
+      \field{title}{Towards Globally Optimal Design of Multipliers for {FPGAs}}
+      \field{year}{2023}
+    \endentry
+    \entry{calvoTestingSesion4}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{hash=a482e4dc2eab6ea82b957f71cf614330}{%
+           family={Calvo\bibnamedelima Monge},
+           familyi={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={José\bibnamedelima Roberto},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{a482e4dc2eab6ea82b957f71cf614330}
+      \strng{fullhash}{a482e4dc2eab6ea82b957f71cf614330}
+      \strng{fullhashraw}{a482e4dc2eab6ea82b957f71cf614330}
+      \strng{bibnamehash}{a482e4dc2eab6ea82b957f71cf614330}
+      \strng{authorbibnamehash}{a482e4dc2eab6ea82b957f71cf614330}
+      \strng{authornamehash}{a482e4dc2eab6ea82b957f71cf614330}
+      \strng{authorfullhash}{a482e4dc2eab6ea82b957f71cf614330}
+      \strng{authorfullhashraw}{a482e4dc2eab6ea82b957f71cf614330}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Diapositivas del programa Técnico en Semiconductores}
+      \field{note}{Material de clase}
+      \field{title}{Testing y Pruebas Funcionales. {Sesión} 4: {Interfaces} básicas de testing/funcionales en un {SOC}}
+      \field{year}{2026}
+      \true{nocite}
+    \endentry
+    \entry{I_demicheli2005}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=f836daa48dbb4365039ceb7f1687bdd5}{%
+           family={De\bibnamedelima Micheli},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill}%
+      }
+      \strng{namehash}{f836daa48dbb4365039ceb7f1687bdd5}
+      \strng{fullhash}{f836daa48dbb4365039ceb7f1687bdd5}
+      \strng{fullhashraw}{f836daa48dbb4365039ceb7f1687bdd5}
+      \strng{bibnamehash}{f836daa48dbb4365039ceb7f1687bdd5}
+      \strng{authorbibnamehash}{f836daa48dbb4365039ceb7f1687bdd5}
+      \strng{authornamehash}{f836daa48dbb4365039ceb7f1687bdd5}
+      \strng{authorfullhash}{f836daa48dbb4365039ceb7f1687bdd5}
+      \strng{authorfullhashraw}{f836daa48dbb4365039ceb7f1687bdd5}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Synthesis and Optimization of Digital Circuits}
+      \field{year}{2005}
+    \endentry
+    \entry{B_gaillardon2011}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=117b2a388a4160a7c421a5df09f76929}{%
+           family={Gaillardon},
+           familyi={G\bibinitperiod},
+           given={Pierre-Emmanuel},
+           giveni={P\bibinithyphendelim E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Université de Grenoble}%
+      }
+      \strng{namehash}{117b2a388a4160a7c421a5df09f76929}
+      \strng{fullhash}{117b2a388a4160a7c421a5df09f76929}
+      \strng{fullhashraw}{117b2a388a4160a7c421a5df09f76929}
+      \strng{bibnamehash}{117b2a388a4160a7c421a5df09f76929}
+      \strng{authorbibnamehash}{117b2a388a4160a7c421a5df09f76929}
+      \strng{authornamehash}{117b2a388a4160a7c421a5df09f76929}
+      \strng{authorfullhash}{117b2a388a4160a7c421a5df09f76929}
+      \strng{authorfullhashraw}{117b2a388a4160a7c421a5df09f76929}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Reconfigurable Logic Architectures based on Disruptive Technologies}
+      \field{type}{phdthesis}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://theses.hal.science/tel-00674438/
+      \endverb
+      \verb{url}
+      \verb https://theses.hal.science/tel-00674438/
+      \endverb
+    \endentry
+    \entry{hassani2024efficient}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=df79a51536dfcaf0ac923080ce2fd2ee}{%
+           family={Hassani},
+           familyi={H\bibinitperiod},
+           given={Fatemeh\bibnamedelima Serajeh},
+           giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e84761b1bb30df671ac688bd76c028ee}
+      \strng{fullhash}{e84761b1bb30df671ac688bd76c028ee}
+      \strng{fullhashraw}{e84761b1bb30df671ac688bd76c028ee}
+      \strng{bibnamehash}{e84761b1bb30df671ac688bd76c028ee}
+      \strng{authorbibnamehash}{e84761b1bb30df671ac688bd76c028ee}
+      \strng{authornamehash}{e84761b1bb30df671ac688bd76c028ee}
+      \strng{authorfullhash}{e84761b1bb30df671ac688bd76c028ee}
+      \strng{authorfullhashraw}{e84761b1bb30df671ac688bd76c028ee}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1084-4309}
+      \field{journaltitle}{ACM Trans. Des. Autom. Electron. Syst.}
+      \field{title}{An Efficient {FPGA} Architecture with Turn-Restricted Switch Boxes}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1145/3643809
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3643809
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3643809
+      \endverb
+    \endentry
+    \entry{ieee1149}{standard}{}{}
+      \list{organization}{1}{%
+        {IEEE Computer Society}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{title}
+      \field{number}{IEEE Std 1149.1-2013}
+      \field{title}{{IEEE Standard for Test Access Port and Boundary-Scan Architecture}}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.1109/IEEESTD.2013.6515989
+      \endverb
+    \endentry
+    \entry{jtagTechnologiesBoundaryScan}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=5b29d2d1650511c63453d51eba61d170}{%
+           family={{JTAG Technologies}},
+           familyi={J\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {JTAG Technologies}%
+      }
+      \strng{namehash}{5b29d2d1650511c63453d51eba61d170}
+      \strng{fullhash}{5b29d2d1650511c63453d51eba61d170}
+      \strng{fullhashraw}{5b29d2d1650511c63453d51eba61d170}
+      \strng{bibnamehash}{5b29d2d1650511c63453d51eba61d170}
+      \strng{authorbibnamehash}{5b29d2d1650511c63453d51eba61d170}
+      \strng{authornamehash}{5b29d2d1650511c63453d51eba61d170}
+      \strng{authorfullhash}{5b29d2d1650511c63453d51eba61d170}
+      \strng{authorfullhashraw}{5b29d2d1650511c63453d51eba61d170}
+      \field{extraname}{1}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Boundary Scan}
+      \verb{urlraw}
+      \verb https://www.jtag.com/boundary-scan/
+      \endverb
+      \verb{url}
+      \verb https://www.jtag.com/boundary-scan/
+      \endverb
+    \endentry
+    \entry{jtagTechnologiesTapController}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=5b29d2d1650511c63453d51eba61d170}{%
+           family={{JTAG Technologies}},
+           familyi={J\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {JTAG Technologies}%
+      }
+      \strng{namehash}{5b29d2d1650511c63453d51eba61d170}
+      \strng{fullhash}{5b29d2d1650511c63453d51eba61d170}
+      \strng{fullhashraw}{5b29d2d1650511c63453d51eba61d170}
+      \strng{bibnamehash}{5b29d2d1650511c63453d51eba61d170}
+      \strng{authorbibnamehash}{5b29d2d1650511c63453d51eba61d170}
+      \strng{authornamehash}{5b29d2d1650511c63453d51eba61d170}
+      \strng{authorfullhash}{5b29d2d1650511c63453d51eba61d170}
+      \strng{authorfullhashraw}{5b29d2d1650511c63453d51eba61d170}
+      \field{extraname}{2}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{How the {JTAG} {TAP} Controller Works}
+      \verb{urlraw}
+      \verb https://www.jtag.com/how-the-jtag-tap-controller-works/
+      \endverb
+      \verb{url}
+      \verb https://www.jtag.com/how-the-jtag-tap-controller-works/
+      \endverb
+    \endentry
+    \entry{G_koch2021}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=bb196239d21e453fc7a041e4b5243fc3}{%
+           family={Koch},
+           familyi={K\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+        {{hash=cf7aaf87f41450edf7d8ae2be2ac5243}{%
+           family={Dao},
+           familyi={D\bibinitperiod},
+           given={Nguyen},
+           giveni={N\bibinitperiod}}}%
+        {{hash=b7eb517a8a22602592eb938d5ecce2c0}{%
+           family={Healy},
+           familyi={H\bibinitperiod},
+           given={Bea},
+           giveni={B\bibinitperiod}}}%
+        {{hash=11b70b44fa87bcb10f72b7b1d3c76466}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1e013c3614909654db52ac3f2d05cfbf}{%
+           family={Attwood},
+           familyi={A\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{d7bcbe4c1b3360782edc725071ea4617}
+      \strng{fullhash}{f9fdd29c7986bc8611c06e9966b05bc0}
+      \strng{fullhashraw}{f9fdd29c7986bc8611c06e9966b05bc0}
+      \strng{bibnamehash}{d7bcbe4c1b3360782edc725071ea4617}
+      \strng{authorbibnamehash}{d7bcbe4c1b3360782edc725071ea4617}
+      \strng{authornamehash}{d7bcbe4c1b3360782edc725071ea4617}
+      \strng{authorfullhash}{f9fdd29c7986bc8611c06e9966b05bc0}
+      \strng{authorfullhashraw}{f9fdd29c7986bc8611c06e9966b05bc0}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. ACM/SIGDA Int. Symp. Field-Programmable Gate Arrays (FPGA)}
+      \field{isbn}{9781450382182}
+      \field{title}{{FABulous}: An Embedded {FPGA} Framework}
+      \field{year}{2021}
+    \endentry
+    \entry{F_kuon2005}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=818d8d95d75e6a15ecbc88d436714d92}{%
+           family={Kuon},
+           familyi={K\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=b5be2f6e35dc02228f1b34eafc4d566a}{%
+           family={Rose},
+           familyi={R\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{449881fd3611ab5213728f75f9017919}
+      \strng{fullhash}{449881fd3611ab5213728f75f9017919}
+      \strng{fullhashraw}{449881fd3611ab5213728f75f9017919}
+      \strng{bibnamehash}{449881fd3611ab5213728f75f9017919}
+      \strng{authorbibnamehash}{449881fd3611ab5213728f75f9017919}
+      \strng{authornamehash}{449881fd3611ab5213728f75f9017919}
+      \strng{authorfullhash}{449881fd3611ab5213728f75f9017919}
+      \strng{authorfullhashraw}{449881fd3611ab5213728f75f9017919}
+      \field{extraname}{1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. ACM/SIGDA Int. Symp. Field-Programmable Gate Arrays (FPGA)}
+      \field{title}{Design, Layout and Verification of an {FPGA} Using Automated Tools}
+      \field{year}{2005}
+    \endentry
+    \entry{E_kuon2007}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=818d8d95d75e6a15ecbc88d436714d92}{%
+           family={Kuon},
+           familyi={K\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=b5be2f6e35dc02228f1b34eafc4d566a}{%
+           family={Rose},
+           familyi={R\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{449881fd3611ab5213728f75f9017919}
+      \strng{fullhash}{449881fd3611ab5213728f75f9017919}
+      \strng{fullhashraw}{449881fd3611ab5213728f75f9017919}
+      \strng{bibnamehash}{449881fd3611ab5213728f75f9017919}
+      \strng{authorbibnamehash}{449881fd3611ab5213728f75f9017919}
+      \strng{authornamehash}{449881fd3611ab5213728f75f9017919}
+      \strng{authorfullhash}{449881fd3611ab5213728f75f9017919}
+      \strng{authorfullhashraw}{449881fd3611ab5213728f75f9017919}
+      \field{extraname}{2}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Measuring the Gap between {FPGAs} and {ASICs}}
+      \field{volume}{26}
+      \field{year}{2007}
+      \field{pages}{203\bibrangedash 215}
+      \range{pages}{13}
+      \verb{urlraw}
+      \verb https://www.eecg.toronto.edu/~jayar/pubs/kuon/kuonfpga06.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.eecg.toronto.edu/~jayar/pubs/kuon/kuonfpga06.pdf
+      \endverb
+    \endentry
+    \entry{kuon2008fpga}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=818d8d95d75e6a15ecbc88d436714d92}{%
+           family={Kuon},
+           familyi={K\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=e24e4f7fc07908365fdbe5b097a1e7ed}{%
+           family={Tessier},
+           familyi={T\bibinitperiod},
+           given={Russell},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b5be2f6e35dc02228f1b34eafc4d566a}{%
+           family={Rose},
+           familyi={R\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{797b8edd9eb0d04e659174a9e16ea101}
+      \strng{fullhash}{797b8edd9eb0d04e659174a9e16ea101}
+      \strng{fullhashraw}{797b8edd9eb0d04e659174a9e16ea101}
+      \strng{bibnamehash}{797b8edd9eb0d04e659174a9e16ea101}
+      \strng{authorbibnamehash}{797b8edd9eb0d04e659174a9e16ea101}
+      \strng{authornamehash}{797b8edd9eb0d04e659174a9e16ea101}
+      \strng{authorfullhash}{797b8edd9eb0d04e659174a9e16ea101}
+      \strng{authorfullhashraw}{797b8edd9eb0d04e659174a9e16ea101}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Foundations and Trends in Electronic Design Automation}
+      \field{number}{2}
+      \field{title}{{FPGA} Architecture: Survey and Challenges}
+      \field{volume}{2}
+      \field{year}{2008}
+      \field{pages}{135\bibrangedash 253}
+      \range{pages}{119}
+      \verb{doi}
+      \verb 10.1561/1000000005
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1561/1000000005
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1561/1000000005
+      \endverb
+    \endentry
+    \entry{N_lopezvallejo2004}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=6c11b07e893b4100ba4faae32a1cd954}{%
+           family={López-Vallejo},
+           familyi={L\bibinithyphendelim V\bibinitperiod},
+           given={M.\bibnamedelimi L.},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=9005e41cecbb1e74738a6055d042efd6}{%
+           family={Ayala\bibnamedelima Rodrigo},
+           familyi={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={J.\bibnamedelimi L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{c645dca944aa854903393096e84016e9}
+      \strng{fullhash}{c645dca944aa854903393096e84016e9}
+      \strng{fullhashraw}{c645dca944aa854903393096e84016e9}
+      \strng{bibnamehash}{c645dca944aa854903393096e84016e9}
+      \strng{authorbibnamehash}{c645dca944aa854903393096e84016e9}
+      \strng{authornamehash}{c645dca944aa854903393096e84016e9}
+      \strng{authorfullhash}{c645dca944aa854903393096e84016e9}
+      \strng{authorfullhashraw}{c645dca944aa854903393096e84016e9}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{FPGA: Nociones básicas e implementación}}
+      \field{year}{2004}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/profile/Marisa-Lopez-Vallejo-2/publication/266337852_FPGA_Nociones_basicas_e_implementacion/links/54b79b1c0cf2bd04be33ac8a/FPGA-Nociones-basicas-e-implementacion.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/profile/Marisa-Lopez-Vallejo-2/publication/266337852_FPGA_Nociones_basicas_e_implementacion/links/54b79b1c0cf2bd04be33ac8a/FPGA-Nociones-basicas-e-implementacion.pdf
+      \endverb
+    \endentry
+    \entry{K_maldonado2011}{thesis}{}{}
+      \name{author}{2}{}{%
+        {{hash=a18807bc8a0606bed44632f762828a99}{%
+           family={Maldonado},
+           familyi={M\bibinitperiod},
+           given={Hugo},
+           giveni={H\bibinitperiod}}}%
+        {{hash=735f19f3c89c51174a99e75d4ae1f9c6}{%
+           family={Molina},
+           familyi={M\bibinitperiod},
+           given={Luciano},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Instituto Universitario Aeronáutico}%
+      }
+      \list{location}{1}{%
+        {Córdoba, Argentina}%
+      }
+      \strng{namehash}{deceb3cc176607df012739a61aaab3b9}
+      \strng{fullhash}{deceb3cc176607df012739a61aaab3b9}
+      \strng{fullhashraw}{deceb3cc176607df012739a61aaab3b9}
+      \strng{bibnamehash}{deceb3cc176607df012739a61aaab3b9}
+      \strng{authorbibnamehash}{deceb3cc176607df012739a61aaab3b9}
+      \strng{authornamehash}{deceb3cc176607df012739a61aaab3b9}
+      \strng{authorfullhash}{deceb3cc176607df012739a61aaab3b9}
+      \strng{authorfullhashraw}{deceb3cc176607df012739a61aaab3b9}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Diseño, simulación e implementación en FPGA de un filtro adaptado con aplicación a contramedidas electrónicas}}
+      \field{type}{Tesis}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://rdu.iua.edu.ar/server/api/core/bitstreams/7fc8af43-f5a9-429a-ab2e-b3fc1d45307d/content
+      \endverb
+      \verb{url}
+      \verb https://rdu.iua.edu.ar/server/api/core/bitstreams/7fc8af43-f5a9-429a-ab2e-b3fc1d45307d/content
+      \endverb
+    \endentry
+    \entry{O_mayhua2018}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=21e40077445a380380049c3d94dcd3f4}{%
+           family={Mayhua\bibnamedelima Ramírez},
+           familyi={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Glen\bibnamedelima Angel},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{21e40077445a380380049c3d94dcd3f4}
+      \strng{fullhash}{21e40077445a380380049c3d94dcd3f4}
+      \strng{fullhashraw}{21e40077445a380380049c3d94dcd3f4}
+      \strng{bibnamehash}{21e40077445a380380049c3d94dcd3f4}
+      \strng{authorbibnamehash}{21e40077445a380380049c3d94dcd3f4}
+      \strng{authornamehash}{21e40077445a380380049c3d94dcd3f4}
+      \strng{authorfullhash}{21e40077445a380380049c3d94dcd3f4}
+      \strng{authorfullhashraw}{21e40077445a380380049c3d94dcd3f4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Universidad Nacional de Educación, Perú}
+      \field{title}{{Matrices. Suma y producto de matrices. Tipos de matrices. Operaciones elementales sobre filas y columnas. Matriz reducida. Rango de una matriz. Inversas de matrices cuadradas. Determinante de matrices cuadradas. Transformaciones lineales y matrices. Sistema de ecuaciones lineales. Solución de sistemas lineales}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://repositorio.une.edu.pe/server/api/core/bitstreams/cd2801da-4c54-4596-be6d-951e8aa14881/content
+      \endverb
+      \verb{url}
+      \verb https://repositorio.une.edu.pe/server/api/core/bitstreams/cd2801da-4c54-4596-be6d-951e8aa14881/content
+      \endverb
+    \endentry
+    \entry{meschkov2025design}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=05893870901467dcda2ef275f19185a0}{%
+           family={Meschkov},
+           familyi={M\bibinitperiod},
+           given={Sergej},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6775bc7221be6ac8d1d3a1bb9f6b25f6}{%
+           family={Lammers},
+           familyi={L\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6fbee34c73db05a3289762b8b6cadeac}{%
+           family={Tahoori},
+           familyi={T\bibinitperiod},
+           given={Mehdi\bibnamedelima B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=ecb99179163100c0796947c8691258ca}{%
+           family={Moradi},
+           familyi={M\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{052c3373692a388ba496fa612cc75c6d}
+      \strng{fullhash}{ba5e68a62ddd9ce9268333c07c9ac64f}
+      \strng{fullhashraw}{ba5e68a62ddd9ce9268333c07c9ac64f}
+      \strng{bibnamehash}{052c3373692a388ba496fa612cc75c6d}
+      \strng{authorbibnamehash}{052c3373692a388ba496fa612cc75c6d}
+      \strng{authornamehash}{052c3373692a388ba496fa612cc75c6d}
+      \strng{authorfullhash}{ba5e68a62ddd9ce9268333c07c9ac64f}
+      \strng{authorfullhashraw}{ba5e68a62ddd9ce9268333c07c9ac64f}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2569-2925}
+      \field{journaltitle}{IACR Transactions on Cryptographic Hardware and Embedded Systems}
+      \field{number}{3}
+      \field{title}{Design and Implementation of a Physically Secure Open-Source {FPGA} and Toolchain}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.46586/tches.v2025.i3.542-582
+      \endverb
+    \endentry
+    \entry{meyerbaese2014digital}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=7f723a796bde8595ac01f547d0104005}{%
+           family={Meyer-Baese},
+           familyi={M\bibinithyphendelim B\bibinitperiod},
+           given={Uwe},
+           giveni={U\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{7f723a796bde8595ac01f547d0104005}
+      \strng{fullhash}{7f723a796bde8595ac01f547d0104005}
+      \strng{fullhashraw}{7f723a796bde8595ac01f547d0104005}
+      \strng{bibnamehash}{7f723a796bde8595ac01f547d0104005}
+      \strng{authorbibnamehash}{7f723a796bde8595ac01f547d0104005}
+      \strng{authornamehash}{7f723a796bde8595ac01f547d0104005}
+      \strng{authorfullhash}{7f723a796bde8595ac01f547d0104005}
+      \strng{authorfullhashraw}{7f723a796bde8595ac01f547d0104005}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4}
+      \field{issn}{1860-4870}
+      \field{title}{Digital Signal Processing with {Field Programmable Gate Arrays}}
+      \field{year}{2014}
+      \verb{doi}
+      \verb 10.1007/978-3-642-45309-0
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-642-45309-0
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-642-45309-0
+      \endverb
+    \endentry
+    \entry{nane2015survey}{article}{}{}
+      \name{author}{13}{}{%
+        {{hash=64e7b46b1869978392eefabd6e798dbd}{%
+           family={Nane},
+           familyi={N\bibinitperiod},
+           given={Razvan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9be906f5a0d685de443b16c93f1470f3}{%
+           family={Sima},
+           familyi={S\bibinitperiod},
+           given={Vlad-Mihai},
+           giveni={V\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=4761db73cfa0608885454fd896a56c4e}{%
+           family={Pilato},
+           familyi={P\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b490b88c19670790f2317e03b9ceb882}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Jinho},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7cbc068076891f2d8a2a75994c1c13f3}{%
+           family={Fort},
+           familyi={F\bibinitperiod},
+           given={Bryan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=faf9fd972a26708879890eff246ff76f}{%
+           family={Canis},
+           familyi={C\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9ffb66d2cdf14128a7495667582fc388}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7143057009c00a9c33fdc30a0ad42211}{%
+           family={Lari},
+           familyi={L\bibinitperiod},
+           given={Vahid},
+           giveni={V\bibinitperiod}}}%
+        {{hash=9d7b386438d04457fd5a696696f2f448}{%
+           family={Anjam},
+           familyi={A\bibinitperiod},
+           given={Nazanin},
+           giveni={N\bibinitperiod}}}%
+        {{hash=dcd2fca46298a5312ba1a72eb2e6a922}{%
+           family={Silvano},
+           familyi={S\bibinitperiod},
+           given={Donatella},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e825f7cb59eb69ae676787ec2e3908ad}{%
+           family={Davidson},
+           familyi={D\bibinitperiod},
+           given={Jos},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c51481dab9132d8812f2b5013c3d86c4}{%
+           family={Gerards},
+           familyi={G\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0e0c2d18940137df95e37e0e0439fc80}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9072a0a1c0dd2152a2977208bcc9aeaa}
+      \strng{fullhash}{285d991c2ccdfb9ec43749acbc8a2cf6}
+      \strng{fullhashraw}{285d991c2ccdfb9ec43749acbc8a2cf6}
+      \strng{bibnamehash}{9072a0a1c0dd2152a2977208bcc9aeaa}
+      \strng{authorbibnamehash}{9072a0a1c0dd2152a2977208bcc9aeaa}
+      \strng{authornamehash}{9072a0a1c0dd2152a2977208bcc9aeaa}
+      \strng{authorfullhash}{285d991c2ccdfb9ec43749acbc8a2cf6}
+      \strng{authorfullhashraw}{285d991c2ccdfb9ec43749acbc8a2cf6}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}
+      \field{month}{12}
+      \field{number}{10}
+      \field{title}{A Survey and Evaluation of {FPGA} High-Level Synthesis Tools}
+      \field{volume}{35}
+      \field{year}{2015}
+      \true{nocite}
+      \field{pages}{1591\bibrangedash 1604}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TCAD.2015.2513673
+      \endverb
+    \endentry
+    \entry{nelsonBoundaryScan}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=974711e215e0950b849a93c51a078dfa}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Victor\bibnamedelima P.},
+           giveni={V\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Auburn University}%
+      }
+      \strng{namehash}{974711e215e0950b849a93c51a078dfa}
+      \strng{fullhash}{974711e215e0950b849a93c51a078dfa}
+      \strng{fullhashraw}{974711e215e0950b849a93c51a078dfa}
+      \strng{bibnamehash}{974711e215e0950b849a93c51a078dfa}
+      \strng{authorbibnamehash}{974711e215e0950b849a93c51a078dfa}
+      \strng{authornamehash}{974711e215e0950b849a93c51a078dfa}
+      \strng{authorfullhash}{974711e215e0950b849a93c51a078dfa}
+      \strng{authorfullhashraw}{974711e215e0950b849a93c51a078dfa}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Testing and Boundary Scan}
+      \field{titleaddon}{{ELEC} 4200 Lecture Slides}
+      \verb{urlraw}
+      \verb http://www.eng.auburn.edu/~nelson/courses/elec4200/Slides/BoundaryScan.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.eng.auburn.edu/~nelson/courses/elec4200/Slides/BoundaryScan.pdf
+      \endverb
+    \endentry
+    \entry{J_note2008}{online}{}{}
+      \name{author}{2}{}{%
+        {{hash=e0603ec3b2222d0ab28b6cd5ce35acd8}{%
+           family={Note},
+           familyi={N\bibinitperiod},
+           given={Jean-Baptiste},
+           giveni={J\bibinithyphendelim B\bibinitperiod}}}%
+        {{hash=bc4b7f079a0850045c1bd3d67c6d0905}{%
+           family={Rannaud},
+           familyi={R\bibinitperiod},
+           given={Éric},
+           giveni={É\bibinitperiod}}}%
+      }
+      \strng{namehash}{6c1b7584d35a0ec9157e3af6a351625a}
+      \strng{fullhash}{6c1b7584d35a0ec9157e3af6a351625a}
+      \strng{fullhashraw}{6c1b7584d35a0ec9157e3af6a351625a}
+      \strng{bibnamehash}{6c1b7584d35a0ec9157e3af6a351625a}
+      \strng{authorbibnamehash}{6c1b7584d35a0ec9157e3af6a351625a}
+      \strng{authornamehash}{6c1b7584d35a0ec9157e3af6a351625a}
+      \strng{authorfullhash}{6c1b7584d35a0ec9157e3af6a351625a}
+      \strng{authorfullhashraw}{6c1b7584d35a0ec9157e3af6a351625a}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{From the bitstream to the netlist}
+      \field{urlday}{3}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.fabienm.eu/flf/wp-content/uploads/2014/11/Note2008.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.fabienm.eu/flf/wp-content/uploads/2014/11/Note2008.pdf
+      \endverb
+    \endentry
+    \entry{A_oliver2007}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=668a926055bf937669b358e55adf3522}{%
+           family={Oliver},
+           familyi={O\bibinitperiod},
+           given={Juan\bibnamedelima Pablo},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{668a926055bf937669b358e55adf3522}
+      \strng{fullhash}{668a926055bf937669b358e55adf3522}
+      \strng{fullhashraw}{668a926055bf937669b358e55adf3522}
+      \strng{bibnamehash}{668a926055bf937669b358e55adf3522}
+      \strng{authorbibnamehash}{668a926055bf937669b358e55adf3522}
+      \strng{authornamehash}{668a926055bf937669b358e55adf3522}
+      \strng{authorfullhash}{668a926055bf937669b358e55adf3522}
+      \strng{authorfullhashraw}{668a926055bf937669b358e55adf3522}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Universidad de la República, Montevideo, Uruguay}
+      \field{issn}{1510-7264}
+      \field{title}{{Diseño digital utilizando lógica programable: aplicaciones a la enseñanza}}
+      \field{year}{2007}
+      \verb{urlraw}
+      \verb https://www.fing.edu.uy/iie/publicaciones/2007/Oli07/Oli07.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.fing.edu.uy/iie/publicaciones/2007/Oli07/Oli07.pdf
+      \endverb
+    \endentry
+    \entry{proakis1996digital}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=5fe41cc224eb8b59f5bb9f1a7ba509f2}{%
+           family={Proakis},
+           familyi={P\bibinitperiod},
+           given={John\bibnamedelima G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=b2d1a3eaa951ee401f997794e76e4d75}{%
+           family={Manolakis},
+           familyi={M\bibinitperiod},
+           given={Dimitris\bibnamedelima G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall International}%
+      }
+      \strng{namehash}{a69d530665744d9d157ef023ff628abd}
+      \strng{fullhash}{a69d530665744d9d157ef023ff628abd}
+      \strng{fullhashraw}{a69d530665744d9d157ef023ff628abd}
+      \strng{bibnamehash}{a69d530665744d9d157ef023ff628abd}
+      \strng{authorbibnamehash}{a69d530665744d9d157ef023ff628abd}
+      \strng{authornamehash}{a69d530665744d9d157ef023ff628abd}
+      \strng{authorfullhash}{a69d530665744d9d157ef023ff628abd}
+      \strng{authorfullhashraw}{a69d530665744d9d157ef023ff628abd}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{isbn}{0-13-394338-9}
+      \field{title}{Digital Signal Processing: Principles, Algorithms, and Applications}
+      \field{year}{1996}
+    \endentry
+    \entry{saidi2020survey}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=c9be4934005cd7f3b8d731d2c2f7433d}{%
+           family={Saidi},
+           familyi={S\bibinitperiod},
+           given={Hajer},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{cc27ffa2ad67fa5c81ca541df1a18eef}
+      \strng{fullhash}{cc27ffa2ad67fa5c81ca541df1a18eef}
+      \strng{fullhashraw}{cc27ffa2ad67fa5c81ca541df1a18eef}
+      \strng{bibnamehash}{cc27ffa2ad67fa5c81ca541df1a18eef}
+      \strng{authorbibnamehash}{cc27ffa2ad67fa5c81ca541df1a18eef}
+      \strng{authornamehash}{cc27ffa2ad67fa5c81ca541df1a18eef}
+      \strng{authorfullhash}{cc27ffa2ad67fa5c81ca541df1a18eef}
+      \strng{authorfullhashraw}{cc27ffa2ad67fa5c81ca541df1a18eef}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IJCSNS International Journal of Computer Science and Network Security.}
+      \field{number}{8}
+      \field{title}{A Survey and Comparative Study of Embedded {FPGA} Architectures}
+      \field{volume}{20}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.22935/IJCSNS.2020.20.08.25
+      \endverb
+      \verb{urlraw}
+      \verb http://paper.ijcsns.org/07_book/202008/20200825.pdf
+      \endverb
+      \verb{url}
+      \verb http://paper.ijcsns.org/07_book/202008/20200825.pdf
+      \endverb
+    \endentry
+    \entry{D_schneider2026}{online}{}{}
+      \name{author}{2}{}{%
+        {{hash=3b5544c6fcb4ce92baf766c91f5d2508}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Josh},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d08dfe1fb1123075ed9c0b177fdef575}{%
+           family={Smalley},
+           familyi={S\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IBM}%
+      }
+      \strng{namehash}{ba994a13aac91be0c4dd164553fac81d}
+      \strng{fullhash}{ba994a13aac91be0c4dd164553fac81d}
+      \strng{fullhashraw}{ba994a13aac91be0c4dd164553fac81d}
+      \strng{bibnamehash}{ba994a13aac91be0c4dd164553fac81d}
+      \strng{authorbibnamehash}{ba994a13aac91be0c4dd164553fac81d}
+      \strng{authornamehash}{ba994a13aac91be0c4dd164553fac81d}
+      \strng{authorfullhash}{ba994a13aac91be0c4dd164553fac81d}
+      \strng{authorfullhashraw}{ba994a13aac91be0c4dd164553fac81d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{¿Qué es una matriz de puertas programables en campo (FPGA)?}}
+      \field{urlday}{3}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ibm.com/mx-es/think/topics/field-programmable-gate-arrays
+      \endverb
+      \verb{url}
+      \verb https://www.ibm.com/mx-es/think/topics/field-programmable-gate-arrays
+      \endverb
+    \endentry
+    \entry{shan2019fpga}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=41f4b12e9d9a3af048ff9823187c48a9}{%
+           family={Shan},
+           familyi={S\bibinitperiod},
+           given={Yizhou},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{41f4b12e9d9a3af048ff9823187c48a9}
+      \strng{fullhash}{41f4b12e9d9a3af048ff9823187c48a9}
+      \strng{fullhashraw}{41f4b12e9d9a3af048ff9823187c48a9}
+      \strng{bibnamehash}{41f4b12e9d9a3af048ff9823187c48a9}
+      \strng{authorbibnamehash}{41f4b12e9d9a3af048ff9823187c48a9}
+      \strng{authornamehash}{41f4b12e9d9a3af048ff9823187c48a9}
+      \strng{authorfullhash}{41f4b12e9d9a3af048ff9823187c48a9}
+      \strng{authorfullhashraw}{41f4b12e9d9a3af048ff9823187c48a9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{{FPGA} Bitstream Explained}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb http://lastweek.io/fpga/bitstream/
+      \endverb
+      \verb{url}
+      \verb http://lastweek.io/fpga/bitstream/
+      \endverb
+    \endentry
+    \entry{M_terasic2017}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=094b8b33f88e13d4fff21ac64beff828}{%
+           family={{Terasic}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{094b8b33f88e13d4fff21ac64beff828}
+      \strng{fullhash}{094b8b33f88e13d4fff21ac64beff828}
+      \strng{fullhashraw}{094b8b33f88e13d4fff21ac64beff828}
+      \strng{bibnamehash}{094b8b33f88e13d4fff21ac64beff828}
+      \strng{authorbibnamehash}{094b8b33f88e13d4fff21ac64beff828}
+      \strng{authornamehash}{094b8b33f88e13d4fff21ac64beff828}
+      \strng{authorfullhash}{094b8b33f88e13d4fff21ac64beff828}
+      \strng{authorfullhashraw}{094b8b33f88e13d4fff21ac64beff828}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{DE0-Nano-SoC User Manual}}
+      \field{urlday}{3}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=205&No=941&PartNo=4#soc
+      \endverb
+      \verb{url}
+      \verb https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=205&No=941&PartNo=4#soc
+      \endverb
+    \endentry
+    \entry{openlane}{software}{}{}
+      \name{author}{1}{}{%
+        {{hash=04726076e6d2ceff287b7f0b34e06c9b}{%
+           family={{The OpenROAD Project}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{04726076e6d2ceff287b7f0b34e06c9b}
+      \strng{fullhash}{04726076e6d2ceff287b7f0b34e06c9b}
+      \strng{fullhashraw}{04726076e6d2ceff287b7f0b34e06c9b}
+      \strng{bibnamehash}{04726076e6d2ceff287b7f0b34e06c9b}
+      \strng{authorbibnamehash}{04726076e6d2ceff287b7f0b34e06c9b}
+      \strng{authornamehash}{04726076e6d2ceff287b7f0b34e06c9b}
+      \strng{authorfullhash}{04726076e6d2ceff287b7f0b34e06c9b}
+      \strng{authorfullhashraw}{04726076e6d2ceff287b7f0b34e06c9b}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{GitHub repository}
+      \field{title}{{OpenLane}: An Automated {RTL} to {GDSII} Flow}
+      \field{year}{2026}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://github.com/The-OpenROAD-Project/OpenLane
+      \endverb
+      \verb{url}
+      \verb https://github.com/The-OpenROAD-Project/OpenLane
+      \endverb
+    \endentry
+    \entry{fabulous2024}{software}{}{}
+      \name{author}{1}{}{%
+        {{hash=2aae3313da331e06c487b8d7c59fa72f}{%
+           family={{TheFABulousProject Authors}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {University of Manchester}%
+      }
+      \strng{namehash}{2aae3313da331e06c487b8d7c59fa72f}
+      \strng{fullhash}{2aae3313da331e06c487b8d7c59fa72f}
+      \strng{fullhashraw}{2aae3313da331e06c487b8d7c59fa72f}
+      \strng{bibnamehash}{2aae3313da331e06c487b8d7c59fa72f}
+      \strng{authorbibnamehash}{2aae3313da331e06c487b8d7c59fa72f}
+      \strng{authornamehash}{2aae3313da331e06c487b8d7c59fa72f}
+      \strng{authorfullhash}{2aae3313da331e06c487b8d7c59fa72f}
+      \strng{authorfullhashraw}{2aae3313da331e06c487b8d7c59fa72f}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{FABulous}: Framework for Architecture Synthesis and Layout of Open User-customizable Scaffolding}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://fabulous.readthedocs.io/en/latest/
+      \endverb
+      \verb{url}
+      \verb https://fabulous.readthedocs.io/en/latest/
+      \endverb
+    \endentry
+    \entry{wolf2024yosys}{software}{}{}
+      \name{author}{1}{}{%
+        {{hash=9821515e489959e38f9fb03a469baf56}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Claire},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{9821515e489959e38f9fb03a469baf56}
+      \strng{fullhash}{9821515e489959e38f9fb03a469baf56}
+      \strng{fullhashraw}{9821515e489959e38f9fb03a469baf56}
+      \strng{bibnamehash}{9821515e489959e38f9fb03a469baf56}
+      \strng{authorbibnamehash}{9821515e489959e38f9fb03a469baf56}
+      \strng{authornamehash}{9821515e489959e38f9fb03a469baf56}
+      \strng{authorfullhash}{9821515e489959e38f9fb03a469baf56}
+      \strng{authorfullhashraw}{9821515e489959e38f9fb03a469baf56}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Yosys Open Synthesis Suite}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://yosyshq.net/yosys/
+      \endverb
+      \verb{url}
+      \verb https://yosyshq.net/yosys/
+      \endverb
+    \endentry
+    \entry{xjtagWhatIsJtag}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=f9558f5b9636b562ba29195281669a1f}{%
+           family={{XJTAG}},
+           familyi={X\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {XJTAG}%
+      }
+      \strng{namehash}{f9558f5b9636b562ba29195281669a1f}
+      \strng{fullhash}{f9558f5b9636b562ba29195281669a1f}
+      \strng{fullhashraw}{f9558f5b9636b562ba29195281669a1f}
+      \strng{bibnamehash}{f9558f5b9636b562ba29195281669a1f}
+      \strng{authorbibnamehash}{f9558f5b9636b562ba29195281669a1f}
+      \strng{authornamehash}{f9558f5b9636b562ba29195281669a1f}
+      \strng{authorfullhash}{f9558f5b9636b562ba29195281669a1f}
+      \strng{authorfullhashraw}{f9558f5b9636b562ba29195281669a1f}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Guía técnica en PDF}
+      \field{title}{eBook: ¿Qué es {JTAG}?}
+      \verb{urlraw}
+      \verb https://www.xjtag.com/wp-content/uploads/xjtag-ebook_what-is-jtag-es.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.xjtag.com/wp-content/uploads/xjtag-ebook_what-is-jtag-es.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

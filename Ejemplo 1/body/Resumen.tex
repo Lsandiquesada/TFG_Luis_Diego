@@ -1,0 +1,40 @@
+\chapter*{Resumen}
+\thispagestyle{empty}
+
+El presente proyecto de graduación implementa y caracteriza una arquitectura de lógica reconfigurable de hardware abierto sobre una FPGA comercial. La Universidad de Kiel desarrolla una FPGA propia para fines académicos y experimentales, y antes de llegar a silicio hace falta una metodología que permita evaluar su utilización de recursos, su temporización y su consumo de potencia. Este trabajo propone emular la arquitectura sobre la tarjeta DE0-Nano-SoC, que incorpora un Cyclone V.
+
+Se utilizó FABulous para generar tres arquitecturas de eFPGA que difieren en la cantidad de bloques DSP y en la altura del fabric. Cada una se describe en Verilog, se simula con Icarus Verilog y se instancia en Quartus junto con un controlador JTAG y una memoria de solo lectura que almacena el flujo de bits. Las arquitecturas originales excedieron los recursos del Cyclone V, por lo que se generaron versiones reducidas con la misma cantidad de azulejos LUT4AB. Su tamaño en Yosys fue de 10 014, 12 432 y 7 896 latches.
+
+Como circuitos de prueba se utilizan un filtro FIR pasa-bajos de tres etapas y un multiplicador de matrices de 2 × 2, ambos reducidos para caber en las mini arquitecturas. Su funcionamiento se valida en simulación mediante controles positivo y negativo, y en la tarjeta mediante conmutadores y LEDs. Sobre cada combinación de arquitectura y circuito se medirán la utilización de recursos, los parámetros de temporización y la potencia estimada con el Power Analyzer de Quartus.
+
+El alcance se limita a las tres mini arquitecturas y a los dos circuitos de prueba, y la potencia es una estimación y no una medición. Los resultados servirán como referencia metodológica para futuras etapas de diseño físico en la colaboración entre el Instituto Tecnológico de Costa Rica y la Universidad de Kiel.
+
+La emulación y evaluación experimental demostraron que las variaciones en los parámetros estructurales producen diferencias en el consumo de recursos de la FPGA y en su temporización, se identificó la arquitectura con doble DSP como la única en presentar una ligera violación de hold. De este modo se determinó que la arquitectura con mayor altura ofrece un balance superior al optimizar la utilización de bloques lógicos sin comprometer la estabilidad temporal, proporcionando así una valiosa referencia metodológica para futuros diseños físicos y su eventual fabricación en silicio.
+
+\vspace{0.1cm}
+\textbf{Palabras clave: } FPGA, LUTs, Matriz de conmutación, Validación, JTAG/TAP, Lógica Reconfigurable, Quartus.
+
+\clearpage
+\chapter*{Abstract}
+\thispagestyle{empty}
+
+This graduation project implements and characterizes an open-source reconfigurable logic architecture on a commercial FPGA. The University of Kiel is developing its own FPGA for academic and experimental purposes, and before moving to silicon a methodology is needed to evaluate its resource utilization, timing, and power consumption. This work proposes emulating the architecture on the DE0-Nano-SoC board, which incorporates a Cyclone V.
+
+FABulous was used to generate three eFPGA architectures that differ in the number of DSP blocks and in the height of the fabric. Each one is described in Verilog, simulated with Icarus Verilog, and instantiated in Quartus together with a JTAG controller and a read-only memory that stores the bitstream. The original architectures exceeded the resources of the Cyclone V, so reduced versions were generated with the same number of LUT4AB tiles. Their sizes in Yosys were 10,014, 12,432, and 7,896 latches.
+
+A three-stage low-pass FIR filter and a 2 × 2 matrix multiplier are used as test circuits, both reduced to fit in the mini architectures. Their operation is validated in simulation through positive and negative controls, and on the board through switches and LEDs. For each combination of architecture and circuit, resource utilization, timing parameters, and estimated power will be obtained with the Quartus Power Analyzer.
+
+The scope is limited to the three mini architectures and the two test circuits, and the power figure is an estimate rather than a measurement. The results will serve as a methodological reference for future physical design stages in the collaboration between the Instituto Tecnológico de Costa Rica and the University of Kiel.
+
+Emulation and experimental evaluation demonstrated that variations in structural parameters produce differences in FPGA resource consumption and timing, identifying the architecture with double DSP as the only one to exhibit a slight hold violation. Thus, it was determined that the architecture with greater height offers a superior balance by optimizing the utilization of logic blocks without compromising temporal stability, thereby providing a valuable methodological reference for future physical designs and their eventual fabrication in silicon.
+
+%\bigskip
+
+\textbf{Keywords:}  FPGA, LUTs, Switch Boxes, Validation, JTAG/TAP, Reconfigurable Logic, Quartus.
+
+%\cleardoublepage
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 

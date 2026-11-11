@@ -1,0 +1,403 @@
+%% ---------------------------------------------------------------------------
+%% intro.tex
+%%
+%% Introduction
+%%
+%% $Id: intro.tex 1477 2010-07-28 21:34:43Z palvarado $
+%% ---------------------------------------------------------------------------
+
+\chapter{Introducción}
+\label{chp:intro}
+
+La Christian-Albrechts-Universitat zu Kiel conocida como CAU o Universidad de Kiel,
+referente en investigación tecnológica en Alemania, ha iniciado una investigación para
+diseñar una arquitectura de FPGA propia. A diferencia de las soluciones comerciales de
+caja negra, este desarrollo busca ofrecer una plataforma competitiva para fines académicos
+y experimentales.
+El proyecto ha captado el interés de TSMC, el fabricante de semiconductores más grande
+del mundo, que ha manifestado su intención de apoyar al centro educativo mediante el
+acceso a nodos de fabricación avanzados. Esta sinergia se extiende a Centroamérica gracias
+a los lazos históricos de cooperación entre la Universidad de Kiel y el Instituto Tecnológico
+de Costa Rica, permitiendo una transferencia de conocimiento de alto nivel en el área de
+sistemas digitales complejos.
+La investigación se centra en el concepto de la caracterización de una FPGA embebida
+en lugar de la fabricación de un IC desde cero. Su desarrollo consta del diseño de una
+eFPGA en conjunto de un sistema para la inyección de flujo de bits para su correcta
+programación. La esencia del proyecto es hardware reconfigurable dentro de otro para
+su caracterización y desarrollo, la implementación de un filtro digital parametrizable y multiplicador de matrices se
+requieren para términos del comportamiento de la eFPGA, entre las métricas a estudiar
+se encuentra el consumo de potencia, las rutas críticas y la eficiencia de las tablas de
+consulta.
+
+\section{Planteamiento del problema}
+
+\subsection{Estado Actual}
+ Aunque existen arquitecturas de FPGA de desarrollo académico, los mismos no cuentan
+con la capacidad de la flexibilidad de una FPGA comercial debido a características como
+la cantidad de tablas de consulta, potencia y velocidad de procesamiento, por lo que su 
+desarrollo se ha quedado estancado en su propia academia. Las FPGAs comerciales
+requieren licencias para su uso además del elevado precio que significa la compra de
+suficientes para impartir un curso. Además, existe un interés de TSMC para su desarrollo,
+sin embargo, aún no se cuenta con un modelo caracterizado ni validado.
+
+\subsection{Definición del Problema}
+
+La dependencia de arquitecturas de hardware cerrado limita la capacidad de los centros
+de investigación para innovar en el diseño de semiconductores. En la colaboración CAU
+TEC, el problema radica en la falta de una metodología validada para caracterizar el
+rendimiento, área y consumo de una eFPGA. Sin una implementación previa en una
+FPGA física que actúe como entorno de prueba para aplicaciones como filtros digitales,
+no es posible asegurar que el diseño final sea competitivo para su futura fabricación con
+TSMC.
+
+\subsection{Justificación formal}
+
+La Universidad de Kiel ha identificado la necesidad de desarrollar una arquitectura 
+de FPGA propia para fines académicos y experimentales, buscando superar las barreras 
+económicas y de licenciamiento que imponen las soluciones comerciales de hardware cerrado. 
+Sin embargo, para que este desarrollo sea viable y competitivo frente a una futura 
+fabricación en silicio con nodos avanzados, es necesario validar previamente su diseño.
+
+Existe una carencia de documentación y metodologías validadas sobre 
+los compromisos entre parámetros estructurales clave en arquitecturas de hardware abierto. 
+Por lo tanto, la realización de este proyecto se justifica en la necesidad técnica de proveer 
+una prueba de concepto y una metodología de emulación física que permita caracterizar el 
+comportamiento de la unidad de lógica reconfigurable antes de su fabricación. Al determinar 
+los parámetros de funcionamiento como la eficiencia de área por conglomerado de tablas de 
+búsqueda, los retardos de temporización y el consumo de potencia, se mitigarán los riesgos 
+financieros y de diseño asociados a la impresión en silicio, lo cual dará mayor dirección al diseño 
+con respecto a los parámetros deseados.
+
+\section{Estructura del Documento}
+
+En el capítulo 2 se presenta un informe de la investigación del 
+estado del arte actual del problema, así como una descripción de las partes y 
+características del proyecto. Se profundiza en la arquitectura básica de una FPGA 
+y en el método para cargarle el bitstream.
+
+En el capítulo 3 se describe el proceso completo de diseño del proyecto, 
+desde la definición de los requisitos iniciales hasta la obtención del sistema final. 
+Se justifican las decisiones tomadas en cada etapa, así como las alternativas que se 
+valoraron y los motivos por los que fueron descartadas. Además, se documenta el flujo 
+de trabajo seguido, con las herramientas empleadas y los pasos realizados, de modo que 
+el desarrollo pueda ser comprendido y reproducido.
+
+%\setlength{\parskip}{2.5mm}
+%
+%En el \textbf{capítulo~\ref{ch:solucion}} se presenta las posible solución al problema 
+%donde analizamos las etapas a tomar en cuenta para la validación de una arquitectura de 
+%lógica reconfigurable, se describe además cada parte del proyecto y los resultados que 
+%se esperan.
+
+%\setlength{\parskip}{2.5mm}
+
+%En el \textbf{capítulo~\ref{ch:HyO}}  se expone la hipótesis planteada, además, se 
+%presenta el objetivo general para este trabajo, así como, los objetivos específicos 
+%del mismo. Se muestran metas por objetivo propuesto. Por último, 
+%se resaltan los alcances y limitaciones que presenta este trabajo.
+
+%\setlength{\parskip}{2.5mm}
+
+%En el \textbf{capítulo~\ref{ch:Experimento}} se presenta el posible experimento 
+%preliminar que detalla la estrategia del proyecto y el enfoque necesario prueba el 
+%sistema y el flujo de herramientas a través de un experimento bien diseñado y riguroso.
+
+%\setlength{\parskip}{2.5mm}
+
+%En el \textbf{capítulo~\ref{ch:Crono}}  se presentan las tareas necesarias a llevar a 
+%cabo a lo largo de este trabajo, así como el diagrama de Gantt para poder completar con las 
+%tareas propuestas.
+
+\setlength{\parskip}{2.5mm}
+
+\section{Hipótesis}
+     ``La variación de la cantidad de bloques DSP y de la altura del fabric en una 
+     eFPGA de hardware abierto, manteniendo constante la cantidad de azulejos LUT4AB, 
+     produce diferencias medibles en la utilización de recursos, los parámetros de 
+     temporización y la potencia estimada al implementar un filtro FIR y un multiplicador 
+     de matrices."
+
+\section{Objetivos}
+
+\subsection{General}
+            Evaluar el impacto de la variación de parámetros estructurales en el 
+            rendimiento, área y potencia de una arquitectura abierta de lógica 
+            reconfigurable a nivel de simulación y sintesis utilizando una 
+            FPGA comercial como plataforma de emulación física.
+\subsection{Específicos}
+	\begin{itemize}
+                \item Seleccionar una arquitectura de lógica reconfigurable de hardware 
+                abierto y su flujo de herramientas asociado, justificando la elección 
+                basándose en su nivel de parametrización, soporte de verificación funcional 
+                e historial de implementación física en otros proyectos.
+
+                \item Configurar la arquitectura seleccionada en una tarjeta 
+                FPGA, basándose en reportes de síntesis, ruteo y ejecución 
+                funcional, mediante el uso de al menos dos circuitos de prueba en dicha 
+                lógica programable.
+                             
+                \item Caracterizar el impacto de la variación de los parámetros 
+                estructurales disponibles en la arquitectura de lógica programable sobre 
+                la utilización de recursos, el consumo de potencia y el rendimiento a nivel 
+                de temporización.
+    \end{itemize}
+
+
+    \begin{table}[htbp]
+\small
+\begin{tabularx}{\textwidth}{|p{1.8cm}|X|X|X|}
+\hline
+\textbf{Etapas} & \textbf{Problemas} & \textbf{Hipótesis} & \textbf{Objetivo Específico} \\ \hline
+
+\textbf{Selección} & 
+Limitada capacidad de innovación debido a la dependencia de arquitecturas cerradas y la falta de criterios claros para elegir un flujo abierto parametrizable. & 
+La selección de una arquitectura abierta con alto nivel de parametrización e historial físico garantiza un flujo de verificación funcional confiable. & 
+Seleccionar una arquitectura de lógica reconfigurable de hardware abierto y su flujo de herramientas asociado, justificando la elección en su parametrización e historial. \\ \hline
+
+\textbf{Emulación} & 
+Incertidumbre sobre la competitividad del diseño final ante la falta de una plataforma de emulación física previa para circuitos de prueba. & 
+La instanciación de la eFPGA en una tarjeta física comercial permite comprobar su viabilidad funcional ejecutando circuitos de prueba como filtros digitales o multiplicadores. & 
+Configurar e instanciar la arquitectura seleccionada en una tarjeta FPGA comercial, caracterizarla funcionalmente e implementar al menos dos circuitos de prueba. \\ \hline
+
+\textbf{Métricas} & 
+Carencia de documentación y metodologías validadas sobre cómo afectan los parámetros estructurales los compromisos de área, retardo y potencia. & 
+La variación de la cantidad de bloques DSP y de la altura del fabric produce diferencias medibles en la utilización de recursos, la temporización y la potencia estimada. & 
+Caracterizar el impacto de la variación de los parámetros estructurales disponibles sobre la utilización de recursos, el consumo de potencia y el rendimiento temporal. \\ \hline
+\end{tabularx}
+\caption{Matriz de trazabilidad del proyecto.}
+\label{tab:matriz_trazabilidad}
+\end{table}
+ 
+\section{Lista de Tareas por Objetivo}
+
+\textbf{\normalsize{Objetivo Específico 1}}
+
+Este objetivo se centra en la investigación de la arquitectura de 
+lógica reconfigurable y el flujo de herramientas para su implementación, 
+considerando la el soporte para su parametrización, verificación 
+funcional e historial de implementación física.
+
+\begin{enumerate}
+
+    \item Investigar y recopilar información sobre las distintas 
+    arquitecturas de lógica reconfigurable de hardware abierto 
+    disponibles.
+     
+    \item Evaluar la flexibilidad y el nivel de parametrización 
+    estructural que ofrece cada arquitectura preseleccionada.
+    
+    \item Analizar la madurez del flujo de herramientas asociado, 
+    comprobando la compatibilidad y el soporte para la verificación 
+    funcional.
+
+    \item Revisar el historial de implementación física en silicio 
+    de las opciones evaluadas para constatar su viabilidad y 
+    confiabilidad en proyectos previos. 
+
+    \item Seleccionar la arquitectura definitiva y justificar técnicamente 
+    la elección, basada en el cumplimiento de los criterios previamente 
+    analizados.
+
+\end{enumerate}
+
+Las tareas descritas justifican el uso de la arquitectura en las próximas 
+etapas y su implementación en la FPGA.
+
+\textbf{\normalsize{Objetivo Específico 2}}
+
+El segundo objetivo se centra en la configuración de la arquitectura 
+seleccionada mediante JTAG y la caracterización basada en reportes 
+desplegados por las herramientas seleccionadas en la etapa anterior, 
+además de la implementación de dos circuitos de prueba.
+
+\begin{enumerate}
+
+    \item Ajustar los módulos de la arquitectura seleccionada para asegurar 
+    su compatibilidad con la herramienta de síntesis de la FPGA objetivo.
+    
+    \item Integrar la arquitectura en el proyecto principal de la herramienta de desarrollo.
+    
+    \item Correr el proceso de síntesis y extraer los reportes de la cantidad de LUTs, 
+    flip-flops y bloques de memoria requeridos.
+
+    \item Ejecutar la implementación en la FPGA y compilar los reportes de tiempos 
+     de setup y hold, consumo de potencia estimado y congestión de ruteo.
+
+    \item Generar el bitstream necesario para configurar la FPGA física.
+    
+    \item Seleccionar dos circuitos que estresen diferentes aspectos de la lógica programable.
+    
+    \item Codificar ambos circuitos independientemente.
+    
+    \item Escribir los testbenches correspondientes y simular el comportamiento 
+    de los circuitos de prueba para asegurar su corrección funcional antes de la 
+    implementación física.
+
+    \item Compilar y cargar el primer y segundo circuito de prueba sobre la 
+    arquitectura de lógica programable ya instanciada.
+
+    \item Estimular las entradas en el hardware real, capturar las salidas y contrastar la 
+    ejecución funcional contra los resultados obtenidos en las simulaciones
+
+\end{enumerate}
+
+Estas tareas permiten validar la arquitectura seleccionada y dan información benéfica para 
+el desarrollo de la caracterización de la arquitectura seleccionada.
+
+\textbf{\normalsize{Objetivo Específico 3}}
+
+El tercer objetivo da base a la caracterizacion de la arquitecura de lógica programable 
+seleccionada según la utilización de recursos.
+
+\begin{enumerate}
+
+    \item Identificar cuáles variables de la arquitectura de la arquitectura lógica 
+    programable serán modificables.
+
+    \item Definir un conjunto discreto de valores para cada parámetro seleccionado y 
+    limitar las combinaciones posibles a un número manejable y representativo.
+    
+    \item Recopilar la cantidad de bloques lógicos básicos utilizados y la estimación de 
+    área equivalente de silicio.
+
+    \item Extraer del Análisis de Temporización Estática y el retardo de la ruta crítica.
+
+    \item Compilar las estimaciones de consumo de potencia dinámica y estática reportadas 
+    tras el ruteo.
+
+    \item Procesar los datos consolidados para graficar el comportamiento de las métricas 
+    frente a la variación de cada parámetro.
+
+    \item Analizar los puntos donde la mejora de una métrica perjudica a otra (Trade-off).
+    
+    \item Concluir cuáles son las configuraciones de parámetros estructurales que ofrecen 
+    el mejor balance técnico para los casos de uso proyectados.
+
+\end{enumerate}
+
+
+\section{Alcances y Limitaciones del Proyecto}
+
+En la sección de limitaciones se exponen los desafíos y restricciones propios de la 
+naturaleza del proyecto. Si bien estas condiciones pueden representar obstáculos, 
+al mismo tiempo delimitan el alcance del trabajo y establecen un marco de referencia 
+realista para su ejecución. A continuación, se detallan las principales limitaciones 
+identificadas:
+
+\begin{itemize}
+
+    \item La ejecución de los experimentos se llevará a cabo con la FPGA 
+    disponible durante la evaluación del proyecto. Esta limitación en los recursos 
+    físicos para la realización de pruebas podría restringir tanto la diversidad de 
+    los escenarios evaluados como la naturaleza de los datos susceptibles de recolección.
+
+    \item Al instanciar una arquitectura de lógica programable sobre una FPGA comercial, 
+    el área, la potencia y el retardo de temporización estarán limitados por la arquitectura 
+    de la FPGA anfitriona.
+
+    \item La configuración óptima identificada estará restringida a las características 
+    de los circuitos seleccionados y podría no ser generalizable a todas las aplicaciones 
+    digitales.
+
+    \item No se realizará una exploración exhaustiva de todo el espacio de diseño, por lo 
+    que la configuración óptima que maximiza el rendimiento corresponderá únicamente a un 
+    óptimo dentro del subconjunto explorado.
+
+    \item Las métricas de consumo de potencia se extraerán a partir de reportes generados 
+    por herramientas de síntesis y ruteo, no mediante mediciones físicas directas sobre 
+    la arquitectura implementada por lo tanto se introduce un margen de error inherente a 
+    los modelos matemáticos y estimaciones.
+
+
+
+\end{itemize}
+
+El alcance de este trabajo de graduación se limita a la etapa de diseño conceptual, 
+caracterización y validación metodológica de tres arquitecturas de lógica reconfigurable 
+propuestas. El objetivo principal no es la entrega de un dispositivo físico final, sino 
+la obtención de un marco de evaluación cuantitativo que permita determinar la viabilidad 
+técnica y los trade-offs de rendimiento de diversas configuraciones de lógica reconfigurable.
+
+En este sentido, la investigación se limita a la fase de simulación y síntesis lógica mediante 
+el uso de herramientas de código abierto como Yosys y FABulous, sin embargo, para la programación
+de la FPGA, se utilizará Quartus® al igual que para la obtencion del consumo de potencia. El proyecto culminará con la 
+entrega de los resultados experimentales de área, retardo y consumo de potencia, los cuales 
+son derivados de la implementación de los benchmarks seleccionados. Por tanto, este trabajo 
+constituye una prueba de concepto fundamental que sienta las bases técnicas y metodológicas 
+para que en etapas posteriores, los resultados sirvan como guía y referencia para el diseño 
+físico definitivo y la eventual fabricación en silicio de la arquitectura analizada. De esta 
+manera, el alcance del presente estudio se centra exclusivamente en la caracterización teórica 
+y la optimización de los parámetros de diseño, proporcionando la dirección necesaria para el 
+desarrollo de futuras implementaciones en nodos avanzados de fabricación.
+
+\section{Solución Propuesta}
+
+
+Este proyecto propone el desarrollo de una metodología de emulación física y caracterización para 
+superar las limitaciones del hardware cerrado y disminuir los riesgos de la fabricación en 
+silicio sin el previo modelado del sistema necesario. 
+Para esto, se proponen cuatro etapas para la solución.
+
+\subsection{Primera Etapa}
+
+La primera etapa de la solución propuesta para el proyecto se enfoca en la selección de 
+una arquitectura de lógica reconfigurable de código abierto parametrizable, y su 
+implementación mediante un banco de pruebas para comprobar su funcionamiento correcto. De 
+esta manera se reduce la dependencia del flujo de herramientas de un fabricante específico 
+y se asegura la portabilidad del proyecto a diferentes plataformas, al igual que se promueve 
+la continuidad del proyecto en el caso de querer profundizar en el futuro.
+
+\subsection{Segunda Etapa}
+
+La segunda parte de la solución propuesta para el proyecto se centra en la instanciación de 
+la arquitectura de lógica reconfigurable seleccionada en la primera etapa sobre una FPGA 
+comercial en Quartus®. Mediante esta etapa se busca un medio para extraer en próximas etapas las métricas 
+de rendimiento y uso de recursos como el uso de los recursos, el consumo de potencia y los 
+retardos de las rutas críticas.
+
+\subsection{Tercera Etapa}
+
+La tercera fase de la solución propuesta para el proyecto busca implementar dos circuitos 
+digitales que estresen la arquitectura de lógica reconfigurable seleccionada en la primera 
+etapa de maneras diferentes. Para esto se propone la implementación de un filtro digital 
+de orden bajo y un multiplicador de matrices. De esta manera se busca obtener métricas de 
+rendimiento para su comparación y se garantiza la funcionalidad del flujo de síntesis y 
+ruteo de la arquitectura de lógica reconfigurable seleccionada.
+
+\subsection{Cuarta Etapa}
+
+La cuarta etapa de la solución propuesta para el proyecto tiene como objetivo la consolidación 
+de los datos obtenidos en la tercera etapa observando cómo las métricas de rendimiento se 
+compensan entre sí, para determinar si la arquitectura de lógica reconfigurable seleccionada 
+es adecuada para su uso en aplicaciones de alto rendimiento o si es necesario realizar 
+modificaciones según la aplicación en la que se utilice. Esta etapa se enfoca en la 
+interpretación de los datos y cómo su análisis puede guiar el diseño de futuras arquitecturas 
+de lógica reconfigurable para su impresión en silicio.
+
+De esta manera se establece que para validar la viabilidad y el rendimiento de la arquitectura 
+eFPGA propuesta, se definió el marco experimental que permite la caracterización del diseño bajo 
+condiciones controladas. Se fundamenta en la evaluación comparativa de tres arquitecturas de 
+lógica reconfigurable distintas, las cuales varían en sus parámetros estructurales, como las dimensiones de la arquitectura y la cantidad de bloques DSP. Las configuraciones serán 
+sometidas a pruebas mediante la implementación de dos circuitos de referencia que actuarán 
+como criterios de evaluación, un multiplicador de matrices, seleccionado por su alta 
+exigencia de recursos aritméticos y capacidad para estresar la estructura de interconexión, 
+y un filtro digital, empleado para evaluar el comportamiento de la arquitectura en tareas de 
+procesamiento de señales y latencia de procesamiento secuencial.
+
+La cuantificación del impacto de cada configuración se realizará mediante figuras de mérito 
+que permitan un análisis objetivo. Se medirá el área mediante el conteo de recursos lógicos equivalentes tras la síntesis, en segundo lugar, se 
+determinará parametros de temporización para establecer la frecuencia 
+máxima de operación del sistema, y se calculará el consumo de potencia en miliwatts, 
+incluyendo la estimación de potencia.
+
+El éxito de la solución propuesta se determinará mediante la implementación exitosa de los 
+benchmarks sobre cada una de las tres arquitecturas. El criterio de evaluación principal 
+consiste en el análisis comparativo de las métricas obtenidas para cada combinación de 
+arquitectura y diseño de prueba. De esta manera, se busca determinar cómo varían el uso del 
+recursos, la temporización y el consumo energético en función de la estructura de lógica reconfigurable, 
+estableciendo así un balance óptimo que demuestre la funcionalidad y eficiencia del diseño 
+antes de su proyección a fabricación en silicio.
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 

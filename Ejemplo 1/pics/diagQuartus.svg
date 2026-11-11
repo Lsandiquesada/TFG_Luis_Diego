@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="186.9613mm"
+   height="13.375972mm"
+   viewBox="0 0 706.62542 50.554855"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <rect
+       x="157.54662"
+       y="128.66309"
+       width="168.2675"
+       height="26.444881"
+       id="rect2" />
+    <rect
+       x="157.54662"
+       y="128.66309"
+       width="164.7675"
+       height="24.944881"
+       id="rect2-4" />
+    <rect
+       x="157.54662"
+       y="128.66309"
+       width="164.7675"
+       height="24.944881"
+       id="rect2-1" />
+    <rect
+       x="157.54662"
+       y="128.66309"
+       width="164.7675"
+       height="24.944881"
+       id="rect2-4-2" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-7.5466235,-128.65443)">
+    <rect
+       style="fill:#2f0093;fill-opacity:0.44856;stroke-width:0.460212"
+       id="rect1"
+       width="166.73683"
+       height="50.546207"
+       x="7.5466232"
+       y="128.66307" />
+    <text
+       xml:space="preserve"
+       id="text1"
+       style="font-size:17.3333px;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);fill:#f7f7f7;fill-opacity:0.794239"
+       x="41.293694"
+       y="0"
+       transform="translate(-150,14)"><tspan
+         x="163.9051"
+         y="144.47776"
+         id="tspan2">Sintesis y Analisis</tspan></text>
+    <rect
+       style="fill:#178260;fill-opacity:0.5;stroke-width:0.460212"
+       id="rect1-4"
+       width="166.73683"
+       height="50.546207"
+       x="368.70099"
+       y="128.65747" />
+    <text
+       xml:space="preserve"
+       id="text1-5"
+       style="font-size:16px;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2-4);fill:#f7f7f7;fill-opacity:0.794239"
+       x="41.293694"
+       y="0"
+       transform="translate(211.15437,13.994405)"><tspan
+         x="165.77051"
+         y="143.26135"
+         id="tspan3">Revisión Funcional</tspan></text>
+    <rect
+       style="fill:#b48020;fill-opacity:0.5;stroke-width:0.460212"
+       id="rect1-42"
+       width="166.73683"
+       height="50.546207"
+       x="187.9696"
+       y="128.66228" />
+    <text
+       xml:space="preserve"
+       id="text1-3"
+       style="font-size:16px;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2-1);fill:#f7f7f7;fill-opacity:0.794239"
+       x="41.293694"
+       y="0"
+       transform="translate(30.423,13.999201)"><tspan
+         x="204.11426"
+         y="143.26135"
+         id="tspan5">Compilar</tspan></text>
+    <rect
+       style="fill:#7f1782;fill-opacity:0.5;stroke-width:0.460212"
+       id="rect1-4-2"
+       width="166.73683"
+       height="50.546207"
+       x="547.43518"
+       y="128.65442" />
+    <text
+       xml:space="preserve"
+       id="text1-5-1"
+       style="font-size:16px;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2-4-2);fill:#f7f7f7;fill-opacity:0.794239"
+       x="41.293694"
+       y="0"
+       transform="translate(391.88856,13.991312)"><tspan
+         x="160.30957"
+         y="143.26135"
+         id="tspan7">Analisis de potencia</tspan></text>
+    <path
+       style="fill:#000000;fill-opacity:1"
+       id="path19"
+       d="m 46.669048,209.30362 -1.530931,-2.65165 -1.530931,-2.65166 3.061862,0 3.061862,0 -1.530931,2.65166 z"
+       transform="rotate(-90.351758,90.24355,110.98448)" />
+    <path
+       style="fill:#000000;fill-opacity:1"
+       id="path19-33"
+       d="m 46.669048,209.30362 -1.530931,-2.65165 -1.530931,-2.65166 3.061862,0 3.061862,0 -1.530931,2.65166 z"
+       transform="rotate(-90.351758,180.59037,21.140626)" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 174.28345,153.93581 13.68615,-6e-5"
+       id="path20" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 354.70644,153.93316 13.99455,-3.7e-4"
+       id="path21" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 535.43782,153.92915 11.99736,-2e-4"
+       id="path22" />
+    <path
+       style="fill:#000000;fill-opacity:1"
+       id="path19-1"
+       d="m 46.669048,209.30362 -1.530931,-2.65165 -1.530931,-2.65166 3.061862,0 3.061862,0 -1.530931,2.65166 z"
+       transform="rotate(-90.351758,270.00016,-67.723443)" />
+  </g>
+</svg>

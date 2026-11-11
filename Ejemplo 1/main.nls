@@ -1,0 +1,34 @@
+
+\begin{thenomenclature} 
+\nomgroup{A}
+  \item [{AC}]\begingroup Alternating Current\nomeqref {0}\nompageref{1}
+  \item [{ALU}]\begingroup Unidad Aritmético-Lógica\nomeqref {0}\nompageref{1}
+  \item [{ASIC}]\begingroup Application-Specific Integrated Circuit\nomeqref {0}\nompageref{1}
+  \item [{AVX-512}]\begingroup Advanced Vector Extensions 512\nomeqref {0}\nompageref{1}
+  \item [{CMOS}]\begingroup Complementary Metal-Oxide-Semiconductor\nomeqref {0}\nompageref{1}
+  \item [{CPU}]\begingroup Central Processing Unit\nomeqref {0}\nompageref{1}
+  \item [{DC}]\begingroup Direct Current\nomeqref {0}\nompageref{1}
+  \item [{DTD}]\begingroup Debug and Test Development\nomeqref {0}\nompageref{1}
+  \item [{EDA}]\begingroup Electronic Design Automation\nomeqref {0}\nompageref{1}
+  \item [{GHz}]\begingroup Gigahertz\nomeqref {0}\nompageref{1}
+  \item [{HPC}]\begingroup High-Performance Computing\nomeqref {0}\nompageref{1}
+  \item [{L1}]\begingroup Caché de Nivel 1\nomeqref {0}\nompageref{1}
+  \item [{L2}]\begingroup Caché de Nivel 2\nomeqref {0}\nompageref{1}
+  \item [{L3}]\begingroup Caché de Nivel 3\nomeqref {0}\nompageref{1}
+  \item [{MHz}]\begingroup Megahertz\nomeqref {0}\nompageref{1}
+  \item [{MOSFET}]\begingroup Metal-Oxide-Semiconductor Field-Effect Transistor\nomeqref {0}\nompageref{1}
+  \item [{PPV}]\begingroup Product Platform Validation\nomeqref {0}\nompageref{1}
+  \item [{PVT}]\begingroup Process, Voltage, Temperature\nomeqref {0}\nompageref{1}
+  \item [{QPI}]\begingroup QuickPath Interconnect\nomeqref {0}\nompageref{1}
+  \item [{RTL}]\begingroup Register-Transfer Level\nomeqref {0}\nompageref{1}
+  \item [{SoC}]\begingroup System on Chip\nomeqref {0}\nompageref{1}
+  \item [{TDP}]\begingroup Thermal Design Power\nomeqref {0}\nompageref{1}
+  \item [{TP}]\begingroup Test Program\nomeqref {0}\nompageref{1}
+  \item [{UPI}]\begingroup Ultra Path Interconnect\nomeqref {0}\nompageref{1}
+  \item [{Vdd}]\begingroup Voltage Drain Drain\nomeqref {0}\nompageref{1}
+  \item [{VLSI}]\begingroup Very-Large-Scale Integration\nomeqref {0}\nompageref{1}
+  \item [{VT-d}]\begingroup Virtualization Technology for Directed I/O\nomeqref {0}\nompageref{1}
+  \item [{VT-x}]\begingroup Virtualization Technology\nomeqref {0}\nompageref{1}
+  \item [{VTC}]\begingroup Voltage Transfer Characteristic\nomeqref {0}\nompageref{1}
+
+\end{thenomenclature}

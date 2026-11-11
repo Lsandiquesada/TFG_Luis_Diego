@@ -1,0 +1,549 @@
+\chapter{Marco teórico}
+\label{ch:marco}
+
+
+\section{Design for Testability (DFT)}
+
+El diseño para pruebas o el diseño para la función de prueba (DFT) consta de técnicas de diseño de circuitos integrados que añaden propiedades de capacidad de prueba al diseño de un producto de hardware. Las funcionalidades añadidas facilitan el desarrollo y la aplicación de pruebas de fabricación  al hardware diseñado. El objetivo de las pruebas de fabricación  es validar que el hardware del producto no contenga deficiencias de fabricación  que logren dañar de manera negativa el conveniente manejo del producto.\cite{dft}\par
+
+ Las pruebas se usan en diversos pasos del flujo de fabricación  del hardware y, para determinados productos, además tienen la posibilidad de usar para el mantenimiento del hardware en el ámbito del comprador. Las pruebas principalmente son impulsadas por programas de prueba que se ejecutan usando conjuntos de prueba automáticos (ATE) o, en el caso del mantenimiento del sistema, dentro del propio sistema ensamblado. Además de descubrir e indicar la existencia de deficiencias (es mencionar, la prueba falla), las pruebas tienen la posibilidad de registrar información de diagnóstico sobre la naturaleza de las fallas de prueba encontradas. La información de diagnóstico se puede usar para ubicar los principios de la fracasa.\cite{803123}\par
+
+ En otros términos, la contestación de los vectores (patrones) de un óptimo circuito es comparable con la contestación de los vectores (usando los mismos patrones) de un DUT (dispositivo bajo prueba). Si la contestación es la misma o coincide, el circuito está bien. De lo opuesto, el circuito no se fabrica como estaba previsto.\par
+
+ DFT juega un papel fundamental en el desarrollo de programas de prueba y como interfaz para la aplicación de pruebas y diagnósticos. La generación automática de patrones de prueba, o ATPG, es muchísimo más simple si se han implementado las normas y recomendaciones de DFT idóneas. \par
+
+\section{Proceso de pruebas de circuitos integrados}
+%dejar bien marcadoas la diferencia entre el proceso de sort y el de class y definir bien estos conceptos
+
+Las pruebas de semiconductores se clasifican como pruebas a nivel de oblea o die y pruebas a nivel de paquete. Las pruebas a nivel de obleas reducen significativamente el costo total de las pruebas porque detectan los chips de obleas defectuosos antes de empaquetarlos.\par
+
+\subsection{Pruebas a nivel de die}
+Las pruebas a nivel de die se han convertido en un proceso importante con el aumento de la integración de dispositivos. Para probar el circuito integrado (IC) a nivel de oblea, una tarjeta de sonda contacta directamente con las almohadillas de la oblea y actúa como una interfaz entre el IC a nivel de oblea y el equipo de prueba automático (ATE). \cite{7103610} \par
+La tarjeta de sonda es un dispositivo esencial para la prueba de nivel de obleas y se desarrolla gradualmente de acuerdo con las tendencias de la industria y del dispositivo. \par
+Los sistemas generales de prueba a nivel de obleas se ilustran en la Figura \ref{fig: Figura1}. \par
+ 	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{fig/tester_wafer.png}
+		\label{fig: Figura1}
+		\caption{Visualización general de las pruebas a nivel de oblea.\cite{7103610}}
+    \end{figure}
+ Una vez los cables de la cabeza del tester hacen contacto en puntos específicos en la parte superior de la oblea y se realiza una prueba eléctrica. Los patrones de prueba se introducen en cada chip y la respuesta del chip se monitorea y compara con "la respuesta correcta". \cite{makinfofchip}\par 
+ 
+  	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{fig/die testing.png}
+		\label{fig: Figura2}
+		\caption{Contacto del tester con la oblea \cite{makinfofchip}}
+    \end{figure}
+ 
+ \subsection{Proceso de empaquetado}
+ 
+ Después de someter a pruebas cada uno de los die individuales en las obleas, se procede a cortar la oblea y los die que hayan respondido de forma correcta a los patrones de prueba son los que se procederán a empaquetar. \cite{4511721}\par
+
+
+  	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{fig/die individual.png}
+		\label{fig: Figura3}
+		\caption{Die individual\cite{makinfofchip}}
+    \end{figure}
+    
+En la figura \ref{fig: Figura3} se puede apreciar un die individual que ha sido cortado en la fase previa, el cual logró pasar exitosamente las pruebas realizadas a nivel de oblea.\par
+
+  	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{fig/empaquetado.png\cite{makinfofchip}}
+		\label{fig: Figura4}
+		\caption{Empaquetado}
+    \end{figure}
+    
+El sustrato del paquete, la matriz y el disipador de calor se juntan para formar un procesador completo. Como se observa en la figura \ref{fig: Figura4} el sustrato verde construye la interfaz eléctrica y mecánica para que el procesador interactúe con el resto del sistema de la PC. El disipador de calor plateado es una interfaz térmica que ayuda a disipar el calor. \cite{1522482}\par
+    
+    \begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{fig/procesador.png}
+		\label{fig: Figura5}
+		\caption{Procesador\cite{makinfofchip}}
+    \end{figure}
+    
+Finalmente en la figura \ref{fig: Figura5} se tiene un procesador completo. Un microprocesador es el producto fabricado más complejo del mundo. De hecho, se necesitan cientos de pasos, en el entorno más limpio del mundo (una fábrica de microprocesadores) para fabricar microprocesadores.\par
+
+\subsection{Pruebas a nivel de empaquetado}
+Con el empaque completo, cada chip debe pasar por una serie de pruebas finales para determinar si se dañaron más chips durante el empaquetado así como para medir el rendimiento de cada dispositivo.\par
+
+Los circuitos integrados se prueban en función de su uso esperado; por lo tanto, un chip que se va a utilizar en un entorno de alta temperatura tendría pruebas en las líneas de sondeo de una muestra después de que se exponga a temperaturas elevadas durante un período de tiempo. Luego, los chips IC se sellan en bolsas de plástico antiestáticas y se envían para su almacenamiento o envío al comprador.\cite{makinfofchip}\par
+
+    \begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{fig/class testing.png}
+		\label{fig: Figura6}
+		\caption{Pruebas a nivel de empaquetado\cite{makinfofchip}}
+    \end{figure}
+    
+Como se aprecia en la figura \ref{fig: Figura6} durante esta etapa final, los procesadores serán probados por sus características clave. Entre las características probadas están:
+\begin{itemize}
+    \item La disipación de potencia 
+    \item La frecuencia máxima)
+\end{itemize}
+
+    \begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{fig/binning.png}
+		\label{fig: Figura7}
+		\caption{Agrupamiento de los procesadores\cite{makinfofchip}}
+    \end{figure}
+
+Por otro lado, según el resultado de la prueba a nivel de empaquetado, los procesadores con capacidades iguales se agrupan en bandejas, listos para enviar a los clientes, tal como se observa en la figura \ref{fig: Figura7}.\par
+
+    \begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{fig/retail.png}
+		\label{fig: Figura8}
+		\caption{Paquete al por menor\cite{makinfofchip}}
+    \end{figure}
+
+Finalmente, los procesadores fabricados y probados van a a las tiendas minoristas en una caja como la que se muestra en la figura \ref{fig: Figura8}.
+
+
+
+
+\section{Análisis de datos y Conceptos Estadísticos }
+
+El análisis de datos es la ciencia que se ocupa de examinar  un grupo de datos destinados a sacar conclusiones sobre la información para lograr tomar decisiones, o sencillamente expandir los conocimientos sobre varios temas.\par 
+
+El análisis de datos se basa en controlar los datos a la ejecución de operaciones, esto se hace con el objetivo de obtener conclusiones exactas que nos ayudarán a conseguir nuestros propios fines, dichas operaciones no tienen la posibilidad de definirse antes debido a que la  recolección de datos puede revelar ciertas problemas.\par
+ 
+ En la actualidad, muchas industrias utilizan el análisis de datos para sacar conclusiones y dictaminar actividades a llevar a cabo. \par
+ 
+ \subsection{Distribuciones}
+ Una distribución estadística, o distribución de probabilidad, es un patrón de variación que describe cómo se distribuyen los valores de un conjunto de datos. Estas pueden ser descritas por centro, forma y dispersión.\par
+ 
+El centro de la distribución puede indicarnos los valores típicos, los cuales generalmente son medidos con la mediana o la media. Por otro lado, la forma nos puede indicar si la distribución es uniforme, o tiene alguna tendencia a ciertos valores o presenta valores atípicos. Asimismo, la dispersión puede indicarnos cuanto seria la variación esperada mediante el rango o la desviación estándar. \cite{Walpole_Myers_Myers_Ye_2013}\par
+    
+Principalmente se puede mencionar que existen dos tipos de distribuciones:
+
+\begin{itemize}
+    \item \textbf{Distribución Simétrica:}  es  una distribución en la que los lados izquierdo y derecho se reflejan entre sí, también conocida como una distribución normal, la cual tiene forma de una campana gaussiana. Estadísticamente hablando la distribución simétrica se caracteriza porque la media, la mediana y la moda es el mismo valor.\cite{Walpole_Myers_Myers_Ye_2013} \par
+    
+    \begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{fig/distribucion simetrica.png}
+		\label{fig: Figura8}
+		\caption{Distribución Simétrica}
+    \end{figure}
+    
+    
+    \item \textbf{Distribución Asimétrica:} es lo puesto a la distribución simétrica, en este caso puede presentar una forma más inclinada hacia la izquierda hablamos de asimetría positiva; y si es más hacia la derecha, de asimetría negativa. \cite{Walpole_Myers_Myers_Ye_2013} \par
+    
+\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{fig/distribucion asimetrica.png}
+		\label{fig: Figura8}
+		\caption{Distribución Asimétrica}
+    \end{figure}
+\end{itemize}
+
+ \subsection{Moda, Media y mediana}
+ La media, mediana y moda hacen parte  de las Medidas de Tendencia Central (MTC), usadas en estadística para identificar cuáles son las tendencias en un conjunto de datos  o hacia dónde se inclina o agrupa más la información. \cite{Montgomery_Runger_2020}\par
+ Gracias a estas medidas, también se pueden proyectar límites o valores hacia los que tiende a inclinarse la variable que estás analizando. \par
+ 
+\begin{itemize}
+    \item \textbf{Moda:}  Es el valor que más se repite en un conjunto de datos, o el valor de mayor ocurrencia. Por otro lado, la modalidad es el número de picos en un conjunto de datos.\par
+    
+    
+    \item \textbf{Media:} Es el valor promedio del grupo datos, es decir, la cifra que se obtiene al sumar todos los datos y dividir el resultado entre la cantidad de los mismos.  \par
+
+    \item \textbf{Mediana:} La mediana es el valor central de un conjunto de datos, es decir, el valor que se encuentra justa a la mitad de un conjunto de datos ordenados ya sea mayor a menor o viceversa.\par
+
+\end{itemize}
+
+        \begin{figure}[H]
+    		\centering
+    		\includegraphics[scale=0.75]{fig/modamedia.png}
+    		\label{fig: Figura8}
+    		\caption{Diferencia entre moda, media y mediana}
+        \end{figure}
+        
+\subsubsection{Valores atípicos}\par
+Otro concepto importante a aclarar son los valores atípicos, también llamados outliers, son observaciones que distan mucho del resto de conjunto de datos. Es decir, un valor atípico es valor anormal y que es extremadamente diferente al resto de valores de la muestra. \cite{Montgomery_Runger_2020}\par
+
+Es importante identificar los valores atípicos (u outliers) de una muestra, ya que estos pueden afectar considerablemente al cálculo de las medidas estadísticas.\par
+
+        \begin{figure}[H]
+    		\centering
+    		\includegraphics[scale=0.75]{fig/outliers.png}
+    		\label{fig: Figura8}
+    		\caption{Distribución con valores atípicos}
+        \end{figure}
+ 
+\subsection{Varianza y desviación estándar}
+La varianza y la desviación estándar indican si los valores se encuentran más o menos próximos a las medidas de posición.\par
+
+\subsubsection{Varianza $\sigma ^2$}\par
+La varianza es una medida de dispersión que representa la variabilidad de una serie de datos respecto a su media. Formalmente se calcula como la suma de los residuos al cuadrado divididos entre el total de observaciones.\cite{Montgomery_Runger_2020}\par
+
+\subsubsection{Desviación estándar$\sigma$}\par
+La desviación estándar es una medida que se utiliza para cuantificar la variación o la dispersión de un conjunto de datos numéricos.\par
+Una desviación estándar baja indica que la mayor parte de los datos de una muestra tienden a estar agrupados cerca de su media (también denominada el valor esperado), mientras que una desviación estándar alta indica que los datos se extienden sobre un rango de valores más amplio.\cite{Montgomery_Runger_2020}\par
+
+\subsection{Análisis de varianza} 
+
+Los gráficos de variabilidad son una excelente manera de presentar visualmente los datos del análisis de varianza y son excelentes en las primeras etapas del análisis de causa raíz. Su principal fortaleza es permitirle visualizar muchas fuentes diversas de variaciones en un solo diagrama mientras brinda una visión general de los efectos de los factores.\par
+
+        \begin{figure}[H]
+    		\centering
+    		\includegraphics[scale=0.75]{fig/ANNOVA-Variabiliy.jpg}
+    		\label{fig: Figura8}
+    		\caption{Gráfico de variabilidad}
+        \end{figure}
+ 
+Los gráficos de variabilidad pueden ayudar a realizar una investigación y estudiar patrones de variación de muchas causas posibles en un solo gráfico. Le permiten visualizar variaciones posicionales o cíclicas en los procesos. También se pueden utilizar para estudiar variaciones dentro de un subgrupo, entre subgrupos, etc.\par
+
+De forma adicional a este tipo de análisis se pueden contemplar lo que serian los diagramas de caja.\par
+
+\subsubsection{Diagramas de caja}\par
+
+Los diagramas de caja son una forma útil de graficar datos divididos en cuatro cuartiles, cada uno con igual cantidad de valores. El diagrama de caja no grafica frecuencia ni muestra las estadísticas individuales, pero en ellos se puede apreciar claramente dónde se encuentra la mitad de los datos. Es un buen diagrama para analizar la asimetría en los datos.\cite{8527734}\par
+
+
+        \begin{figure}[H]
+    		\centering
+    		\includegraphics[scale=0.75]{fig/box plot.png}
+    		\label{fig: Figura8}
+    		\caption{Partes de un gráfico de caja}
+        \end{figure}
+
+
+\section{Descripción del proceso actual de análisis de datos}
+
+En la Figura \ref{} se muestra un diagrama del proceso a actual que se debe seguir para realizar el análisis de los resultados de las pruebas, el cual queremos automatizar con este proyecto.\par 
+
+        \begin{figure}[H]
+    		\centering
+    		\includegraphics[scale=0.25]{fig/flujoactual.png}
+    		\label{fig: Figura8}
+    		\caption{Diagrama del proceso actual de análisis de datos}
+        \end{figure}
+\begin{enumerate}
+    \item Primeramente, el ingeniero debe accesar a la base de datos y realizar la consulta (query), con los nombres de las pruebas que desea analizar, asimismo, debe ajustar ciertos filtros, para obtener los resultados de las unidades deseadas.\par
+    
+    \item Luego, una vez la base de datos finaliza de realizar la búsqueda, esta procede a exportar una tabla, en donde por unidad, vienen todas las mediciones que se le realizaron en una misma cadena de datos separados por ",".\par
+    
+    \item Después, se debe tomar esa tabla que me genero la base de datos y se debe realizar un postprocesasdo, el cual contempla: \par
+    
+    \begin{itemize}
+        \item Separar las mediciones que vienen concatenadas en una misma cadena de datos en filas individuales.
+        
+        \item Asociar cada medición con el pin el cual fue tomada dicha medición.
+        
+        \item Extraer parámetros tanto de los nombres de las pruebas, como de los mismos pines asociados. 
+        
+        \item Crear columnas con los parámetros extraídos, para tener mayor granularidad en el análisis.
+        
+    \end{itemize}
+    
+    \item Finalmente, cuando se tiene una tabla postprocesada, se procede a generar un reporte estadístico que incluya gráficos de variabilidad y distribuciones, para analizar el comportamiento de las unidades ante estas pruebas.\par
+    
+\end{enumerate}
+
+
+
+
+\section{Descripción del Monitor de Procesos Analógicos (APM)}
+
+En esta sección se plantea definir el monitor de procesos analógicos.\par
+En este momento en Intel se está implementando un circuito como el de la figura \ref{} que es el que vamos a utilizar como base para realizar las mediciones.\par
+
+        \begin{figure}[H]
+    		\centering
+    		\includegraphics[scale=0.6]{fig/apm.png}
+    		\label{fig: Figura8}
+    		\caption{Diagrama de bloques del APM.}
+        \end{figure}
+
+  \begin{itemize}
+        \item El bloque de pruebas APM estará implementado para un nuevo producto en desarrollo.
+        \item El bloque de APM se integrará dentro del módulo DDR. \item Este contará  con sensores integrados para las mediciones de $V_{Th}$, $G_m$, $R_{out}$, y serán controlados digitalmente.
+        \item Cada uno de los sensores contará con su respectiva polarización: N y P.
+        \item Los sensores generan voltajes analógicos que representan el comportamiento del transistor analógico.
+        \item Mediante un multiplexor, se podrán seleccionar las distintas tensiones de prueba a las cuales se están sometiendo los transistores.
+        \item Estos voltajes analógicos que se eligen con el multiplexor se digitalizan por medio de un ADC y se leen.
+
+        
+    \end{itemize}
+
+
+\section{Machine Learning}
+El ‘machine learning’ –aprendizaje automático– es una especialidad en el campo de la inteligencia artificial que posibilita que las máquinas aprendan sin ser expresamente programadas para eso. Una capacidad imprescindible para hacer sistemas capaces de detectar patrones entre los datos para hacer predicciones.\par
+
+
+Existen tres métodos distintos para entrenar los modelos:
+
+\begin{itemize}
+    \item Aprendizaje por refuerzo
+    \item Aprendizaje supervisado
+    \item Aprendizaje no supervisado
+\end{itemize}
+
+\subsection{Aprendizaje por refuerzo}
+El aprendizaje por refuerzo es una rama del machine learning en la cual la máquina guía su propio aprendizaje por medio de recompensas y castigos. O sea, se basa en un sistema de instrucción autosuficiente cuyo camino es indicado según sus aciertos y errores.\par
+
+Consta de un aprendizaje experimental, por lo cual el representante informático está en constante averiguación de esas elecciones que le premien de alguna forma, a la par que previene esos senderos que, por vivencia propia, son penalizados. \par
+
+Además, puede decirse que el aprendizaje reforzado es un criterio semejante al que usan los organismos vivos. En otras palabras, las máquinas aprenden qué elecciones tomar según el caso en la que estén. Además, son capaces de desarrollar tácticas con una perspectiva a largo plazo.\par
+
+El aprendizaje por refuerzo ofrece un nuevo enfoque para hacer que nuestra máquina aprenda, para eso, postula los siguientes dos elementos:
+
+\begin{itemize}
+
+    \item \textbf{El agente:} va a ser nuestro modelo que deseamos realizar y que aprenda a tomar elecciones.
+    \item \textbf{El ambiente:} va a ser el ámbito en donde interactúa y “se mueve” el mánager. El ambiente tiene las restricciones y normas probables a cada instante.
+    
+\end{itemize}
+Entre ellos existe una interacción que se retroalimenta y cuenta con los próximos nexos:
+
+\begin{itemize}
+
+    \item \textbf{La acción:} las probables actividades que puede tomar en un rato definido el agente.
+    \item \textbf{El estado (del ambiente):} son los indicadores del ambiente de cómo permanecen los múltiples recursos que lo conforman en aquel instante.
+    \item \textbf{Recompensas o castigos:}  a raíz de cada acción captada por el agente, vamos a poder obtener un premio o una penalización que orientarán al agente en si lo está realizando bien o mal.
+    
+\end{itemize}
+
+En un primer instante, el agente obtiene un estado inicial y toma una acción con lo que influye y participa en el ambiente. Esto está realmente bien, puesto que es cierto que una vez que tomamos elecciones en la vida real lo estamos modificando. Y dicha elección va a tener sus secuelas: en la siguiente iteración el ambiente devolverá al agente el nuevo estado y la recompensa obtenida. Si la recompensa es positiva estaremos reforzando aquel comportamiento para el futuro. Sin embargo si la recompensa es negativa lo estaremos penalizando, para que frente a la misma situación el agente actúe de forma distinta.\par
+
+
+Por otro lado, entre las aplicaciones del aprendizaje por refuerzo, se tienen:
+
+\begin{itemize}
+
+    \item \textbf{Diseños de materiales y bienes:} Consta del perfeccionamiento del diseño de diferentes materiales o bienes intermedios con el fin de minimizar costes y mejorar el rendimiento. Tienen la posibilidad de ser materiales de creación, materiales plásticos, bienes prefabricados de madera, fibras textiles o partes metálicas.
+    \item \textbf{Tratamientos médicos:  }Es la aplicación para diagnosticar y tratar patologías. Da el mejor procedimiento viable según las necesidades y propiedades de cada paciente. Además, valora los efectos que un definido procedimiento tendrá sobre un sujeto en específico.
+    \item \textbf{Sistemas de navegación:} Se utiliza para desarrollar sistemas de navegación autónomos de drones, automóviles y robots.
+    
+\end{itemize}
+
+\subsection{Aprendizaje supervisado}
+El aprendizaje supervisado es una rama en el campo del Machine Learning , un procedimiento de estudio de datos que usa algoritmos que aprenden iterativamente de los datos para permitir que las computadoras encuentren información escondida sin tener que planear de forma explícita dónde buscar. \par 
+
+El aprendizaje supervisado resuelve inconvenientes conocidos y usa un grupo de datos etiquetados para realizar un algoritmo para hacer labores concretas. Usa modelos para predecir resultados conocidos como:
+\begin{itemize}
+    \item ¿Cuáles son los factores determinantes para el fraude o los defectos del producto?
+    \item ¿Cuál es el color de la imagen?
+    \item ¿Cuántas personas hay en la imagen?
+\end{itemize}
+ El aprendizaje supervisado posibilita que los algoritmos 'aprendan' de datos de entrenamiento y los apliquen a entradas desconocidas para obtener la salida adecuada. Para funcionar, el aprendizaje supervisado usa árboles de elección, bosques aleatorios entre otros algoritmos.\par
+ 
+ Existen dos tipos principales de aprendizaje supervisado: clasificación y regresión.\par
+ 
+ \subsubsection{Regresión}\par
+ La regresión es un método de aprendizaje supervisado en el que se entrena a un algoritmo para predecir una salida a partir de un rango continuo de valores posibles.\par 
+ 
+ En la regresión, un algoritmo requiere detectar una interacción funcional  entre los parámetros de entrada y salida. El valor de salida no es discreto, sino que es una función de los parámetros de entrada. La precisión de un algoritmo de regresión se calcula en funcionalidad de la desviación entre la salida rigurosa y la salida prevista.\par
+ 
+ La regresión, se trata del proceso estadístico predictivo en el que el modelo intenta predecir un valor continuo (como ventas, precio, calificaciones) mediante la relación entre variables dependientes e independientes. Es decir, se encuentra una ecuación en la que se sustituyen los valores de las variables y como resultado se obtiene el valor a predecir.\par
+ 
+ Entre las aplicaciones de regresión, podemos mencionar las siguientes:
+ \begin{itemize}
+
+    \item \textbf{Regresión lineal}\par
+   Esta se encargad de entrenar a un algoritmo para encontrar una relación lineal entre los datos de entrada y salida. Es el modelo más simple utilizado donde las salidas representan una combinación linealmente ponderada de las salidas. La regresión lineal se puede utilizar para predecir valores dentro de un rango continuo.  En los datos de entrenamiento para la regresión lineal, se proporcionan una variable de entrada (independiente) y una respectiva variable de salida (la variable dependiente). A partir de los datos proporcionados de entrada que son etiquetados, el algoritmo de regresión calcula la intersección y el coeficiente x en la función lineal. Para obtener dicha ecuación, se usa el método de los cuadrados mínimos.\par
+    \item \textbf{Regresión logística}\par
+    Es una regresión que se utiliza para determinar la probabilidad de que ocurra un evento. Los datos de entrenamiento tendrán una variable independiente, y el resultado deseado será un valor entre 0 y 1. Una vez que el algoritmo se entrena con la regresión logística, podrá predecir el valor de una variable dependiente (entre 0 y 1) en función del valor de la variable independiente (entrada).\par
+    También es usada en problemas de clasificación binaria. A pesar de la aparente incongruencia, se trata de una regresión porque el resultado de la ecuación es la probabilidad de que pertenezca a una clase, que dependiendo del umbral que se utilice, se clasifica como positivo o negativo.
+    \item \textbf{Regresión polinomial}\par
+    La regresión polinomial se utiliza para un conjunto de datos más complejo que no encajaría perfectamente en una regresión lineal. Un algoritmo se entrena con un conjunto de datos complejos y etiquetados que podrían no encajar adecuadamente en una regresión en línea recta. Si dichos datos de entrenamiento se utilizan con regresión lineal, podría causar un ajuste insuficiente, donde el algoritmo no capturará las tendencias verdaderas de los datos. Las regresiones polinomiales permiten una mayor curvatura en la línea de regresión y, por lo tanto, una mejor aproximación de la relación entre la variable dependiente y la independiente.\par
+    El sesgo y la desviación son dos términos principales asociados con la regresión polinomial. El sesgo es el error en el modelado que se produce al simplificar la función de ajuste. La desviación también se refiere a un error causado por el uso de una función demasiado compleja para ajustar los datos.\par
+    
+    
+\end{itemize}
+ 
+ \subsubsection{Clasificación}\par
+ 
+ La clasificación es el sitio donde se entrena a un algoritmo para clasificar los datos de ingreso en variables discretas. A lo largo de el entrenamiento, los algoritmos reciben datos de acceso de entrenamiento con una etiqueta de 'categorización'.\par
+ 
+ El objetivo es predecir las etiquetas de clase categóricas de nuevos registros, con base en observaciones pasadas. Dependiendo de la etiqueta, se puede decir que la clasificación es binaria o multiclase. Cuando solo existen dos clases (es decir, la etiqueta es discreta) se trata de clasificación binaria, y si existen más de dos clases entonces es clasificación multiclase.\par
+ 
+ Para los fines de la implementación del proyecto, nos enfocaremos en la clasificación binaria. por lo tanto, más adelante analizaremos algunos de los modelos más utilizados.\par
+ 
+ 
+ 
+\subsection{Aprendizaje no supervisado}
+
+El aprendizaje no supervisado es una de las formas en que Machine Learning  "aprende" los datos. El aprendizaje no supervisado tiene datos sin etiquetar que el algoritmo tiene que intentar entender por sí mismo.A diferencia del aprendizaje supervisado que para desarrollar modelos en los que los datos tenían etiquetas previamente conocidas. \par
+
+Sin embargo, cuando se trata de problemas del mundo real, la mayoría de las veces, los datos no vienen con etiquetas predefinidas, así que vamos a querer desarrollar modelos de aprendizaje automático que puedan clasificar correctamente estos datos, encontrando por sí mismos algunos puntos en común en las características, que se utilizarán para predecir las clases sobre nuevos datos.\par
+
+El mejor momento para utilizar el aprendizaje no supervisado es cuando no se dispone de datos sobre los resultados deseados.\par
+
+El proceso general que se  debe seguir al desarrollar un modelo de aprendizaje no supervisado se puede sintetizar en el siguiente cuadro:
+
+        \begin{figure}[H]
+    		\centering
+    		\includegraphics[scale=0.5]{fig/no superv.png}
+    		\label{fig: Figura8}
+    		\caption{Proceso de Análisis del Aprendizaje no Supervisado}
+        \end{figure}
+        
+El aprendizaje no supervisado busca resolver los problemas de agrupación y de asociación.\par
+
+\subsubsection{Agrupamiento}\par
+Se trata principalmente de encontrar una estructura o patrón en una colección de datos no categorizados. Los algoritmos de agrupamiento o clústeres, como se le conoce en inglés, procesarán los datos y encontrarán grupos o clústeres naturales si existen en los datos. También se puede modificar cuántos grupos deben identificar sus algoritmos. Permite ajustar la granularidad de estos grupos.\par
+
+\subsubsection{Asociación}\par
+Las reglas de asociación te permiten establecer asociaciones entre objetos de datos dentro de grandes bases de datos. Esta técnica no supervisada trata de descubrir relaciones interesantes entre variables en grandes bases de datos. Por ejemplo, las personas que compran una casa nueva tienen más probabilidades de comprar muebles nuevos\par
+
+
+
+\subsection{Métricas  a utilizar para evaluar los diferentes modelos de clasificación}
+
+Antes de proceder con la configuración y entrenamiento de los modelos de predicción, en esta sección se describirán todas las métricas a utilizar para evaluar los diferentes modelos a utilizar en el proyecto. Esto con el objetivo de aclarar las métricas antes de utilizarlas. \par
+
+\subsubsection{Accuracy Score (Puntaje de Exatitud)} \par
+
+\begin{itemize}
+    \item Es la fracción de predicciones de nuestro modelo que fueron clasificadas correctamente. 
+    \item Mientras más se acerque este valor a 1, se tendrá una mejor exactitud.
+\end{itemize}
+
+$$
+Accuracy = \frac{Número Predicciones Correctas}{Número Total Predicciones} \\
+$$
+
+Matemáticamente se puede ver de la siguiente forma:
+
+$$ Accuracy(y,\hat{y}) = \frac{1}{n_{samples}} \sum_{i=0}^{n_{samples}} 1(\hat{y} = y)$$
+
+Donde 1(x) es la función de indicación, que nos permite contar si la predicción fue correcta o no.
+
+\subsubsection{Balanced Accuracy Score} \par
+\begin{itemize}
+    \item Esta métrica nos permite lidiar con problemas de clasificación de conjuntos de datos desbalanceados.
+    \item Evita estimaciones de rendimiento infladas en conjuntos de datos desequilibrados.
+    \item Se puede definir como el la media aritmética de las sensibilidad (Precision) y especificidad (Recall) de recall obtenido en cada clase.
+    \item El mejor valor es 1 y el peor 0.
+\end{itemize}
+
+
+$$ balancedAccuracy = \frac{1}{2} (\frac{TP}{TP+FN} + \frac{TN}{TN+FP} ) $$
+
+\subsubsection{Kappa Score} \par
+\begin{itemize}
+    \item Se refiere al coeficiente kappa de Cohen. Esta es una medida estadística que mide el acuerdo entre anotadores en un problema de clasificación.
+    \item Se define como:\par
+    $$ k = \frac{(p_{o} - p_{e})}{(1- p_{e})}$$
+    \item Donde $p_{o}$ es la probabilidad empírica de acuerdo en una etiqueta asignada a una muestra.
+    \item Donde $p_{e}$ es el acuerdo esperado cuando ambos anotadores asignan la etiqueta aleatoriamente.
+    \item Este coeficiente varía entre -1 y 1. Donde los coeficientes mayores a 0.8 son considerados como un buen acuerdo. Cero o menos significa que no hubo acuerdo, prácticamente etiquetas aleatorias.
+\end{itemize}
+
+\subsubsection{Matthew Correlation Coeficient (MCC)} \par
+\begin{itemize}
+    \item El coeficiente de correlacion de Matthew se utiliza en aprendizaje automático como medición de la calidad de clasificaciones binarias o multiclase.
+    \item Este toma en cueta los valores verdaderos y falsos positivos y negativos.
+    \item Puede ser vista como una métrica balanceada la cual puede ser utilizada incluse si las clases son de diferentes tamaños.
+    \item Este coeficiente varía entre -1 y +1. Donde +1 es una predicción perfecta, 0 es una predicción aleatoria y -1 es una predicción inversa.
+\end{itemize}
+Se define como: \par
+    $$ MCC = \frac{tp \times tn - fp \times fn}{\sqrt{(tp+fp)(tp+fn)(tn+fp)(tn+fn)}}$$
+
+
+\subsubsection{ Precision Score (Puntaje de precisión)} \par
+\begin{itemize}
+    \item La precisión es la relación de $\frac{TP}{(TP + FP)}$, donde TP (True positive) son los verdaderos positivos y FP (False positive) son los falsos positivos.
+    \item La precisión es la habilidad de clasificador de no etiquetar como positivo una muestra que es negativa. 
+    \item El mejor valor es de 1 y el peor 0.
+\end{itemize}
+
+    Matemáticamente se puede ver de la siguiente forma: \par
+
+    $$\frac{TP}{(TP + FP)} = \frac{Number True Positives}{(Number True Positives + Number False Positives)} = \frac{Number True Positive}{Number Positive Calls} $$
+
+\subsubsection{  Recall Score (Puntaje de Recuperación)} \par
+\begin{itemize}
+    \item El Recall es la relación de $\frac{TP}{(TP + FN)}$, donde TP (True positive) son los verdaderos positivos y FN (False negative) son los falsos negativos.
+    \item  El recall es la abilidad del clasificador para encontrar todos las muestras positivas.
+    \item El mejor valor es de 1 y el peor 0.
+\end{itemize}
+    Matemáticamente se puede ver de la siguiente forma: \par
+
+    $$\frac{TP}{(TP + FN)} = \frac{Number True Positives}{(Number True Positives + Number False Negative)} = \frac{Number True Positive}{Number Expected Positive} $$
+
+\subsubsection{ F1 Score (Puntuación F1)} \par
+\begin{itemize}
+    \item También se denomina puntuación F equilibrada o F medida F. 
+    \item Es la media armónica de la precisión y la recuperación. 
+    \item La puntuación F1 resulta útil cuando desea buscar un equilibrio entre la precisión y la recuperación.
+    \item Una puntuación F1 alcanza el mejor valor en 1,00 y la peor puntuación en 0,00. Indica cuán preciso es el clasificador.
+\end{itemize}
+
+Matemáticamente se puede ver de la siguiente forma: \par
+
+    $$F1 = 2 * \frac{(precision * recall)}{(precision + recall)}$$
+
+
+\subsection{Modelos de clasificación binaria a implementar}
+Para los fines de la implementación del proyecto, nos enfocaremos únicamente en el aprendizaje supervisado, utilizando específicamente algoritmos de clasificación binaria. por lo tanto, analizaremos algunos de los modelos más utilizados. \par
+\subsubsection{ Decision Tree} \par
+%https://en.wikipedia.org/wiki/Decision_tree_learning
+
+Los modelos de árbol son aquellos en los que la variable de salida puede tomar un conjunto discreto de valores se denominan árboles de clasificación; en estas estructuras de árbol, las hojas representan etiquetas de clase y las ramas representan conjunciones de características que conducen a esas etiquetas de clase. Los árboles de decisión en los que la variable objetivo puede tomar valores continuos (normalmente números reales) se denominan árboles de regresión. \par
+
+Los árboles de decisión se encuentran entre los algoritmos de aprendizaje automático más populares debido a su inteligibilidad y simplicidad.\par
+
+En el análisis de decisiones, se puede usar un árbol de decisiones para representar visual y explícitamente las decisiones y la toma de decisiones.\par
+
+\subsubsection{ SVC (Support Vector classificator)} \par
+%https://en.wikipedia.org/wiki/Support_vector_machine
+En el aprendizaje automático, las máquinas de vectores de soporte SVM son modelos de aprendizaje supervisado con algoritmos de aprendizaje asociados que analizan datos para clasificación y análisis de regresión. \par 
+Las SVM son uno de los métodos de predicción más robustos, basados en marcos de aprendizaje. Dado un conjunto de ejemplos de entrenamiento, cada uno marcado como perteneciente a una de dos categorías, un algoritmo de entrenamiento SVM construye un modelo que asigna nuevos ejemplos a una categoría u otra, convirtiéndolo en un clasificador lineal binario no probabilístico. SVM asigna ejemplos de entrenamiento a puntos en el espacio para maximizar el ancho de la brecha entre las dos categorías. Luego, los nuevos ejemplos se mapean en ese mismo espacio y se predice que pertenecen a una categoría según el lado de la brecha en el que se encuentran.\par
+
+Además de realizar una clasificación lineal, las SVM pueden realizar de manera eficiente una clasificación no lineal utilizando lo que se denomina el truco del kernel, mapeando implícitamente sus entradas en espacios de características de alta dimensión.\par
+
+
+\subsubsection{ K-nearest neighbors} \par
+%https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm
+El algoritmo de k vecinos más cercanos (k-NN) es un método de aprendizaje supervisado no paramétrico, cuya entrada consta de los k ejemplos de entrenamiento más cercanos en un conjunto de datos. El resultado depende de si k-NN se usa para la clasificación o la regresión.\par
+En la clasificación k-NN, la salida es una pertenencia a una clase. Un objeto se clasifica por una pluralidad de votos de sus vecinos, y el objeto se asigna a la clase más común entre sus k vecinos más cercanos (k es un número entero positivo, típicamente pequeño). Si k = 1, entonces el objeto simplemente se asigna a la clase de ese vecino más cercano.\par
+
+Tanto para la clasificación como para la regresión, una técnica útil puede ser asignar pesos a las contribuciones de los vecinos, de modo que los vecinos más cercanos contribuyan más al promedio que los más distantes.\par
+
+Los vecinos se toman de un conjunto de objetos para los que se conoce la clase. Esto se puede considerar como el conjunto de entrenamiento para el algoritmo, aunque no se requiere ningún paso de entrenamiento explícito.\par
+
+\subsubsection{ Naive Bayes} \par
+%https://en.wikipedia.org/wiki/Naive_Bayes_classifier
+Los clasificadores de Naive Bayes son una familia de "clasificadores probabilísticos" simples basados en la aplicación del teorema de Bayes con fuertes suposiciones de independencia entre las características.\par
+
+Los clasificadores Naive Bayes son altamente escalables y requieren una cantidad de parámetros lineales en la cantidad de variables (características/predictores) en un problema de aprendizaje. El entrenamiento de máxima verosimilitud se puede realizar mediante la evaluación de una expresión de forma cerrada, que toma un tiempo lineal, en lugar de una costosa aproximación iterativa como se usa para muchos otros tipos de clasificadores.\par
+
+\subsubsection{ Random Forest} \par
+%https://en.wikipedia.org/wiki/Random_forest
+
+Los bosques aleatorios son un método de aprendizaje conjunto para clasificación que opera mediante la construcción de una multitud de árboles de decisión en el momento del entrenamiento.\par
+
+Para las tareas de clasificación, la salida del bosque aleatorio es la clase seleccionada por la mayoría de los árboles.\par
+
+Los bosques aleatorios se utilizan con frecuencia como modelos de "caja negra" en las empresas, ya que generan predicciones razonables en una amplia gama de datos y requieren poca configuración. \par
+
+
+\section{Estado del arte}
+
+En el estado del arte existen diferentes investigaciones orientadas a aplicaciones de machine learning en el desarrollo de circuitos integrados, de los cuales los más recientes podemos destacar los siguientes. \par
+
+
+
+Como primer caso, Yu-Jung Huang y compañía en el artículo \textit{Machine-Learning Approach in Detection and Classification for Defects in TSV-Based 3-D IC} proponen un método de para detectar defectos de vacíos, cortos y abiertos en CI  3D basados en vías de silicio pasante. En donde utilizan el algoritmo clasificador Random Forest. Logran reducir significativamente el tiempo y costo que toma la detección de defectos de vacíos.\par
+
+Por otro lado, Haralampos-G. Stratigopoulos y otros compañeros en el artículo \textit{Machine learning applications in IC testing} establecieron que el aprendizaje automático se puede usar para extraer en el conjunto de pruebas y buscar un subconjunto que se pueda usar para predecir el resultado combinado de aprobación o falla de las pruebas que se eliminan.\par
+
+Además, Yu-Chen Lee, Tsung-Han Tsai y compañía en 2019 en el artículo \textit{Enhancing the data analysis in IC testing by machine learning techniques} buscan un método para mejorar el análisis de datos en las pruebas de circuitos integrados mediante técnicas de aprendizaje automático. En donde clasificarán los errores utilizando un clasificador SVM, obteniendo una la precisión de la prueba es del 86\%. Con el modelo, pudieron encontrar la correlación entre las causas de los errores y los parámetros eléctricos.\par
+
+Asimismo, Qicheng Huang, Chenlei Fang y otros compañeros también en 2019 en el artículo \textit{Improving Test Chip Design Efficiency via Machine Learning} logran implementar una técnica de clasificación aleatoria de bosques para predecir los resultados de la síntesis para la exploración del diseño de chips de prueba. Utilizando aprendizaje automático acelera 11 veces el tiempo que toma el diseñar circuitos de prueba de lógica de flujo completo.\par
+
+También, Soham Roy, Spencer K. Millican  y compañía en el año 2021 en el artículo \textit{Machine Learning in Test: A Survey of Analog, Digital, Memory, and RF Integrated Circuits} mediante la utilización de los algoritmos de SVM, lograron detectar el 90\% de los chips defectuosos comparado con los métodos tradicionales que aplicaban.\par
+
+Y finalmente, también en el año 2021 Ji-Wei Li junto con Leon Li-Yang Chen y compañía, en el artículo \textit{Machine Learning-Based Detection Method for Wafer Test Induced Defects} propusieron un método basado en el aprendizaje automático para determinar si hay defectos inducidos por pruebas en una oblea.\par
+
+Aquí se evaluaron los resultados de predicción utilizando algoritmos lineales en donde el algoritmo de árbol de decisión fue el que tuvo mejores resultados de predicción con un 95\%.\par
+
+

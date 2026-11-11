@@ -1,0 +1,24 @@
+\babel@toc {spanish}{}\relax 
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{\ignorespaces Matriz de trazabilidad del proyecto.}}{4}{table.1.1}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Area Ratio (FPGA/ASIC)}}{12}{table.2.1}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Critical Path Delay Ratio (FPGA/ASIC) - Slowest Speed Grade}}{13}{table.2.2}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Dynamic Power Consumption Ratio (FPGA/ASIC)}}{14}{table.2.3}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Recursos tras la síntesis con Yosys para cada circuito.}}{39}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Recursos disponibles en cada arquitectura de eFPGA.}}{40}{table.4.2}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Utilización de celdas lógicas y de entrada y salida tras la implementación de cada circuito en cada arquitectura.}}{40}{table.4.3}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Resultados de temporización de nextpnr.}}{41}{table.4.4}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Tiempo de ejecución del colocador y del enrutador de nextpnr para cada circuito y arquitectura.}}{41}{table.4.5}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Utilización de recursos de la Cyclone V para el FIR en cada arquitectura.}}{42}{table.4.6}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Relojes definidos en el análisis de temporización.}}{42}{table.4.7}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Holgura del peor caso en el análisis de temporización multiesquina de Quartus. Todos los valores están en nanosegundos.}}{43}{table.4.8}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Holgura de temporización por reloj y arquitectura. Todos los valores están en nanosegundos. }}{43}{table.4.9}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces Potencia térmica estimada por el analizador de potencia de Quartus para el FIR en cada arquitectura.}}{44}{table.4.10}%
+\contentsline {table}{\numberline {4.11}{\ignorespaces Utilización de recursos de la Cyclone V para el multiplicador de matrices en cada arquitectura.}}{44}{table.4.11}%
+\contentsline {table}{\numberline {4.12}{\ignorespaces Holgura del peor caso en el análisis de temporización multiesquina de Quartus para el multiplicador de matrices. Todos los valores están en nanosegundos.}}{45}{table.4.12}%
+\contentsline {table}{\numberline {4.13}{\ignorespaces Holgura de temporización por reloj y arquitectura para el multiplicador de matrices. Todos los valores están en nanosegundos.}}{46}{table.4.13}%
+\contentsline {table}{\numberline {4.14}{\ignorespaces Potencia térmica estimada por el analizador de potencia de Quartus para el multiplicador de matrices en cada arquitectura.}}{46}{table.4.14}%
+\addvspace {10\p@ }
